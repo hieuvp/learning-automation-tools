@@ -24,6 +24,17 @@
 
 ## What is XPath
 
+XPath also called as XML Path is a language to query XML documents.
+It is an important strategy to locate elements in selenium.
+It consists of a path expression along with some conditions.
+Here, you can easily write XPath script/query to locate any element in the webpage.
+It is designed to allow the navigation of XML documents,
+with the purpose of selecting individual elements, attributes,
+or some other part of an XML document for specific processing.
+It also produces reliable locators.
+
+Now, let's understand how to write an XPath for an XML Document.
+
 ## XML Document
 
 ## Syntax of XPath
