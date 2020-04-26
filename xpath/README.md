@@ -1,17 +1,15 @@
-# Learning Automation Tools
+# XPath
 
 ## Table of Contents
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [Topics](#topics)
 - [References](#references)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-## Topics
-
-- [ ] [XPath](xpath/README.md)
-
 ## References
+
+- [How to Get Started with XPath in Selenium](https://www.edureka.co/blog/xpath-in-selenium)
+- [Xpath in Selenium | Selenium Xpath Tutorial | Selenium Xpath Examples](https://www.youtube.com/watch?v=9-iVt0MIqNY)
