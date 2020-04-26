@@ -12,6 +12,6 @@
 
 ## Topics
 
-- [ ] [XPath](xpath/README.md)
+- [XPath](xpath/README.md)
 
 ## References
