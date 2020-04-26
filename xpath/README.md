@@ -12,4 +12,4 @@
 ## References
 
 - [How to Get Started with XPath in Selenium – XPath Tutorial](https://www.edureka.co/blog/xpath-in-selenium)
-- [Xpath in Selenium | Selenium Xpath Tutorial | Selenium Xpath Examples | Selenium Training | Edureka](https://www.youtube.com/watch?v=9-iVt0MIqNY)
+- [Xpath in Selenium | Selenium Xpath Tutorial | Selenium Xpath Examples](https://www.youtube.com/watch?v=9-iVt0MIqNY)
