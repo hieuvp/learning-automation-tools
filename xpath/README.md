@@ -16,6 +16,8 @@
 - [XML Document](#xml-document)
 - [Syntax of XPath](#syntax-of-xpath)
 - [Types of XPath](#types-of-xpath)
+  - [Absolute XPath](#absolute-xpath)
+  - [Relative XPath](#relative-xpath)
 - [XPath Functions](#xpath-functions)
 - [Element Search using Eclipse](#element-search-using-eclipse)
 - [References](#references)
@@ -98,6 +100,17 @@ In the next section of this XPath in Selenium article,
 I will be talking about different types of XPath with the help of some practical examples.
 
 ## Types of XPath
+
+There are two types of XPath and they are:
+
+1. Absolute XPath
+1. Relative XPath
+
+First, let's understand Absolute XPath.
+
+### Absolute XPath
+
+### Relative XPath
 
 ## XPath Functions
 
