@@ -146,6 +146,13 @@ This gives XPath expression as below:
 
 <div align="center"><img src="assets/Xpath-google.png" width="900"></div>
 
+As you can see in the above image,
+on writing the XPath it has highlighted the element
+which implies that this particular element was located using XPath.
+
+Now, let's move ahead with this XPath in Selenium article
+and understand different functions used in Selenium.
+
 ## XPath Functions
 
 ## Element Search using Eclipse
