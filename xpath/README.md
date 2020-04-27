@@ -69,6 +69,19 @@ As you can see in the below figure, both have 2 tags i.e. title and author.
 
 <div align="center"><img src="assets/xml-document.png" width="900"></div>
 
+Here, I will start with the root node i.e. book store,
+then I will locate a book whose category is children.
+Once I reach the correct node,
+the next step will be to pick a node with an author tag.
+So XPath can be written like:
+
+```xpath
+bookstore/book[@category='children']/author
+```
+
+This is an XPath query to locate the author of a book whose category is children.
+Now let's understand the syntax of the XPath query.
+
 ## Syntax of XPath
 
 ## Types of XPath
