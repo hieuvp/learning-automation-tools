@@ -19,6 +19,10 @@
   - [Absolute XPath](#absolute-xpath)
   - [Relative XPath](#relative-xpath)
 - [XPath Functions](#xpath-functions)
+  - [Types of XPath Functions](#types-of-xpath-functions)
+    - [`contains()`](#contains)
+    - [`starts-with()`](#starts-with)
+    - [`text()`](#text)
 - [Element Search using Eclipse](#element-search-using-eclipse)
 - [References](#references)
 
@@ -129,7 +133,7 @@ On inspecting the web element you can see it has an input tag and attributes lik
 Now, I will use the tag name and these attributes to construct XPath
 which in turn will locate the search bar.
 
-<div align="center"><img src="assets/google-xpath.png" width="900"></div>
+<div align="center"><img src="assets/google-xpath.png" width="800"></div>
 
 Here, you just have to click Elements tab
 and press Ctrl + F to open a search box in chromes developers tool.
@@ -144,7 +148,7 @@ This gives XPath expression as below:
 //input[@name=’q’]
 ```
 
-<div align="center"><img src="assets/Xpath-google.png" width="900"></div>
+<div align="center"><img src="assets/Xpath-google.png" width="800"></div>
 
 As you can see in the above image,
 on writing the XPath it has highlighted the element
@@ -154,6 +158,33 @@ Now, let's move ahead with this XPath in Selenium article
 and understand different functions used in Selenium.
 
 ## XPath Functions
+
+Automation using Selenium is definitely a great technology
+that provides many ways to identify an object or element on the web page.
+But sometimes we do face problems in identifying the objects on a page
+which have the same attributes.
+Some of such cases can be
+elements having the same attributes and names
+or having more than one button with the same name and ids.
+In such cases, it's challenging to instruct selenium to identify a particular object on a web page
+and this is where XPath functions come to our rescue.
+
+### Types of XPath Functions
+
+Selenium is comprised of various functions.
+Below, I have listed down three of the most widely used functions:
+
+1. `contains()`
+1. `starts-with()`
+1. `text()`
+
+First, I will tell you how `contains()` function is being used in XPath query.
+
+#### `contains()`
+
+#### `starts-with()`
+
+#### `text()`
 
 ## Element Search using Eclipse
 
