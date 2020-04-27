@@ -122,6 +122,13 @@ It begins with the double forward slash (//),
 which means it can search the element anywhere at the webpage.
 For example: `//input[@id='ap_email']`
 
+Now, let's understand this with the help of an example.
+I will launch Google Chrome and navigate to google.com.
+Here, I will try to locate the search bar using XPath.
+On inspecting the web element you can see it has an input tag and attributes like class and id.
+Now, I will use the tag name and these attributes to construct XPath
+which in turn will locate the search bar.
+
 ## XPath Functions
 
 ## Element Search using Eclipse
