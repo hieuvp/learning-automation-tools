@@ -129,6 +129,23 @@ On inspecting the web element you can see it has an input tag and attributes lik
 Now, I will use the tag name and these attributes to construct XPath
 which in turn will locate the search bar.
 
+<div align="center"><img src="assets/google-xpath.png" width="900"></div>
+
+Here, you just have to click Elements tab
+and press Ctrl + F to open a search box in chromes developers tool.
+Next, you can write XPath, string selector and it will try to search based on that criteria.
+As you can see in the above image, it has an input tag.
+
+Now I will start with // input. Here //input implies tagname.
+Now, I will use the name attribute and pass ‘q’ in single quotes as its value.
+This gives XPath expression as below:
+
+```xpath
+//input[@name=’q’]
+```
+
+<div align="center"><img src="assets/Xpath-google.png" width="900"></div>
+
 ## XPath Functions
 
 ## Element Search using Eclipse
