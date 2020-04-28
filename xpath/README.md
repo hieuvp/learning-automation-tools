@@ -3,7 +3,7 @@
 <div align="center">
   <img src="assets/logo.png" width="480">
   <br />
-  <em>The <b>best</b> way to <b>locate elements</b> on a <b>web page</b></em>
+  <div>The <b>best</b> way to <b>locate elements</b> on a <b>web page</b></div>
   <br />
 </div>
 
