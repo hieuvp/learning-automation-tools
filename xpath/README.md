@@ -1,13 +1,15 @@
 # XPath
 
-<div align="center"><img src="assets/logo.png" width="450"></div>
+<div align="center">
+  <img src="assets/logo.png" width="480">
+  <br />
+  <em>The best way to locate elements in selenium</em>
+  <br />
+</div>
 
 > If you wish to know the easiest way to locate elements on the webpage,
 > then you have landed at the perfect place.
-> The best way to locate elements in selenium is using XPath.
-> In this article on XPath in Selenium,
-> I will give you a brief insight on
-> how to create the right and effective XPath along with its various types.
+> The best way to locate elements in selenium is using `XPath`.
 
 ## Table of Contents
 
