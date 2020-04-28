@@ -3,7 +3,7 @@
 <div align="center">
   <img src="assets/logo.png" width="480">
   <br />
-  <em>The easiest & best way to locate elements on a web page</em>
+  <em>The <b>best</b> way to <b>locate elements</b> on a <b>web page</b></em>
   <br />
 </div>
 
