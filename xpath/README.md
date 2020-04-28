@@ -18,6 +18,7 @@
 - [Types of XPath](#types-of-xpath)
   - [Absolute XPath](#absolute-xpath)
   - [Relative XPath](#relative-xpath)
+  - [Examples](#examples)
 - [XPath Functions](#xpath-functions)
   - [Types of XPath Functions](#types-of-xpath-functions)
     - [`contains()`](#contains)
@@ -107,13 +108,6 @@ I will be talking about different types of XPath with the help of some practical
 
 ## Types of XPath
 
-There are two types of XPath and they are:
-
-1. Absolute XPath
-1. Relative XPath
-
-First, let's understand Absolute XPath.
-
 ### Absolute XPath
 
 It is the direct way to find the element,
@@ -127,6 +121,8 @@ For Relative XPath, the path starts from the middle of the HTML DOM structure.
 It begins with the double forward slash (//),
 which means it can search the element anywhere at the webpage.
 For example: `//input[@id='ap_email']`
+
+### Examples
 
 Now, let's understand this with the help of an example.
 I will launch Google Chrome and navigate to google.com.
