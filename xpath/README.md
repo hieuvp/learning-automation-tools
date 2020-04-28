@@ -1,6 +1,6 @@
 # XPath
 
-<div align="center"><img src="assets/logo.png" width="360"></div>
+<div align="center"><img src="assets/logo.png" width="420"></div>
 
 > If you wish to know the easiest way to locate elements on the webpage,
 > then you have landed at the perfect place.
