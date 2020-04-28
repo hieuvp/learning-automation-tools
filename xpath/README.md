@@ -3,13 +3,9 @@
 <div align="center">
   <img src="assets/logo.png" width="480">
   <br />
-  <em>The best way to locate elements in selenium</em>
+  <em>The easiest & best way to locate elements on a web page</em>
   <br />
 </div>
-
-> If you wish to know the easiest way to locate elements on the webpage,
-> then you have landed at the perfect place.
-> The best way to locate elements in selenium is using `XPath`.
 
 ## Table of Contents
 
