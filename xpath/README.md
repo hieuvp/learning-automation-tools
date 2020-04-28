@@ -30,7 +30,7 @@
 
 ## What is XPath
 
-<div align="center"><img src="assets/logo.png" width="640"></div>
+<div align="center"><img src="assets/logo.png" width="480"></div>
 
 XPath also called as XML Path is a language to query XML documents.
 It is an important strategy to locate elements in selenium.
@@ -147,7 +147,7 @@ Now, I will use the name attribute and pass ‘q’ in single quotes as its valu
 This gives XPath expression as below:
 
 ```xpath
-//input[@name=’q’]
+//input[@name='q']
 ```
 
 <div align="center"><img src="assets/Xpath-google.png" width="800"></div>
