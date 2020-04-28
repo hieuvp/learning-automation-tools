@@ -30,6 +30,8 @@
 
 ## What is XPath
 
+<div align="center"><img src="assets/logo.png" width="640"></div>
+
 XPath also called as XML Path is a language to query XML documents.
 It is an important strategy to locate elements in selenium.
 It consists of a path expression along with some conditions.
