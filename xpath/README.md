@@ -217,13 +217,115 @@ Now let's, move further and understand a few more XPath functions.
 
 #### `starts-with()`
 
+This function is used to find a web element whose value of an attribute changes on the refresh
+or on any other dynamic operation on the web page.
+In this, we match the starting text of the attribute
+to locate an element whose attribute has changed dynamically.
+
+For Example: On the web page,
+ID of a particular element changes dynamically such as ‘id1’, ‘id2’, ‘id3’, etc.,
+but the remaining text will be the same.
+
+Let's now try demonstrating it using the same object.
+Here, instead of contains(), you have to change it to starts-with().
+
 <div align="center"><img src="assets/starts-with.png" width="800"></div>
+
+As you can see in the figure src attribute starts with https.
+It will locate the elements that start with https.
+Thus, this is how starts-with function is used to locate a particular element on the webpage.
+
+XPath query looks like:
+
+```xpath
+//img[starts-with(@src,'https')]
+```
+
+Now let's understand one more function text().
 
 #### `text()`
 
+This expression is used with the text function to locate an element with exact text.
+Let's see a small example to use text().
+
 <div align="center"><img src="assets/text.png" width="800"></div>
 
+Here my condition is –
+
+“go anywhere inside this document, irrespective of the tag,
+but, it must contain a text whose value is Search Google or type a URL”.
+
+The asterisk(\*) implies any tag with the same value. This give me an XPath query that looks like:
+
+```xpath
+//*[text()='Search Google or type a URL']
+```
+
+This is how you can use text() function.
+Now let's try to use two functions i.e. contains() and text() together in one XPath query.
+
+<div align="center"><img src="assets/two-fnctions.png" width="800"></div>
+
+As you can see in the above snippet, first I have used contains(),
+and passed the first argument as text().
+Now, text() should hold a value Search Google or type a URL.
+As you might notice, I have not used @ because the text() is a function
+and not an attribute.
+This is how you can use two XPath functions together.
+
+In the next section of this article,
+we will see how to register the drivers for chrome
+and how to send keys to search element using Eclipse.
+
 ## Element Search using Eclipse
+
+For google chrome, you need to install a chrome driver in your system.
+Now let's take a closer look at the code.
+As you can see, I have used System.setproperty() to set the path of chrome driver.
+Then I am using driver.get() to navigate to ebay.com.
+Further, using the XPath I am locating search box of the webpage.
+Now, using sendkeys(), I will be sending the search value as Guitar
+to redirect to the particular search page.
+
+```java
+package Edureka;
+import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+public class CustomXpath {
+public static void main(String[] args) {
+System.setProperty("webdriver.chrome.driver", "C:Selenium-java-edurekachromedriver_win32chromedriver.exe");
+WebDriver driver = new ChromeDriver();
+driver.manage().window().maximize();
+driver.manage().deleteAllCookies();
+driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
+driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+driver.get("<a href="https://www.ebay.com/">https://www.ebay.com/</a>");
+driver.findElement(By.xpath("//input[@id='gh-ac']")).sendKeys("Guitar"); //xpath for search box
+WebElement searchIcon = driver.findElement(By.xpath("//input[@id='gh-btn']"));//xpath for search button
+searchIcon.click();
+}
+}
+```
+
+When you run the above Java program,
+chrome driver will launch Google Chrome and redirect to ebay.com
+and provide you the preferred search automatically.
+You can refer below image for the output:
+
+<div align="center"><img src="assets/sendkeys.png" width="900"></div>
+
+I hope this gives you a clear understanding of how XPath in Selenium works.
+Thus, it brings us to the end of this article.
+
+If you wish to learn Selenium and build a career in the testing domain,
+then check out our interactive, live-online Selenium Certification Training here,
+that comes with 24\*7 support to guide you throughout your learning period.
+
+Got a question for us? Please mention it in the comments section of XPath in Selenium blog
+and we will get back to you.
 
 ## References
 
