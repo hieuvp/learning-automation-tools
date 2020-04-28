@@ -182,9 +182,46 @@ First, I will tell you how `contains()` function is being used in XPath query.
 
 #### `contains()`
 
+It is a method used in an XPath expression.
+When the value of any attribute changes dynamically
+e.g. login information, this method comes into use.
+It can locate a web element with the available partial text.
+Let me show you how to use `contains()` method.
+
+<div align="center"><img src="assets/contains.png" width="800"></div>
+
+I will again open google.com and choose a <img> tag to inspect its element tab.
+So what's next?
+
+As you can see in the above source code snippet,
+it has a <img> tag, followed by its attributes.
+Now let's say, I want to locate its src attribute using XPath.
+In order to do this, I will start with // followed by input tag,
+then I will use the select attribute, followed by its attribute name src.
+Finally, I will copy and paste the value of src.
+But by doing this, our XPath will become too lengthy.
+
+And, this is one of the biggest reasons for constructing a partial XPath query.
+As an src attribute contains the URL in its value,
+there are chances that its value or some part of the URL might change while you reload the page.
+So the bottom line here is, a part of the attribute value is static while the rest is dynamic,
+in such cases, we generally prefer using partial XPath.
+
+XPath query looks like:
+
+```xpath
+//img[contains(@src,'content')]
+```
+
+Now let's, move further and understand a few more XPath functions.
+
 #### `starts-with()`
 
+<div align="center"><img src="assets/starts-with.png" width="800"></div>
+
 #### `text()`
+
+<div align="center"><img src="assets/text.png" width="800"></div>
 
 ## Element Search using Eclipse
 
