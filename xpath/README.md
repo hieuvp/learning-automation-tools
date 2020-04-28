@@ -1,5 +1,7 @@
 # XPath
 
+<div align="center"><img src="assets/logo.png" width="360"></div>
+
 > If you wish to know the easiest way to locate elements on the webpage,
 > then you have landed at the perfect place.
 > The best way to locate elements in selenium is using XPath.
@@ -30,8 +32,6 @@
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## What is XPath
-
-<div align="center"><img src="assets/logo.png" width="480"></div>
 
 XPath also called as XML Path is a language to query XML documents.
 It is an important strategy to locate elements in selenium.
