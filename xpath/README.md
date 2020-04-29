@@ -98,23 +98,23 @@ Below figure depicts XPath Syntax and its terminology.
 - **`tagname`**: It is the name of the tag of a particular node.
 - **`@`**: It is used to select attribute.
 - **`Attribute`**: It is the name of the attribute of the node.
-- **`Value`**: It is the value of the attribute
+- **`Value`**: It is the value of the attribute.
 
 ## Types of XPath
 
 ### Absolute XPath
 
-It is the direct way to find the element,
-but the disadvantage of the absolute XPath is that,
-if there are any changes made in the path of the element then that XPath gets failed.
-For example: `/html/body/div[1]/section/div[1]/div`
+- For example: `/html/body/div[1]/section/div[1]/div`
+- It is the direct way to find the element,
+  but the disadvantage of the absolute XPath is that,
+  if there are any changes made in the path of the element then that XPath gets failed.
 
 ### Relative XPath
 
-For Relative XPath, the path starts from the middle of the HTML DOM structure.
-It begins with the double forward slash (//),
-which means it can search the element anywhere at the webpage.
-For example: `//input[@id='ap_email']`
+- For example: `//input[@id='ap_email']`
+- For Relative XPath, the path starts from the middle of the HTML DOM structure.
+  It begins with the double forward slash (//),
+  which means it can search the element anywhere at the webpage.
 
 ### Examples
 
