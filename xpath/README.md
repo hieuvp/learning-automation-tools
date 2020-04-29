@@ -124,7 +124,7 @@ I will launch **Google Chrome** and navigate to <https://www.goshopback.vn/>.
 
 <div align="center"><img src="assets/shopback-inspect-elements.png" width="900"></div>
 
-<div align="center"><img src="assets/shopback-copy-tools.png" width="600"></div>
+<div align="center"><img src="assets/shopback-copy-tools.png" width="640"></div>
 
 ### Copy XPath
 
