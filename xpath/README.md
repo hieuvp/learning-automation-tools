@@ -23,14 +23,13 @@
   - [Absolute XPath](#absolute-xpath)
   - [Relative XPath](#relative-xpath)
 - [Chrome DevTools](#chrome-devtools)
-  - [`Copy XPath`](#copy-xpath)
-  - [`Copy Full XPath`](#copy-full-xpath)
+  - [Copy Full XPath](#copy-full-xpath)
+  - [Copy XPath](#copy-xpath)
   - [Find by XPath](#find-by-xpath)
 - [XPath Functions](#xpath-functions)
-  - [Types of XPath Functions](#types-of-xpath-functions)
-    - [`contains()`](#contains)
-    - [`starts-with()`](#starts-with)
-    - [`text()`](#text)
+  - [`contains()`](#contains)
+  - [`starts-with()`](#starts-with)
+  - [`text()`](#text)
 - [Element Search using Eclipse](#element-search-using-eclipse)
 - [References](#references)
 
@@ -129,16 +128,16 @@ Launch **Google Chrome** and navigate to <https://www.goshopback.vn/>.
 
 <div align="center"><img src="assets/shopback-copy-tools.png" width="640"></div>
 
-### `Copy XPath`
-
-```xpath
-//*[@id="home-page-container"]/div/div/section/section[7]/section/div/section/div[1]/a/img
-```
-
-### `Copy Full XPath`
+### Copy Full XPath
 
 ```xpath
 /html/body/div[1]/div[5]/div/div/div/section/section[7]/section/div/section/div[1]/a/img
+```
+
+### Copy XPath
+
+```xpath
+//*[@id="home-page-container"]/div/div/section/section[7]/section/div/section/div[1]/a/img
 ```
 
 ### Find by XPath
@@ -163,8 +162,8 @@ and press `Command` + `F` to open a search box in chromes developers tool.
 Next, you can write XPath, string selector and it will try to search based on that criteria.
 As you can see in the above image, it has an input tag.
 
-Now I will start with // input. Here //input implies tagname.
-Now, I will use the name attribute and pass ‘q’ in single quotes as its value.
+Now I will start with `//` input. Here `//input` implies tagname.
+Now, I will use the name attribute and pass `'q'` in single quotes as its value.
 This gives XPath expression as below:
 
 ```xpath
@@ -176,9 +175,6 @@ This gives XPath expression as below:
 As you can see in the above image,
 on writing the XPath it has highlighted the element
 which implies that this particular element was located using XPath.
-
-Now, let's move ahead with this XPath in Selenium article
-and understand different functions used in Selenium.
 
 ## XPath Functions
 
@@ -192,18 +188,10 @@ or having more than one button with the same name and ids.
 In such cases, it's challenging to instruct selenium to identify a particular object on a web page
 and this is where XPath functions come to our rescue.
 
-### Types of XPath Functions
-
 Selenium is comprised of various functions.
-Below, I have listed down three of the most widely used functions:
+Below, I have listed down three of the most widely used functions.
 
-1. `contains()`
-1. `starts-with()`
-1. `text()`
-
-First, I will tell you how `contains()` function is being used in XPath query.
-
-#### `contains()`
+### `contains()`
 
 It is a method used in an XPath expression.
 When the value of any attribute changes dynamically
@@ -238,7 +226,7 @@ XPath query looks like:
 
 Now let's, move further and understand a few more XPath functions.
 
-#### `starts-with()`
+### `starts-with()`
 
 This function is used to find a web element whose value of an attribute changes on the refresh
 or on any other dynamic operation on the web page.
@@ -266,7 +254,7 @@ XPath query looks like:
 
 Now let's understand one more function text().
 
-#### `text()`
+### `text()`
 
 This expression is used with the text function to locate an element with exact text.
 Let's see a small example to use text().
