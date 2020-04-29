@@ -46,8 +46,8 @@
 ## XML Document
 
 The XML document has a tree-like structure.
-Below figure is an example of an XML document where you have different tags and attributes.
-It starts with a tag called the bookstore, which is also an element or a node.
+This is an example of an XML document where you have different tags and attributes.
+It starts with a tag called the `bookstore`, which is also an element or a node.
 
 <!-- AUTO-GENERATED-CONTENT:START (CODE:src=labs/bookstore.xml) -->
 <!-- The below code snippet is automatically added from labs/bookstore.xml -->
