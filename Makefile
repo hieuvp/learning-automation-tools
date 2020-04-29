@@ -9,6 +9,10 @@ fmt:
 	@printf "\n"
 
 	@printf "\n"
+	$(MAKEFILE_SCRIPT_PATH)/fmt-javascript.sh
+	@printf "\n"
+
+	@printf "\n"
 	$(MAKEFILE_SCRIPT_PATH)/fmt-markdown.sh
 	@printf "\n"
 

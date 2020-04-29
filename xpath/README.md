@@ -288,6 +288,10 @@ and how to send keys to search element using Eclipse.
 
 ## Selenium ChromeDriver
 
+```shell script
+node labs/ebay
+```
+
 For google chrome, you need to install a chrome driver in your system.
 Now let's take a closer look at the code.
 As you can see, I have used System.setproperty() to set the path of chrome driver.
@@ -328,13 +332,6 @@ You can refer below image for the output:
 
 I hope this gives you a clear understanding of how XPath in Selenium works.
 Thus, it brings us to the end of this article.
-
-If you wish to learn Selenium and build a career in the testing domain,
-then check out our interactive, live-online Selenium Certification Training here,
-that comes with 24\*7 support to guide you throughout your learning period.
-
-Got a question for us? Please mention it in the comments section of XPath in Selenium blog
-and we will get back to you.
 
 ## References
 
