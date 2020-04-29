@@ -23,8 +23,9 @@
   - [Absolute XPath](#absolute-xpath)
   - [Relative XPath](#relative-xpath)
 - [Chrome DevTools](#chrome-devtools)
-  - [Copy XPath](#copy-xpath)
-  - [Copy Full XPath](#copy-full-xpath)
+  - [`Copy XPath`](#copy-xpath)
+  - [`Copy Full XPath`](#copy-full-xpath)
+  - [Find by XPath](#find-by-xpath)
 - [XPath Functions](#xpath-functions)
   - [Types of XPath Functions](#types-of-xpath-functions)
     - [`contains()`](#contains)
@@ -126,20 +127,27 @@ I will launch **Google Chrome** and navigate to <https://www.goshopback.vn/>.
 
 <div align="center"><img src="assets/shopback-copy-tools.png" width="640"></div>
 
-### Copy XPath
+### `Copy XPath`
 
 ```xpath
 //*[@id="home-page-container"]/div/div/section/section[7]/section/div/section/div[1]/a/img
 ```
 
-### Copy Full XPath
+### `Copy Full XPath`
 
 ```xpath
 /html/body/div[1]/div[5]/div/div/div/section/section[7]/section/div/section/div[1]/a/img
 ```
 
-- find path, search by Xpath
-- <https://chrome.google.com/webstore/detail/chropath/ljngjbnaijcbncmcnjfhigebomdlkcjo>
+### Find by XPath
+
+<div align="center"><img src="assets/shopback-search-box.png" width="900"></div>
+
+<div align="center"><img src="assets/shopback-find-by-xpath.png" width="900"></div>
+
+```xpath
+//img[@class='brand-image']
+```
 
 Here, I will try to locate the search bar using XPath.
 On inspecting the web element you can see it has an input tag and attributes like class and id.
@@ -149,7 +157,7 @@ which in turn will locate the search bar.
 <div align="center"><img src="assets/google-xpath.png" width="800"></div>
 
 Here, you just have to click Elements tab
-and press Ctrl + F to open a search box in chromes developers tool.
+and press `Command` + `F` to open a search box in chromes developers tool.
 Next, you can write XPath, string selector and it will try to search based on that criteria.
 As you can see in the above image, it has an input tag.
 
