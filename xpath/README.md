@@ -317,6 +317,17 @@ const { Builder, By } = require("selenium-webdriver");
 (async function main() {
   const driver = await new Builder().forBrowser("chrome").build();
 
+  driver.manage().window().setSize(1280, 720);
+  driver.manage().deleteAllCookies();
+  driver
+    .manage()
+    .timeouts()
+    .pageLoadTimeout(40 * 1000);
+  driver
+    .manage()
+    .timeouts()
+    .implicitlyWait(30 * 1000);
+
   // Navigate to Url
   await driver.get("https://www.ebay.com");
 
@@ -338,35 +349,12 @@ Further, using the XPath I am locating search box of the webpage.
 Now, using sendkeys(), I will be sending the search value as Guitar
 to redirect to the particular search page.
 
-```java
-package Edureka;
-import java.util.concurrent.TimeUnit;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-public class CustomXpath {
-public static void main(String[] args) {
-System.setProperty("webdriver.chrome.driver", "C:Selenium-java-edurekachromedriver_win32chromedriver.exe");
-WebDriver driver = new ChromeDriver();
-driver.manage().window().maximize();
-driver.manage().deleteAllCookies();
-driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
-driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-driver.get("<a href="https://www.ebay.com/">https://www.ebay.com/</a>");
-driver.findElement(By.xpath("//input[@id='gh-ac']")).sendKeys("Guitar"); //xpath for search box
-WebElement searchIcon = driver.findElement(By.xpath("//input[@id='gh-btn']"));//xpath for search button
-searchIcon.click();
-}
-}
-```
-
 When you run the above Java program,
 chrome driver will launch Google Chrome and redirect to ebay.com
 and provide you the preferred search automatically.
 You can refer below image for the output:
 
-<div align="center"><img src="assets/sendkeys.png" width="900"></div>
+<div align="center"><img src="assets/ebay-output.png" width="900"></div>
 
 I hope this gives you a clear understanding of how XPath in Selenium works.
 Thus, it brings us to the end of this article.
