@@ -123,10 +123,6 @@ Below figure depicts XPath Syntax and its terminology.
 1. Launch **Google Chrome** and navigate to <https://www.goshopback.vn/>.
 1. Try to inspect a random web element.
 
-you can see it has an input tag and attributes like class and id.
-Now, I will use the tag name and these attributes to construct XPath
-which in turn will locate the search bar.
-
 <div align="center"><img src="assets/shopback-inspect-elements.png" width="900"></div>
 
 <br />
@@ -135,11 +131,15 @@ which in turn will locate the search bar.
 
 ### Copy Full XPath
 
+> Returns absolute XPath.
+
 ```xpath
 /html/body/div[1]/div[5]/div/div/div/section/section[7]/section/div/section/div[1]/a/img
 ```
 
 ### Copy XPath
+
+> Returns relative XPath.
 
 ```xpath
 //*[@id="home-page-container"]/div/div/section/section[7]/section/div/section/div[1]/a/img
@@ -154,6 +154,10 @@ which in turn will locate the search bar.
 ```xpath
 //img[@class='brand-image']
 ```
+
+you can see it has an input tag and attributes like class and id.
+Now, I will use the tag name and these attributes to construct XPath
+which in turn will locate the search bar.
 
 On the `Elements` panel, press `Command` + `F` to open a search box in Chrome DevTools.
 Next, you can write XPath, string selector and it will try to search based on that criteria.
