@@ -66,22 +66,19 @@ It starts with a tag called the `bookstore`, which is also an element or a node.
 
 <!-- AUTO-GENERATED-CONTENT:END -->
 
+<br />
+
 Now, let's visualize this XML document in a tree-like structure.
 
 <div align="center"><img src="assets/xml-document.png" width="900"></div>
 
-Here, I will start with the root node i.e. book store,
-then I will locate a book whose category is children.
-Once I reach the correct node,
-the next step will be to pick a node with an author tag.
-So XPath can be written like:
+<br />
+
+This is an XPath query to locate the `author` of a `book` whose `category` is `children`:
 
 ```xpath
 bookstore/book[@category='children']/author
 ```
-
-This is an XPath query to locate the author of a book whose category is children.
-Now let's understand the syntax of the XPath query.
 
 ## IntelliJ-Based IDEs
 
