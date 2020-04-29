@@ -176,6 +176,14 @@ Below figure depicts XPath Syntax and its terminology.
   <br />
 </div>
 
+- Select the `Console` tab, and check the XPath by typing `$x("your_xpath_here")`.
+  This will return an array of matched values.
+  If it is empty, you know there is no match on the page.
+
+```js
+$x("//img[@class='brand-image']");
+```
+
 ## XPath Functions
 
 - Sometimes we do face problems in identifying the objects on a page
