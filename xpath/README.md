@@ -121,7 +121,7 @@ Below figure depicts XPath Syntax and its terminology.
 ## Chrome DevTools
 
 1. Launch **Google Chrome** and navigate to <https://www.goshopback.vn/>.
-1. Try to inspect a random web element.
+1. Try to **inspect** a random web element.
 
 <div align="center"><img src="assets/shopback-inspect-elements.png" width="900"></div>
 
