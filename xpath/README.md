@@ -30,7 +30,7 @@
   - [`contains()`](#contains)
   - [`starts-with()`](#starts-with)
   - [`text()`](#text)
-- [Element Search using Eclipse](#element-search-using-eclipse)
+- [Selenium ChromeDriver](#selenium-chromedriver)
 - [References](#references)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -286,7 +286,7 @@ In the next section of this article,
 we will see how to register the drivers for chrome
 and how to send keys to search element using Eclipse.
 
-## Element Search using Eclipse
+## Selenium ChromeDriver
 
 For google chrome, you need to install a chrome driver in your system.
 Now let's take a closer look at the code.
@@ -342,3 +342,4 @@ and we will get back to you.
 - [Xpath in Selenium | Selenium Xpath Tutorial | Selenium Xpath Examples](https://www.youtube.com/watch?v=9-iVt0MIqNY)
 - [XPath and XSLT Support](https://www.jetbrains.com/help/idea/xpath-and-xslt-support.html)
 - [XPath Functions](https://developer.mozilla.org/en-US/docs/Web/XPath/Functions)
+- [XPath in Selenium WebDriver: Complete Tutorial](https://www.guru99.com/xpath-selenium.html)
