@@ -160,16 +160,12 @@ Below figure depicts XPath Syntax and its terminology.
 //img[@class='brand-image']
 ```
 
-<div align="center"><img src="assets/shopback-find-by-xpath.png" width="900"></div>
-
-Now, I will use the name attribute and pass `'q'` in single quotes as its value.
-This gives XPath expression as below:
-
-<div align="center"><img src="assets/Xpath-google.png" width="800"></div>
-
-As you can see in the above image,
-on writing the XPath it has highlighted the element
-which implies that this particular element was located using XPath.
+<div align="center">
+  <img src="assets/shopback-find-by-xpath.png" width="900">
+  <br />
+  <em>The located elements are highlighted</em>
+  <br />
+</div>
 
 ## XPath Functions
 
