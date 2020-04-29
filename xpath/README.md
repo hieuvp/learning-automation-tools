@@ -120,11 +120,11 @@ Below figure depicts XPath Syntax and its terminology.
 
 ## Chrome DevTools
 
-I will launch Google Chrome and navigate to <https://www.goshopback.vn/>.
+I will launch **Google Chrome** and navigate to <https://www.goshopback.vn/>.
 
 <div align="center"><img src="assets/shopback-inspect-elements.png" width="900"></div>
 
-<div align="center"><img src="assets/shopback-copy-tools.png" width="900"></div>
+<div align="center"><img src="assets/shopback-copy-tools.png" width="400"></div>
 
 ### Copy XPath
 
