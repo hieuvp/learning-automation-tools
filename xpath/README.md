@@ -323,20 +323,12 @@ const sleep = require("sleep");
 
   driver.manage().window().setSize(1280, 720);
   driver.manage().deleteAllCookies();
-  driver
-    .manage()
-    .timeouts()
-    .pageLoadTimeout(40 * 1000);
-  driver
-    .manage()
-    .timeouts()
-    .implicitlyWait(30 * 1000);
 
   try {
     // Navigate to ebay.com
     await driver.get("https://www.ebay.com");
 
-    // Using the XPath, we are locating the search box of the webpage
+    // By using XPath, we are locating the search box of the webpage
     // sendKeys() to search for a value of "DevOps"
     await driver.findElement(By.xpath("//input[@id='gh-ac']")).sendKeys("DevOps");
 
