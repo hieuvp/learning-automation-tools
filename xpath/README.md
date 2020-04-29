@@ -147,13 +147,13 @@ Below figure depicts XPath Syntax and its terminology.
 
 ### Find by XPath
 
-On the `Elements` panel, press **`Command-F`** to open a **search box**.
+- On the `Elements` panel, press `Command-F` to open a **search box**.
 
 <div align="center"><img src="assets/shopback-search-box.png" width="900"></div>
 
 <br />
 
-We will use `img` as a `tagname` and `class` as an `attribute` to construct an XPath expression.
+- We will use `img` as a `tagname` and `class` as an `attribute` to construct an XPath expression.
 
 <div align="center"><img src="assets/shopback-find-by-xpath.png" width="900"></div>
 
