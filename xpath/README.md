@@ -92,7 +92,7 @@ bookstore/book[@category='children']/author
 
 Below figure depicts XPath Syntax and its terminology.
 
-<div align="center"><img src="assets/syntax.png" width="900"></div>
+<div align="center"><img src="assets/syntax.png" width="800"></div>
 
 - **`//`**: It is used to select the current node.
 - **`tagname`**: It is the name of the tag of a particular node.
