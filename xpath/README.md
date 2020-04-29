@@ -163,24 +163,18 @@ Below figure depicts XPath Syntax and its terminology.
 <div align="center">
   <img src="assets/shopback-find-by-xpath.png" width="900">
   <br />
-  <em>The located elements are highlighted</em>
+  <div>The located elements are highlighted</div>
   <br />
 </div>
 
 ## XPath Functions
 
-Automation using Selenium is definitely a great technology
-that provides many ways to identify an object or element on the web page.
-But sometimes we do face problems in identifying the objects on a page
-which have the same attributes.
-Some of such cases can be
-elements having the same attributes and names
-or having more than one button with the same name and ids.
-In such cases, it's challenging to instruct selenium to identify a particular object on a web page
-and this is where XPath functions come to our rescue.
+- Sometimes we do face problems in identifying the objects on a page
+  which having the same attributes or names, ids.
+- In such cases, it is challenging to identify a particular object on a web page
+  and this is where XPath functions come to our rescue.
 
-Selenium is comprised of various functions.
-Below, I have listed down three of the most widely used functions.
+Below is a three of the most widely used functions.
 
 ### `contains()`
 
