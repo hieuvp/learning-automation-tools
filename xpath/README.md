@@ -127,7 +127,7 @@ Below figure depicts XPath Syntax and its terminology.
 
 <br />
 
-<div align="center"><img src="assets/shopback-copy-tools.png" width="720"></div>
+<div align="center"><img src="assets/shopback-copy-tools.png" width="700"></div>
 
 ### Copy Full XPath
 
@@ -147,9 +147,11 @@ Below figure depicts XPath Syntax and its terminology.
 
 ### Find by XPath
 
-<div align="center"><img src="assets/shopback-search-box.png" width="880"></div>
+On the `Elements` panel, press **`Command-F`** to open a **search box**:
 
-<div align="center"><img src="assets/shopback-find-by-xpath.png" width="880"></div>
+<div align="center"><img src="assets/shopback-search-box.png" width="900"></div>
+
+<div align="center"><img src="assets/shopback-find-by-xpath.png" width="900"></div>
 
 ```xpath
 //img[@class='brand-image']
@@ -159,7 +161,6 @@ you can see it has an input tag and attributes like class and id.
 Now, I will use the tag name and these attributes to construct XPath
 which in turn will locate the search bar.
 
-On the `Elements` panel, press `Command` + `F` to open a search box in Chrome DevTools.
 Next, you can write XPath, string selector and it will try to search based on that criteria.
 As you can see in the above image, it has an input tag.
 
