@@ -16,13 +16,14 @@ const sleep = require('sleep');
     .implicitlyWait(30 * 1000);
 
   try {
-    // Navigate to Url
+    // Navigate to ebay.com
     await driver.get('https://www.ebay.com');
 
-    // From search box, enter a text
+    // Using the XPath, we are locating the search box of the webpage
+    // sendKeys() to search for a value of "DevOps"
     await driver.findElement(By.xpath("//input[@id='gh-ac']")).sendKeys('DevOps');
 
-    // Hit search button
+    // Hit search button to redirect to the results page
     await driver.findElement(By.xpath("//input[@id='gh-btn']")).click();
 
     sleep.sleep(5);

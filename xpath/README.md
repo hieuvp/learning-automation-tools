@@ -288,14 +288,10 @@ and how to send keys to search element using Eclipse.
 
 ## Selenium ChromeDriver
 
-```shell script
-npm --global install chromedriver
-```
+- You need to install a [Chrome Driver](https://github.com/giggio/node-chromedriver) in your system.
 
 ```shell script
-cd labs/ebay
-npm install
-node .
+npm --global install chromedriver
 ```
 
 <!-- AUTO-GENERATED-CONTENT:START (CODE:src=labs/ebay/package.json) -->
@@ -337,13 +333,14 @@ const sleep = require("sleep");
     .implicitlyWait(30 * 1000);
 
   try {
-    // Navigate to Url
+    // Navigate to ebay.com
     await driver.get("https://www.ebay.com");
 
-    // From search box, enter a text
+    // Using the XPath, we are locating the search box of the webpage
+    // sendKeys() to search for a value of "DevOps"
     await driver.findElement(By.xpath("//input[@id='gh-ac']")).sendKeys("DevOps");
 
-    // Hit search button
+    // Hit search button to redirect to the results page
     await driver.findElement(By.xpath("//input[@id='gh-btn']")).click();
 
     sleep.sleep(5);
@@ -355,23 +352,20 @@ const sleep = require("sleep");
 
 <!-- AUTO-GENERATED-CONTENT:END -->
 
-For google chrome, you need to install a chrome driver in your system.
-Now let's take a closer look at the code.
-As you can see, I have used System.setproperty() to set the path of chrome driver.
-Then I am using driver.get() to navigate to ebay.com.
-Further, using the XPath I am locating search box of the webpage.
-Now, using sendkeys(), I will be sending the search value as Guitar
-to redirect to the particular search page.
+```shell script
+cd labs/ebay
+npm install
+node .
+```
 
-When you run the above Java program,
-chrome driver will launch Google Chrome and redirect to ebay.com
-and provide you the preferred search automatically.
-You can refer below image for the output:
-
-<div align="center"><img src="assets/ebay-output.png" width="900"></div>
-
-I hope this gives you a clear understanding of how XPath in Selenium works.
-Thus, it brings us to the end of this article.
+<div align="center">
+  <img src="assets/ebay-output.png" width="900">
+  <br />
+  <div>Chrome Driver will launch Google Chrome and redirect to ebay.com</div>
+  <br />
+  <div>Providing you the preferred search automatically</div>
+  <br />
+</div>
 
 ## References
 
