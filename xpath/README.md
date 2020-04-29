@@ -14,6 +14,10 @@
 
 - [What is XPath](#what-is-xpath)
 - [XML Document](#xml-document)
+- [IntelliJ-Based IDEs](#intellij-based-ides)
+  - [XPath Search](#xpath-search)
+  - [XPath Expression Evaluation](#xpath-expression-evaluation)
+  - [XPath Expression Generation](#xpath-expression-generation)
 - [Syntax of XPath](#syntax-of-xpath)
 - [Types of XPath](#types-of-xpath)
   - [Absolute XPath](#absolute-xpath)
@@ -87,6 +91,14 @@ bookstore/book[@category='children']/author
 
 This is an XPath query to locate the author of a book whose category is children.
 Now let's understand the syntax of the XPath query.
+
+## IntelliJ-Based IDEs
+
+### XPath Search
+
+### XPath Expression Evaluation
+
+### XPath Expression Generation
 
 ## Syntax of XPath
 
@@ -326,3 +338,4 @@ and we will get back to you.
 
 - [How to Get Started with XPath in Selenium](https://www.edureka.co/blog/xpath-in-selenium)
 - [Xpath in Selenium | Selenium Xpath Tutorial | Selenium Xpath Examples](https://www.youtube.com/watch?v=9-iVt0MIqNY)
+- [XPath and XSLT Support](https://www.jetbrains.com/help/idea/xpath-and-xslt-support.html)
