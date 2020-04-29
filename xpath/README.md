@@ -287,13 +287,21 @@ The asterisk(\*) implies any tag with the same value. This give me an XPath quer
 //*[text()='Made with love by']
 ```
 
+```xpath
+//*[text()='Made with love']
+```
+
 This is how you can use text() function.
 Now let's try to use two functions i.e. contains() and text() together in one XPath query.
 
 <div align="center"><img src="assets/two-fnctions.png" width="800"></div>
 
 ```xpath
-//*[contains[text()='Made with love by']]
+//*[contains(text(), 'Made with love')]
+```
+
+```xpath
+//*[contains(text(), 'Made with love by')]
 ```
 
 As you can see in the above snippet, first I have used contains(),
