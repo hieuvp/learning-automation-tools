@@ -174,9 +174,17 @@ Below figure depicts XPath Syntax and its terminology.
 - In such cases, it is challenging to identify a particular object on a web page
   and this is where XPath functions come to our rescue.
 
-Below is a three of the most widely used functions.
-
 ### `contains()`
+
+The contains function determines whether the first argument string contains the second argument string
+and returns boolean true or false.
+
+```xpath
+contains(haystack, needle)
+```
+
+- haystack: the string to be searched
+- needle: the string to look for as a substring of haystack.
 
 It is a method used in an XPath expression.
 When the value of any attribute changes dynamically
@@ -209,9 +217,14 @@ XPath query looks like:
 //img[contains(@src,'content')]
 ```
 
-Now let's, move further and understand a few more XPath functions.
-
 ### `starts-with()`
+
+The starts-with checks whether the first string starts with the second string
+and returns true or false.
+
+```xpath
+starts-with(haystack, needle)
+```
 
 This function is used to find a web element whose value of an attribute changes on the refresh
 or on any other dynamic operation on the web page.
@@ -328,3 +341,4 @@ and we will get back to you.
 - [How to Get Started with XPath in Selenium](https://www.edureka.co/blog/xpath-in-selenium)
 - [Xpath in Selenium | Selenium Xpath Tutorial | Selenium Xpath Examples](https://www.youtube.com/watch?v=9-iVt0MIqNY)
 - [XPath and XSLT Support](https://www.jetbrains.com/help/idea/xpath-and-xslt-support.html)
+- [XPath Functions](https://developer.mozilla.org/en-US/docs/Web/XPath/Functions)
