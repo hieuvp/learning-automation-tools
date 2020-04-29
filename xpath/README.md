@@ -94,7 +94,7 @@ bookstore/book[@category='children']/author
 
 Below figure depicts XPath Syntax and its terminology.
 
-<div align="center"><img src="assets/syntax.png" width="800"></div>
+<div align="center"><img src="assets/syntax.png" width="720"></div>
 
 - **`//`**: It is used to select the current node.
 - **`tagname`**: It is the name of the tag of a particular node.
@@ -120,7 +120,12 @@ Below figure depicts XPath Syntax and its terminology.
 
 ## Chrome DevTools
 
-Launch **Google Chrome** and navigate to <https://www.goshopback.vn/>.
+1. Launch **Google Chrome** and navigate to <https://www.goshopback.vn/>.
+1. Try to inspect a random web element.
+
+you can see it has an input tag and attributes like class and id.
+Now, I will use the tag name and these attributes to construct XPath
+which in turn will locate the search bar.
 
 <div align="center"><img src="assets/shopback-inspect-elements.png" width="900"></div>
 
@@ -150,15 +155,7 @@ Launch **Google Chrome** and navigate to <https://www.goshopback.vn/>.
 //img[@class='brand-image']
 ```
 
-Here, I will try to locate the search bar using XPath.
-On inspecting the web element you can see it has an input tag and attributes like class and id.
-Now, I will use the tag name and these attributes to construct XPath
-which in turn will locate the search bar.
-
-<div align="center"><img src="assets/google-xpath.png" width="800"></div>
-
-Here, you just have to click Elements tab
-and press `Command` + `F` to open a search box in chromes developers tool.
+On the `Elements` panel, press `Command` + `F` to open a search box in Chrome DevTools.
 Next, you can write XPath, string selector and it will try to search based on that criteria.
 As you can see in the above image, it has an input tag.
 
