@@ -226,6 +226,10 @@ XPath query looks like:
 //img[contains(@src,'content')]
 ```
 
+```xpath
+//img[contains(@src,'shopily-vn')]
+```
+
 ### `starts-with()`
 
 The starts-with checks whether the first string starts with the second string
@@ -279,10 +283,18 @@ The asterisk(\*) implies any tag with the same value. This give me an XPath quer
 //*[text()='Search Google or type a URL']
 ```
 
+```xpath
+//*[text()='Made with love by']
+```
+
 This is how you can use text() function.
 Now let's try to use two functions i.e. contains() and text() together in one XPath query.
 
 <div align="center"><img src="assets/two-fnctions.png" width="800"></div>
+
+```xpath
+//*[contains[text()='Made with love by']]
+```
 
 As you can see in the above snippet, first I have used contains(),
 and passed the first argument as text().
