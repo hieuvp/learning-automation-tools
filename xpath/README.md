@@ -45,7 +45,6 @@
 
 ## XML Document
 
-The XML document has a tree-like structure.
 This is an example of an XML document where you have different tags and attributes.
 It starts with a tag called the `bookstore`, which is also an element or a node.
 
@@ -67,13 +66,7 @@ It starts with a tag called the `bookstore`, which is also an element or a node.
 
 <!-- AUTO-GENERATED-CONTENT:END -->
 
-As you can see here, the Bookstore node has a child node Book.
-It is further followed by an attribute called category whose value is Cooking.
-And this book node, in turn, has 2 child nodes i.e. Title and Author.
 Now, let's visualize this XML document in a tree-like structure.
-Here, the book store is a root node which has 2 children of type book.
-Category of 1st book type is cooking and 2nd is children.
-As you can see in the below figure, both have 2 tags i.e. title and author.
 
 <div align="center"><img src="assets/xml-document.png" width="900"></div>
 
