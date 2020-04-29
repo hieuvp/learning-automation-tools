@@ -292,6 +292,48 @@ and how to send keys to search element using Eclipse.
 node labs/ebay
 ```
 
+<!-- AUTO-GENERATED-CONTENT:START (CODE:src=labs/ebay/package.json) -->
+<!-- The below code snippet is automatically added from labs/ebay/package.json -->
+
+```json
+{
+  "name": "ebay",
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "selenium-webdriver": "3.6.0"
+  }
+}
+```
+
+<!-- AUTO-GENERATED-CONTENT:END -->
+
+<!-- AUTO-GENERATED-CONTENT:START (CODE:src=labs/ebay/index.js) -->
+<!-- The below code snippet is automatically added from labs/ebay/index.js -->
+
+```js
+const { Builder, By, Key, until } = require("selenium-webdriver");
+
+(async function main() {
+  const driver = await new Builder().forBrowser("chrome").build();
+  try {
+    // Navigate to Url
+    await driver.get("https://www.google.com");
+
+    // Enter text "cheese" and perform keyboard action "Enter"
+    await driver.findElement(By.name("q")).sendKeys("cheese", Key.ENTER);
+
+    const firstResult = await driver.wait(until.elementLocated(By.css("h3>div")), 10000);
+
+    console.log(await firstResult.getAttribute("textContent"));
+  } finally {
+    driver.quit();
+  }
+})();
+```
+
+<!-- AUTO-GENERATED-CONTENT:END -->
+
 For google chrome, you need to install a chrome driver in your system.
 Now let's take a closer look at the code.
 As you can see, I have used System.setproperty() to set the path of chrome driver.
