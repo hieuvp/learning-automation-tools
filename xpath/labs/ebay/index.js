@@ -1,4 +1,5 @@
 const { Builder, By } = require('selenium-webdriver');
+const sleep = require('sleep');
 
 (async function main() {
   const driver = await new Builder().forBrowser('chrome').build();
@@ -14,12 +15,18 @@ const { Builder, By } = require('selenium-webdriver');
     .timeouts()
     .implicitlyWait(30 * 1000);
 
-  // Navigate to Url
-  await driver.get('https://www.ebay.com');
+  try {
+    // Navigate to Url
+    await driver.get('https://www.ebay.com');
 
-  // From search box, enter a text
-  await driver.findElement(By.xpath("//input[@id='gh-ac']")).sendKeys('DevOps');
+    // From search box, enter a text
+    await driver.findElement(By.xpath("//input[@id='gh-ac']")).sendKeys('DevOps');
 
-  // Hit search button
-  await driver.findElement(By.xpath("//input[@id='gh-btn']")).click();
+    // Hit search button
+    await driver.findElement(By.xpath("//input[@id='gh-btn']")).click();
+
+    sleep.sleep(5);
+  } finally {
+    driver.quit();
+  }
 })();
