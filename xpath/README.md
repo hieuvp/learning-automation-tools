@@ -127,7 +127,7 @@ Below figure depicts XPath Syntax and its terminology.
 
 <br />
 
-<div align="center"><img src="assets/shopback-copy-tools.png" width="640"></div>
+<div align="center"><img src="assets/shopback-copy-tools.png" width="720"></div>
 
 ### Copy Full XPath
 
@@ -147,9 +147,9 @@ Below figure depicts XPath Syntax and its terminology.
 
 ### Find by XPath
 
-<div align="center"><img src="assets/shopback-search-box.png" width="900"></div>
+<div align="center"><img src="assets/shopback-search-box.png" width="880"></div>
 
-<div align="center"><img src="assets/shopback-find-by-xpath.png" width="900"></div>
+<div align="center"><img src="assets/shopback-find-by-xpath.png" width="880"></div>
 
 ```xpath
 //img[@class='brand-image']
