@@ -96,7 +96,7 @@ Below figure depicts XPath Syntax and its terminology.
 
 - **`//`**: It is used to select the current node.
 - **`tagname`**: It is the name of the tag of a particular node.
-- **`@`**: It is used to select to select attribute.
+- **`@`**: It is used to select attribute.
 - **`Attribute`**: It is the name of the attribute of the node.
 - **`Value`**: It is the value of the attribute
 
