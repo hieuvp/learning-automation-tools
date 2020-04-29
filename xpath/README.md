@@ -361,9 +361,8 @@ node .
 <div align="center">
   <img src="assets/ebay-output.png" width="900">
   <br />
-  <div>Chrome Driver will launch Google Chrome and redirect to ebay.com</div>
-  <br />
-  <div>Providing you the preferred search automatically</div>
+  <div><b>Chrome Driver</b> will launch <b>Google Chrome</b> and redirect to ebay.com</div>
+  <div>Providing the preferred search automatically</div>
   <br />
 </div>
 
