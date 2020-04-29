@@ -23,6 +23,8 @@
   - [Absolute XPath](#absolute-xpath)
   - [Relative XPath](#relative-xpath)
 - [Chrome DevTools](#chrome-devtools)
+  - [Copy XPath](#copy-xpath)
+  - [Copy Full XPath](#copy-full-xpath)
 - [XPath Functions](#xpath-functions)
   - [Types of XPath Functions](#types-of-xpath-functions)
     - [`contains()`](#contains)
@@ -118,8 +120,27 @@ Below figure depicts XPath Syntax and its terminology.
 
 ## Chrome DevTools
 
-Now, let's understand this with the help of an example.
-I will launch Google Chrome and navigate to google.com.
+I will launch Google Chrome and navigate to <https://www.goshopback.vn/>.
+
+<div align="center"><img src="assets/shopback-inspect-elements.png" width="900"></div>
+
+<div align="center"><img src="assets/shopback-copy-tools.png" width="900"></div>
+
+### Copy XPath
+
+```xpath
+//*[@id="home-page-container"]/div/div/section/section[7]/section/div/section/div[1]/a/img
+```
+
+### Copy Full XPath
+
+```xpath
+/html/body/div[1]/div[5]/div/div/div/section/section[7]/section/div/section/div[1]/a/img
+```
+
+- find path, search by Xpath
+- <https://chrome.google.com/webstore/detail/chropath/ljngjbnaijcbncmcnjfhigebomdlkcjo>
+
 Here, I will try to locate the search bar using XPath.
 On inspecting the web element you can see it has an input tag and attributes like class and id.
 Now, I will use the tag name and these attributes to construct XPath
