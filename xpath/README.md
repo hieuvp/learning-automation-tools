@@ -86,9 +86,18 @@ bookstore/book[@category='children']/author
 
 ### XPath Expression Evaluation
 
+> An XPath expression needs evaluation to test it
+> before using in program code
+> or before making structured queries against XML documents.
+
 ### XPath Expression Generation
 
+> This action computes a unique XPath expression
+> that matches the currently selected node in the document.
+
 ### XPath Search
+
+> Find occurrences of certain XPath expressions in all XML files in a specific scope.
 
 ## Syntax of XPath
 
