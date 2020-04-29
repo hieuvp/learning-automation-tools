@@ -121,9 +121,11 @@ Below figure depicts XPath Syntax and its terminology.
 
 ## Chrome DevTools
 
-I will launch **Google Chrome** and navigate to <https://www.goshopback.vn/>.
+Launch **Google Chrome** and navigate to <https://www.goshopback.vn/>.
 
 <div align="center"><img src="assets/shopback-inspect-elements.png" width="900"></div>
+
+<br />
 
 <div align="center"><img src="assets/shopback-copy-tools.png" width="640"></div>
 
