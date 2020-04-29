@@ -15,9 +15,9 @@
 - [What is XPath](#what-is-xpath)
 - [XML Document](#xml-document)
 - [IntelliJ-Based IDEs](#intellij-based-ides)
-  - [XPath Search](#xpath-search)
   - [XPath Expression Evaluation](#xpath-expression-evaluation)
   - [XPath Expression Generation](#xpath-expression-generation)
+  - [XPath Search](#xpath-search)
 - [Syntax of XPath](#syntax-of-xpath)
 - [Types of XPath](#types-of-xpath)
   - [Absolute XPath](#absolute-xpath)
@@ -94,11 +94,11 @@ Now let's understand the syntax of the XPath query.
 
 ## IntelliJ-Based IDEs
 
-### XPath Search
-
 ### XPath Expression Evaluation
 
 ### XPath Expression Generation
+
+### XPath Search
 
 ## Syntax of XPath
 
