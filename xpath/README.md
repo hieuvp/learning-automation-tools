@@ -153,18 +153,15 @@ Below figure depicts XPath Syntax and its terminology.
 
 <br />
 
-- We will use `img` as a `tagname` and `class` as an `attribute` to construct an XPath expression.
-
-<div align="center"><img src="assets/shopback-find-by-xpath.png" width="900"></div>
+- Start with `//`, we will use `img` as a `tagname` and `class` as an `attribute`
+  to construct an XPath expression.
 
 ```xpath
 //img[@class='brand-image']
 ```
 
-Next, you can write XPath, string selector and it will try to search based on that criteria.
-As you can see in the above image, it has an input tag.
+<div align="center"><img src="assets/shopback-find-by-xpath.png" width="900"></div>
 
-Now I will start with `//` input. Here `//input` implies tagname.
 Now, I will use the name attribute and pass `'q'` in single quotes as its value.
 This gives XPath expression as below:
 
