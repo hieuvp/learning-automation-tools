@@ -147,19 +147,19 @@ Below figure depicts XPath Syntax and its terminology.
 
 ### Find by XPath
 
-On the `Elements` panel, press **`Command-F`** to open a **search box**:
+On the `Elements` panel, press **`Command-F`** to open a **search box**.
 
 <div align="center"><img src="assets/shopback-search-box.png" width="900"></div>
+
+<br />
+
+We will use `img` as a `tagname` and `class` as an `attribute` to construct an XPath expression.
 
 <div align="center"><img src="assets/shopback-find-by-xpath.png" width="900"></div>
 
 ```xpath
 //img[@class='brand-image']
 ```
-
-you can see it has an input tag and attributes like class and id.
-Now, I will use the tag name and these attributes to construct XPath
-which in turn will locate the search bar.
 
 Next, you can write XPath, string selector and it will try to search based on that criteria.
 As you can see in the above image, it has an input tag.
