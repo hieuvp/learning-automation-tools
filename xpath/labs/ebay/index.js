@@ -1,18 +1,14 @@
-const { Builder, By, Key, until } = require('selenium-webdriver');
+const { Builder, By } = require('selenium-webdriver');
 
 (async function main() {
   const driver = await new Builder().forBrowser('chrome').build();
-  try {
-    // Navigate to Url
-    await driver.get('https://www.google.com');
 
-    // Enter text "cheese" and perform keyboard action "Enter"
-    await driver.findElement(By.name('q')).sendKeys('cheese', Key.ENTER);
+  // Navigate to Url
+  await driver.get('https://www.ebay.com');
 
-    const firstResult = await driver.wait(until.elementLocated(By.css('h3>div')), 10000);
+  // From search box, enter a text
+  await driver.findElement(By.xpath("//input[@id='gh-ac']")).sendKeys('DevOps');
 
-    console.log(await firstResult.getAttribute('textContent'));
-  } finally {
-    driver.quit();
-  }
+  // Hit search button
+  await driver.findElement(By.xpath("//input[@id='gh-btn']")).click();
 })();
