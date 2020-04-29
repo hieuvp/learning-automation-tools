@@ -153,7 +153,7 @@ Below figure depicts XPath Syntax and its terminology.
 
 <br />
 
-- Start with `//`, we will use `img` as a `tagname` and `class` as an `attribute`
+- Starting with `//`, we will use `img` as a `tagname` and `class` as an `attribute`
   to construct an XPath expression.
 
 ```xpath
@@ -164,10 +164,6 @@ Below figure depicts XPath Syntax and its terminology.
 
 Now, I will use the name attribute and pass `'q'` in single quotes as its value.
 This gives XPath expression as below:
-
-```xpath
-//input[@name='q']
-```
 
 <div align="center"><img src="assets/Xpath-google.png" width="800"></div>
 
