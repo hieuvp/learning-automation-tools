@@ -27,7 +27,7 @@
 <!-- The below code snippet is automatically added from labs/bookstore.xml -->
 
 ```xml
-<!-- Here is an example of an XML document where you have different tags and attributes -->
+<!-- An example of an XML document where you have different tags and attributes -->
 <!-- Start with a tag called the bookstore, which is also an element or a node -->
 <bookstore>
   <book category="cooking">
@@ -45,9 +45,12 @@
 
 <br />
 
-Now, let's visualize this XML document in a tree-like structure.
-
-<div align="center"><img src="assets/xml-document.png" width="900"></div>
+<div align="center">
+  <img src="assets/xml-document.png" width="900">
+  <br />
+  <div>Visualize this XML document in a tree-like structure</div>
+  <br />
+</div>
 
 <br />
 
