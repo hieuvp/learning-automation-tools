@@ -106,8 +106,8 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
 /bookstore/book[@category='children']/author
 ```
 
-<div align="center"><img src="assets/webstorm-xpath-search.png" width="600"></div>
-<div align="center"><img src="assets/webstorm-xpath-search-outcome.png" width="600"></div>
+<div align="center"><img src="assets/webstorm-xpath-search.png" width="540"></div>
+<div align="center"><img src="assets/webstorm-xpath-search-outcome.png" width="640"></div>
 
 ## Syntax of XPath
 
