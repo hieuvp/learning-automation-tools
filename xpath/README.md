@@ -13,20 +13,13 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 - [What is XPath](#what-is-xpath)
-- [XML Document](#xml-document)
 - [References](#references)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## What is XPath
 
-> **XPath** is also called as **XML Path**, a language to query XML documents.
-
-It is designed to allow the navigation of XML documents,
-with the purpose of selecting individual elements, attributes,
-or some other part of an XML document for specific processing.
-
-## XML Document
+- **XPath** is also called as **XML Path**, a language to query XML documents.
 
 Here is an example of an XML document where you have different tags and attributes.
 It starts with a tag called the `bookstore`, which is also an element or a node.
