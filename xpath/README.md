@@ -96,7 +96,11 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
 
 <br />
 
-<div align="center"><img src="assets/webstorm-xpath-evaluation-outcome.png" width="550"></div>
+<div align="center">
+  <img src="assets/webstorm-xpath-evaluation-outcome.png" width="550">
+  <br />
+  <div>Matched nodes got highlighted</div>
+</div>
 
 ### [XPath Expression Generation](https://www.jetbrains.com/help/idea/xpath-expression-generation.html)
 
