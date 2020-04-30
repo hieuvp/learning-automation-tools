@@ -55,7 +55,7 @@
 Here is an **XPath** query to locate the `author` of a `book` whose `category` is `children`:
 
 ```xpath
-bookstore/book[@category='children']/author
+/bookstore/book[@category='children']/author
 ```
 
 ## References
