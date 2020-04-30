@@ -20,7 +20,7 @@
 
 ## What is XPath
 
-> **`XPath`** also called as **XML Path** is a language to query XML documents.
+> **XPath** is also called as **XML Path**, a language to query XML documents.
 
 - It consists of a path expression along with some conditions.
 - It is designed to allow the navigation of XML documents,
