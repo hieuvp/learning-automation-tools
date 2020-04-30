@@ -166,8 +166,8 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
 ### Relative XPath
 
 - **Example**: `//input[@id='ap_email']`.
-- For Relative XPath, the path starts from the middle of the HTML DOM structure.
-  It begins with the double forward slash (`//`),
+- The path starts from the middle of the HTML DOM structure.
+  It begins with the double forward-slash (`//`),
   which means it can search the element anywhere at the webpage.
 
 ## Chrome DevTools
