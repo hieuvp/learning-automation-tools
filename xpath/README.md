@@ -212,6 +212,8 @@ Let me show you how to use `contains()` method.
 
 <div align="center"><img src="assets/contains.png" width="800"></div>
 
+<div align="center"><img src="assets/xpath-contains.png" width="800"></div>
+
 I will again open google.com and choose a <img> tag to inspect its element tab.
 So what's next?
 
@@ -261,6 +263,8 @@ Let's now try demonstrating it using the same object.
 Here, instead of contains(), you have to change it to starts-with().
 
 <div align="center"><img src="assets/starts-with.png" width="800"></div>
+
+<div align="center"><img src="assets/xpath-starts-with.png" width="800"></div>
 
 As you can see in the figure src attribute starts with https.
 It will locate the elements that start with https.
