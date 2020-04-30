@@ -30,7 +30,7 @@
   - [`contains()`](#contains)
   - [`starts-with()`](#starts-with)
   - [`text()`](#text)
-- [Selenium ChromeDriver](#selenium-chromedriver)
+- [Demo: Selenium ChromeDriver](#demo-selenium-chromedriver)
 - [References](#references)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -106,6 +106,10 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
 Below figure depicts XPath Syntax and its terminology.
 
 <div align="center"><img src="assets/syntax.png" width="720"></div>
+
+|          | Explanation                            |
+| -------- | -------------------------------------- |
+| **`//`** | It is used to select the current node. |
 
 - **`//`**: It is used to select the current node.
 - **`tagname`**: It is the name of the tag of a particular node.
@@ -322,7 +326,7 @@ In the next section of this article,
 we will see how to register the drivers for chrome
 and how to send keys to search element using Eclipse.
 
-## Selenium ChromeDriver
+## Demo: Selenium ChromeDriver
 
 - You need to install a [Chrome Driver](https://github.com/giggio/node-chromedriver) in your system.
 
