@@ -3,7 +3,11 @@
 <div align="center">
   <img src="assets/logo.png" width="480">
   <br />
+<<<<<<< HEAD
   <div>The <b>best</b> way to <b>locate elements</b> on a <b>web page</b></div>
+=======
+  <div>The <b>best way</b> to <b>locate elements</b> on a <b>webpage</b></div>
+>>>>>>> master
   <br />
 </div>
 
@@ -13,6 +17,7 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 - [What is XPath](#what-is-xpath)
+<<<<<<< HEAD
 - [XML Document](#xml-document)
 - [IntelliJ-Based IDEs](#intellij-based-ides)
   - [XPath Expression Evaluation](#xpath-expression-evaluation)
@@ -31,12 +36,15 @@
   - [`starts-with()`](#starts-with)
   - [`text()`](#text)
 - [Selenium ChromeDriver](#selenium-chromedriver)
+=======
+>>>>>>> master
 - [References](#references)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## What is XPath
 
+<<<<<<< HEAD
 > **`XPath`** also called as **XML Path** is a language to query XML documents.
 
 - It consists of a path expression along with some conditions.
@@ -49,11 +57,21 @@
 
 This is an example of an XML document where you have different tags and attributes.
 It starts with a tag called the `bookstore`, which is also an element or a node.
+=======
+> `XPath` is also called as `XML Path`, a **language** to **query XML documents**.
+
+<br />
+>>>>>>> master
 
 <!-- AUTO-GENERATED-CONTENT:START (CODE:src=labs/bookstore.xml) -->
 <!-- The below code snippet is automatically added from labs/bookstore.xml -->
 
 ```xml
+<<<<<<< HEAD
+=======
+<!-- An example of an XML document where you have different "tags" and "attributes" -->
+<!-- Start with a "tag" called the "bookstore", which is also an "element" or a "node" -->
+>>>>>>> master
 <bookstore>
   <book category="cooking">
     <title lang="en">Everyday Chinese</title>
@@ -68,6 +86,7 @@ It starts with a tag called the `bookstore`, which is also an element or a node.
 
 <!-- AUTO-GENERATED-CONTENT:END -->
 
+<<<<<<< HEAD
 <br />
 
 Now, let's visualize this XML document in a tree-like structure.
@@ -395,10 +414,31 @@ node .
   <br />
 </div>
 
+=======
+<div align="center">
+  <img src="assets/xml-document.png" width="900">
+  <br />
+  <div>Visualize the XML document in a tree-like structure</div>
+  <br />
+</div>
+
+<br />
+
+Here is an **XPath query** to locate the `author` of a `book` which `category` is `children`:
+
+```xpath
+/bookstore/book[@category='children']/author
+```
+
+>>>>>>> master
 ## References
 
 - [How to Get Started with XPath in Selenium](https://www.edureka.co/blog/xpath-in-selenium)
 - [Xpath in Selenium | Selenium Xpath Tutorial | Selenium Xpath Examples](https://www.youtube.com/watch?v=9-iVt0MIqNY)
+<<<<<<< HEAD
 - [XPath and XSLT Support](https://www.jetbrains.com/help/idea/xpath-and-xslt-support.html)
 - [XPath Functions](https://developer.mozilla.org/en-US/docs/Web/XPath/Functions)
 - [XPath in Selenium WebDriver: Complete Tutorial](https://www.guru99.com/xpath-selenium.html)
+=======
+- [XPath in Selenium WebDriver](https://www.guru99.com/xpath-selenium.html)
+>>>>>>> master
