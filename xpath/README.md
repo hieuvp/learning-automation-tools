@@ -91,7 +91,7 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
 Action: Evaluate XPath
 
 <div align="center"><img src="assets/webstorm-xpath-evaluation.png" width="500"></div>
-<div align="center"><img src="assets/webstorm-xpath-evaluation-outcome.png" width="560"></div>
+<div align="center"><img src="assets/webstorm-xpath-evaluation-outcome.png" width="550"></div>
 
 ### [XPath Expression Generation](https://www.jetbrains.com/help/idea/xpath-expression-generation.html)
 
@@ -100,7 +100,7 @@ Action: Evaluate XPath
 
 Action: Unique XPath
 
-<div align="center"><img src="assets/webstorm-xpath-generation.png" width="580"></div>
+<div align="center"><img src="assets/webstorm-xpath-generation.png" width="560"></div>
 
 ### [XPath Search](https://www.jetbrains.com/help/idea/xpath-search.html)
 
