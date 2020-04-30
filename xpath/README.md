@@ -43,8 +43,6 @@
 
 <!-- AUTO-GENERATED-CONTENT:END -->
 
-<br />
-
 <div align="center">
   <img src="assets/xml-document.png" width="900">
   <br />
@@ -52,9 +50,7 @@
   <br />
 </div>
 
-<br />
-
-This is an XPath query to locate the `author` of a `book` whose `category` is `children`:
+Here is an **XPath** query to locate the `author` of a `book` whose `category` is `children`:
 
 ```xpath
 bookstore/book[@category='children']/author
