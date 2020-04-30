@@ -25,6 +25,7 @@
   - [Copy Full XPath](#copy-full-xpath)
   - [Copy XPath](#copy-xpath)
   - [Find Elements by XPath](#find-elements-by-xpath)
+  - [Evaluate XPath Expression](#evaluate-xpath-expression)
 - [XPath Functions](#xpath-functions)
   - [`contains()`](#contains)
   - [`starts-with()`](#starts-with)
@@ -169,7 +170,8 @@ Below figure depicts XPath Syntax and its terminology.
   <br />
 </div>
 
-`$x(path, [startNode])`
+### Evaluate XPath Expression
+
 `$x(path)` returns an array of DOM elements that match the given XPath expression.
 
 - Select the `Console` tab, and check the XPath by typing `$x("your_xpath_here")`.
