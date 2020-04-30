@@ -90,7 +90,7 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
 
 Action: Evaluate XPath
 
-<div align="center"><img src="assets/webstorm-xpath-evaluation.png" width="570"></div>
+<div align="center"><img src="assets/webstorm-xpath-evaluation.png" width="560"></div>
 <div align="center"><img src="assets/webstorm-xpath-evaluation-outcome.png" width="600"></div>
 
 ### [XPath Expression Generation](https://www.jetbrains.com/help/idea/xpath-expression-generation.html)
