@@ -258,7 +258,7 @@ ID of a particular element changes dynamically such as ‘id1’, ‘id2’, ‘
 but the remaining text will be the same.
 
 Let's now try demonstrating it using the same object.
-Here, instead of contains(), you have to change it to starts-with().
+Here, instead of `contains()`, you have to change it to `starts-with()`.
 
 <div align="center"><img src="assets/xpath-starts-with.png" width="800"></div>
 
@@ -271,8 +271,6 @@ XPath query looks like:
 ```xpath
 //img[starts-with(@src,'https')]
 ```
-
-Now let's understand one more function text().
 
 ### `text()`
 
