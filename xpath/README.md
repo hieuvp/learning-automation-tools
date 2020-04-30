@@ -28,6 +28,8 @@ It starts with a tag called the `bookstore`, which is also an element or a node.
 <!-- The below code snippet is automatically added from labs/bookstore.xml -->
 
 ```xml
+<!-- Here is an example of an XML document where you have different tags and attributes -->
+<!-- Start with a tag called the bookstore, which is also an element or a node -->
 <bookstore>
   <book category="cooking">
     <title lang="en">Everyday Chinese</title>
