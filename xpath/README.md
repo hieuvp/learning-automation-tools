@@ -364,7 +364,7 @@ const sleep = require("sleep");
     // sendKeys() to search for a value of "DevOps"
     await driver.findElement(By.xpath("//input[@id='gh-ac']")).sendKeys("DevOps");
 
-    // Hit search button to redirect to the results page
+    // Hit the search button to redirect to the results page
     await driver.findElement(By.xpath("//input[@id='gh-btn']")).click();
 
     sleep.sleep(5);
