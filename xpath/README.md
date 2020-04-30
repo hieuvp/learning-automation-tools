@@ -124,7 +124,7 @@ Below figure depicts XPath Syntax and its terminology.
 ## Chrome DevTools
 
 1. Launch **Google Chrome** and navigate to <https://www.goshopback.vn/>.
-1. Try to **inspect** a random web element.
+1. Try to **Inspect** a random web element.
 
 <div align="center"><img src="assets/chrome-inspect-elements.png" width="900"></div>
 
@@ -148,6 +148,8 @@ Below figure depicts XPath Syntax and its terminology.
 //*[@id="home-page-container"]/div/div/section/section[7]/section/div/section/div[1]/a/img
 ```
 
+<br />
+
 ### Find Elements by XPath
 
 - On the `Elements` panel, press `Command-F` to open a **search box**.
@@ -167,7 +169,6 @@ Below figure depicts XPath Syntax and its terminology.
   <img src="assets/chrome-find-by-xpath.png" width="900">
   <br />
   <div>The located elements are highlighted</div>
-  <br />
 </div>
 
 ### Evaluate XPath Expression
