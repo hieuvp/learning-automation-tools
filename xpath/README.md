@@ -78,7 +78,7 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
 
 ## IntelliJ-Based IDEs
 
-### XPath Expression Evaluation
+### [XPath Expression Evaluation](https://www.jetbrains.com/help/idea/xpath-expression-evaluation.html)
 
 > An XPath expression needs evaluation to test it
 > before using in program code
@@ -88,14 +88,18 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
 /bookstore/book[@category='children']/author
 ```
 
-### XPath Expression Generation
+### [XPath Expression Generation](https://www.jetbrains.com/help/idea/xpath-expression-generation.html)
 
 > This action computes a unique XPath expression
 > that matches the currently selected node in the document.
 
-### XPath Search
+### [XPath Search](https://www.jetbrains.com/help/idea/xpath-search.html)
 
 > Find occurrences of certain XPath expressions in all XML files in a specific scope.
+
+```xpath
+/bookstore/book[@category='children']/author
+```
 
 ## Syntax of XPath
 
@@ -376,6 +380,8 @@ const sleep = require("sleep");
 
 <!-- AUTO-GENERATED-CONTENT:END -->
 
+<br />
+
 ```shell script
 cd labs/ebay
 npm install
@@ -395,5 +401,4 @@ node .
 - [How to Get Started with XPath in Selenium](https://www.edureka.co/blog/xpath-in-selenium)
 - [Xpath in Selenium | Selenium Xpath Tutorial | Selenium Xpath Examples](https://www.youtube.com/watch?v=9-iVt0MIqNY)
 - [XPath in Selenium WebDriver](https://www.guru99.com/xpath-selenium.html)
-- [XPath and XSLT Support](https://www.jetbrains.com/help/idea/xpath-and-xslt-support.html)
 - [XPath Functions](https://developer.mozilla.org/en-US/docs/Web/XPath/Functions)
