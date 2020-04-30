@@ -145,14 +145,14 @@ Below figure depicts XPath Syntax and its terminology.
 
 ### Absolute XPath
 
-- Example: `/html/body/div[1]/section/div[1]/div`.
+- **Example**: `/html/body/div[1]/section/div[1]/div`.
 - It is the direct way to find the element,
   but the disadvantage of the absolute XPath is that,
   if there are any changes made in the path of the element then that XPath gets failed.
 
 ### Relative XPath
 
-- Example: `//input[@id='ap_email']`.
+- **Example**: `//input[@id='ap_email']`.
 - For Relative XPath, the path starts from the middle of the HTML DOM structure.
   It begins with the double forward slash (`//`),
   which means it can search the element anywhere at the webpage.
