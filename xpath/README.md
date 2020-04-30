@@ -96,7 +96,7 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
 > This action computes a unique XPath expression
 > that matches the currently selected node in the document.
 
-<div align="center"><img src="assets/webstorm-xpath-generation.png" width="900"></div>
+<div align="center"><img src="assets/webstorm-xpath-generation.png" width="600"></div>
 
 ### [XPath Search](https://www.jetbrains.com/help/idea/xpath-search.html)
 
@@ -106,8 +106,8 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
 /bookstore/book[@category='children']/author
 ```
 
-<div align="center"><img src="assets/webstorm-xpath-search.png" width="900"></div>
-<div align="center"><img src="assets/webstorm-xpath-search-outcome.png" width="900"></div>
+<div align="center"><img src="assets/webstorm-xpath-search.png" width="600"></div>
+<div align="center"><img src="assets/webstorm-xpath-search-outcome.png" width="600"></div>
 
 ## Syntax of XPath
 
