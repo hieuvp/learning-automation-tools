@@ -102,6 +102,8 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
   <div>Matched nodes got highlighted</div>
 </div>
 
+<br />
+
 ### [XPath Expression Generation](https://www.jetbrains.com/help/idea/xpath-expression-generation.html)
 
 > This action computes a unique XPath expression
@@ -112,6 +114,8 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
   <br />
   <div>Action: <b>Unique XPath</b></div>
 </div>
+
+<br />
 
 ### [XPath Search](https://www.jetbrains.com/help/idea/xpath-search.html)
 
@@ -130,6 +134,8 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
 <br />
 
 <div align="center"><img src="assets/webstorm-xpath-search-outcome.png" width="620"></div>
+
+<br />
 
 ## Syntax of XPath
 
