@@ -24,7 +24,7 @@
 - [Chrome DevTools](#chrome-devtools)
   - [Copy Full XPath](#copy-full-xpath)
   - [Copy XPath](#copy-xpath)
-  - [Find by XPath](#find-by-xpath)
+  - [Find Elements by XPath](#find-elements-by-xpath)
 - [XPath Functions](#xpath-functions)
   - [`contains()`](#contains)
   - [`starts-with()`](#starts-with)
@@ -147,7 +147,7 @@ Below figure depicts XPath Syntax and its terminology.
 //*[@id="home-page-container"]/div/div/section/section[7]/section/div/section/div[1]/a/img
 ```
 
-### Find by XPath
+### Find Elements by XPath
 
 - On the `Elements` panel, press `Command-F` to open a **search box**.
 
@@ -168,6 +168,9 @@ Below figure depicts XPath Syntax and its terminology.
   <div>The located elements are highlighted</div>
   <br />
 </div>
+
+`$x(path, [startNode])`
+`$x(path)` returns an array of DOM elements that match the given XPath expression.
 
 - Select the `Console` tab, and check the XPath by typing `$x("your_xpath_here")`.
   This will return an array of matched values.
