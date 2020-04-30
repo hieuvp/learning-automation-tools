@@ -210,7 +210,7 @@ e.g. login information, this method comes into use.
 It can locate a web element with the available partial text.
 Let me show you how to use `contains()` method.
 
-<div align="center"><img src="assets/xpath-contains.png" width="800"></div>
+<div align="center"><img src="assets/xpath-contains.png" width="900"></div>
 
 I will again open google.com and choose a <img> tag to inspect its element tab.
 So what's next?
@@ -260,7 +260,7 @@ but the remaining text will be the same.
 Let's now try demonstrating it using the same object.
 Here, instead of `contains()`, you have to change it to `starts-with()`.
 
-<div align="center"><img src="assets/xpath-starts-with.png" width="800"></div>
+<div align="center"><img src="assets/xpath-starts-with.png" width="900"></div>
 
 As you can see in the figure src attribute starts with https.
 It will locate the elements that start with https.
@@ -278,6 +278,8 @@ This expression is used with the text function to locate an element with exact t
 Let's see a small example to use text().
 
 <div align="center"><img src="assets/text.png" width="800"></div>
+<div align="center"><img src="assets/xpath-text-match.png" width="900"></div>
+<div align="center"><img src="assets/xpath-text-no-match.png" width="900"></div>
 
 Here my condition is –
 
