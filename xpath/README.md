@@ -28,7 +28,7 @@ or some other part of an XML document for specific processing.
 
 ## XML Document
 
-This is an example of an XML document where you have different tags and attributes.
+Here is an example of an XML document where you have different tags and attributes.
 It starts with a tag called the `bookstore`, which is also an element or a node.
 
 <!-- AUTO-GENERATED-CONTENT:START (CODE:src=labs/bookstore.xml) -->
