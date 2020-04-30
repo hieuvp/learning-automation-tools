@@ -88,6 +88,8 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
 /bookstore/book[@category='children']/author
 ```
 
+Evaluate XPath
+
 <div align="center"><img src="assets/webstorm-xpath-evaluation.png" width="600"></div>
 <div align="center"><img src="assets/webstorm-xpath-evaluation-outcome.png" width="600"></div>
 
@@ -95,6 +97,8 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
 
 > This action computes a unique XPath expression
 > that matches the currently selected node in the document.
+
+Unique XPath
 
 <div align="center"><img src="assets/webstorm-xpath-generation.png" width="600"></div>
 
@@ -105,6 +109,8 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
 ```xpath
 /bookstore/book[@category='children']/author
 ```
+
+Find by XPath
 
 <div align="center"><img src="assets/webstorm-xpath-search.png" width="580"></div>
 <div align="center"><img src="assets/webstorm-xpath-search-outcome.png" width="620"></div>
