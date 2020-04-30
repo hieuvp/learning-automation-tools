@@ -277,8 +277,18 @@ XPath query looks like:
 This expression is used with the text function to locate an element with exact text.
 Let's see a small example to use text().
 
-<div align="center"><img src="assets/text.png" width="800"></div>
+```xpath
+//*[text()='Made with love by']
+```
+
 <div align="center"><img src="assets/xpath-text-match.png" width="900"></div>
+
+<br />
+
+```xpath
+//*[text()='Made with love']
+```
+
 <div align="center"><img src="assets/xpath-text-no-match.png" width="900"></div>
 
 Here my condition is –
@@ -286,31 +296,16 @@ Here my condition is –
 “go anywhere inside this document, irrespective of the tag,
 but, it must contain a text whose value is Search Google or type a URL”.
 
-The asterisk(\*) implies any tag with the same value. This give me an XPath query that looks like:
-
-```xpath
-//*[text()='Search Google or type a URL']
-```
-
-```xpath
-//*[text()='Made with love by']
-```
-
-```xpath
-//*[text()='Made with love']
-```
+The asterisk(`*`) implies any tag with the same value. This give me an XPath query that looks like:
 
 This is how you can use text() function.
 Now let's try to use two functions i.e. contains() and text() together in one XPath query.
 
 <div align="center"><img src="assets/two-fnctions.png" width="800"></div>
+<div align="center"><img src="assets/xpath-two-functions.png" width="800"></div>
 
 ```xpath
 //*[contains(text(), 'Made with love')]
-```
-
-```xpath
-//*[contains(text(), 'Made with love by')]
 ```
 
 As you can see in the above snippet, first I have used contains(),
