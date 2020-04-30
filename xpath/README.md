@@ -52,7 +52,7 @@
 
 <br />
 
-Here is an **XPath** query to locate the `author` of a `book` whose `category` is `children`:
+Here is an **XPath query** to locate the `author` of a `book` where `category` is `children`:
 
 ```xpath
 /bookstore/book[@category='children']/author
