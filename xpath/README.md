@@ -210,8 +210,6 @@ e.g. login information, this method comes into use.
 It can locate a web element with the available partial text.
 Let me show you how to use `contains()` method.
 
-<div align="center"><img src="assets/contains.png" width="800"></div>
-
 <div align="center"><img src="assets/xpath-contains.png" width="800"></div>
 
 I will again open google.com and choose a <img> tag to inspect its element tab.
@@ -261,8 +259,6 @@ but the remaining text will be the same.
 
 Let's now try demonstrating it using the same object.
 Here, instead of contains(), you have to change it to starts-with().
-
-<div align="center"><img src="assets/starts-with.png" width="800"></div>
 
 <div align="center"><img src="assets/xpath-starts-with.png" width="800"></div>
 
