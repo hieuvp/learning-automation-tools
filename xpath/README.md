@@ -46,7 +46,7 @@
 <div align="center">
   <img src="assets/xml-document.png" width="900">
   <br />
-  <div>Visualize this XML document in a tree-like structure</div>
+  <div>Visualize the XML document in a tree-like structure</div>
   <br />
 </div>
 
