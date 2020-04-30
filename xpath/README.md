@@ -88,7 +88,7 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
 /bookstore/book[@category='children']/author
 ```
 
-Action: Evaluate XPath
+Action: Evaluate XPath...
 
 <div align="center"><img src="assets/webstorm-xpath-evaluation.png" width="500"></div>
 <div align="center"><img src="assets/webstorm-xpath-evaluation-outcome.png" width="550"></div>
@@ -110,9 +110,14 @@ Action: Unique XPath
 /bookstore/book[@category='children']/author
 ```
 
-Action: Find by XPath
+<div align="center">
+  <img src="assets/webstorm-xpath-search.png" width="570">
+  <br />
+  <div>Action: <b>Find by XPath...</b></div>
+</div>
 
-<div align="center"><img src="assets/webstorm-xpath-search.png" width="570"></div>
+<br />
+
 <div align="center"><img src="assets/webstorm-xpath-search-outcome.png" width="620"></div>
 
 ## Syntax of XPath
