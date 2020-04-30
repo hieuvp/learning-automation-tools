@@ -126,11 +126,11 @@ Below figure depicts XPath Syntax and its terminology.
 1. Launch **Google Chrome** and navigate to <https://www.goshopback.vn/>.
 1. Try to **inspect** a random web element.
 
-<div align="center"><img src="assets/shopback-inspect-elements.png" width="900"></div>
+<div align="center"><img src="assets/chrome-inspect-elements.png" width="900"></div>
 
 <br />
 
-<div align="center"><img src="assets/shopback-copy-tools.png" width="700"></div>
+<div align="center"><img src="assets/chrome-copy-tools.png" width="700"></div>
 
 ### Copy Full XPath
 
@@ -152,7 +152,7 @@ Below figure depicts XPath Syntax and its terminology.
 
 - On the `Elements` panel, press `Command-F` to open a **search box**.
 
-<div align="center"><img src="assets/shopback-search-box.png" width="900"></div>
+<div align="center"><img src="assets/chrome-search-box.png" width="900"></div>
 
 <br />
 
@@ -164,7 +164,7 @@ Below figure depicts XPath Syntax and its terminology.
 ```
 
 <div align="center">
-  <img src="assets/shopback-find-by-xpath.png" width="900">
+  <img src="assets/chrome-find-by-xpath.png" width="900">
   <br />
   <div>The located elements are highlighted</div>
   <br />
@@ -181,6 +181,8 @@ Below figure depicts XPath Syntax and its terminology.
 ```js
 $x("//img[@class='brand-image']");
 ```
+
+<div align="center"><img src="assets/chrome-evaluate-xpath.png" width="900"></div>
 
 ## XPath Functions
 
