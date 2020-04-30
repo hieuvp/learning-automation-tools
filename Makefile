@@ -5,6 +5,18 @@
 .PHONY: fmt
 fmt:
 	@printf "\n"
+	$(MAKEFILE_SCRIPT_PATH)/fmt-xml.sh
+	@printf "\n"
+
+	@printf "\n"
+	prettier --write **/package.json
+	@printf "\n"
+
+	@printf "\n"
+	$(MAKEFILE_SCRIPT_PATH)/fmt-javascript.sh
+	@printf "\n"
+
+	@printf "\n"
 	$(MAKEFILE_SCRIPT_PATH)/fmt-markdown.sh
 	@printf "\n"
 

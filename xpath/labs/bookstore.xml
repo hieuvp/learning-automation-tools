@@ -1,0 +1,10 @@
+<bookstore>
+  <book category="cooking">
+    <title lang="en">Everyday Chinese</title>
+    <author>K.S.Bose</author>
+  </book>
+  <book category="children">
+    <title lang="en">Harry Potter</title>
+    <author>J.K. Rowling</author>
+  </book>
+</bookstore>
