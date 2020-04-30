@@ -107,15 +107,13 @@ Below figure depicts XPath Syntax and its terminology.
 
 <div align="center"><img src="assets/syntax.png" width="720"></div>
 
-|          | Explanation                            |
-| -------- | -------------------------------------- |
-| **`//`** | It is used to select the current node. |
-
-- **`//`**: It is used to select the current node.
-- **`tagname`**: It is the name of the tag of a particular node.
-- **`@`**: It is used to select attribute.
-- **`Attribute`**: It is the name of the attribute of the node.
-- **`Value`**: It is the value of the attribute.
+|                 | Description                                     |
+| :-------------: | ----------------------------------------------- |
+|    **`//`**     | It is used to select the current node.          |
+|  **`tagname`**  | It is the name of the tag of a particular node. |
+|     **`@`**     | It is used to select attribute.                 |
+| **`Attribute`** | It is the name of the attribute of the node.    |
+|   **`Value`**   | It is the value of the attribute.               |
 
 ## Types of XPath
 
