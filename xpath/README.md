@@ -19,10 +19,9 @@
 
 ## What is XPath
 
-- **XPath** is also called as **XML Path**, a language to query XML documents.
+> **XPath** is also called as **XML Path**, a language to query XML documents.
 
-Here is an example of an XML document where you have different tags and attributes.
-It starts with a tag called the `bookstore`, which is also an element or a node.
+<br />
 
 <!-- AUTO-GENERATED-CONTENT:START (CODE:src=labs/bookstore.xml) -->
 <!-- The below code snippet is automatically added from labs/bookstore.xml -->
