@@ -300,12 +300,12 @@ Here my condition is –
 “go anywhere inside this document, irrespective of the tag,
 but, it must contain a text whose value is Search Google or type a URL”.
 
-The asterisk(`*`) implies any tag with the same value. This give me an XPath query that looks like:
+The asterisk (`*`) implies any tag with the same value. This give me an XPath query that looks like:
 
 This is how you can use text() function.
 Now let's try to use two functions i.e. contains() and text() together in one XPath query.
 
-<div align="center"><img src="assets/xpath-two-functions.png" width="800"></div>
+<div align="center"><img src="assets/xpath-two-functions.png" width="900"></div>
 
 ```xpath
 //*[contains(text(), 'Made with love')]
