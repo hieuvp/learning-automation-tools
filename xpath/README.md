@@ -62,7 +62,7 @@
 <!-- AUTO-GENERATED-CONTENT:END -->
 
 <div align="center">
-  <img src="assets/xml-document.png" width="900">
+  <img src="assets/xml-document-tree.png" width="900">
   <br />
   <div>Visualize the XML document in a tree-like structure</div>
   <br />
@@ -386,7 +386,7 @@ node .
 ```
 
 <div align="center">
-  <img src="assets/ebay-output.png" width="900">
+  <img src="assets/ebay-results.png" width="900">
   <br />
   <div><b>Chrome Driver</b> will launch <b>Google Chrome</b> and redirect to ebay.com</div>
   <div>Providing the preferred search automatically</div>
