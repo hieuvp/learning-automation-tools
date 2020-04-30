@@ -84,6 +84,10 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
 > before using in program code
 > or before making structured queries against XML documents.
 
+```xpath
+/bookstore/book[@category='children']/author
+```
+
 ### XPath Expression Generation
 
 > This action computes a unique XPath expression
@@ -301,7 +305,6 @@ The asterisk(`*`) implies any tag with the same value. This give me an XPath que
 This is how you can use text() function.
 Now let's try to use two functions i.e. contains() and text() together in one XPath query.
 
-<div align="center"><img src="assets/two-fnctions.png" width="800"></div>
 <div align="center"><img src="assets/xpath-two-functions.png" width="800"></div>
 
 ```xpath
