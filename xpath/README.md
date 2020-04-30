@@ -25,7 +25,7 @@
   - [Copy Full XPath](#copy-full-xpath)
   - [Copy XPath](#copy-xpath)
   - [Find Elements by XPath](#find-elements-by-xpath)
-  - [Evaluate XPath Expression](#evaluate-xpath-expression)
+  - [Evaluate XPath Expressions](#evaluate-xpath-expressions)
 - [XPath Functions](#xpath-functions)
   - [`contains()`](#contains)
   - [`starts-with()`](#starts-with)
@@ -175,7 +175,7 @@ Below figure depicts XPath Syntax and its terminology.
   <div>The located elements are highlighted</div>
 </div>
 
-### Evaluate XPath Expression
+### Evaluate XPath Expressions
 
 `$x(path)` returns an array of DOM elements that match the given XPath expression.
 
