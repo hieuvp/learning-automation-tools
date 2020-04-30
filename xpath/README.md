@@ -69,6 +69,4 @@ bookstore/book[@category='children']/author
 
 - [How to Get Started with XPath in Selenium](https://www.edureka.co/blog/xpath-in-selenium)
 - [Xpath in Selenium | Selenium Xpath Tutorial | Selenium Xpath Examples](https://www.youtube.com/watch?v=9-iVt0MIqNY)
-- [XPath and XSLT Support](https://www.jetbrains.com/help/idea/xpath-and-xslt-support.html)
-- [XPath Functions](https://developer.mozilla.org/en-US/docs/Web/XPath/Functions)
-- [XPath in Selenium WebDriver: Complete Tutorial](https://www.guru99.com/xpath-selenium.html)
+- [XPath in Selenium WebDriver - Complete Tutorial](https://www.guru99.com/xpath-selenium.html)
