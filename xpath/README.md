@@ -138,7 +138,7 @@ Below figure depicts XPath Syntax and its terminology.
 
 ### Copy Full XPath
 
-> Returns absolute XPath.
+> Returns an **Absolute XPath**.
 
 ```xpath
 /html/body/div[1]/div[5]/div/div/div/section/section[7]/section/div/section/div[1]/a/img
@@ -146,7 +146,7 @@ Below figure depicts XPath Syntax and its terminology.
 
 ### Copy XPath
 
-> Returns relative XPath.
+> Returns a **Relative XPath**.
 
 ```xpath
 //*[@id="home-page-container"]/div/div/section/section[7]/section/div/section/div[1]/a/img
@@ -214,8 +214,6 @@ e.g. login information, this method comes into use.
 It can locate a web element with the available partial text.
 Let me show you how to use `contains()` method.
 
-<div align="center"><img src="assets/xpath-contains.png" width="900"></div>
-
 I will again open google.com and choose a <img> tag to inspect its element tab.
 So what's next?
 
@@ -236,12 +234,10 @@ in such cases, we generally prefer using partial XPath.
 XPath query looks like:
 
 ```xpath
-//img[contains(@src,'content')]
-```
-
-```xpath
 //img[contains(@src,'shopily-vn')]
 ```
+
+<div align="center"><img src="assets/xpath-contains.png" width="900"></div>
 
 ### `starts-with()`
 
@@ -287,6 +283,11 @@ Let's see a small example to use text().
 
 <div align="center"><img src="assets/xpath-text-match.png" width="900"></div>
 
+Here my condition is:
+
+- Go anywhere inside this document, irrespective of the tag,
+  but, it must contain a text whose value is `Made with love by`.
+
 <br />
 
 ```xpath
@@ -294,11 +295,6 @@ Let's see a small example to use text().
 ```
 
 <div align="center"><img src="assets/xpath-text-no-match.png" width="900"></div>
-
-Here my condition is –
-
-“go anywhere inside this document, irrespective of the tag,
-but, it must contain a text whose value is Search Google or type a URL”.
 
 The asterisk (`*`) implies any tag with the same value. This give me an XPath query that looks like:
 
