@@ -129,9 +129,12 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
 
 ## Syntax of XPath
 
-Below figure depicts XPath Syntax and its terminology.
-
-<div align="center"><img src="assets/syntax.png" width="720"></div>
+<div align="center">
+  <img src="assets/syntax.png" width="720">
+  <br />
+  <div>The figure depicts XPath syntax and its terminology</div>
+  <br />
+</div>
 
 |   Terminology   | Description                               |
 | :-------------: | ----------------------------------------- |
