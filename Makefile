@@ -9,6 +9,10 @@ fmt:
 	@printf "\n"
 
 	@printf "\n"
+	prettier --write **/package.json
+	@printf "\n"
+
+	@printf "\n"
 	$(MAKEFILE_SCRIPT_PATH)/fmt-javascript.sh
 	@printf "\n"
 
