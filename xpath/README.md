@@ -298,7 +298,7 @@ starts-with(haystack, needle)
 <div align="center">
   <img src="assets/xpath-starts-with.png" width="900">
   <br />
-  <div>Locate images that <b>start with https</b></div>
+  <div>Locating images that <b>start with https</b></div>
 </div>
 
 ### `text()`
@@ -328,16 +328,17 @@ starts-with(haystack, needle)
 
 ### Combining Functions
 
-Now, let's try to use two XPath functions together
-i.e. `contains()` and `text()` together in one XPath query.
-
 ```xpath
 //*[contains(text(), 'Made with love')]
 ```
 
-<div align="center"><img src="assets/xpath-two-functions.png" width="900"></div>
+<div align="center">
+  <img src="assets/xpath-two-functions.png" width="900">
+  <br />
+  <div>Using two functions together in one XPath query</div>
+</div>
 
-We don't use `@` because the `text()` is a **function** and not an **~~attribute~~**.
+- Don't use `@` because the `text()` is a **function** and not an **~~attribute~~**.
 
 ## Demo: Selenium ChromeDriver
 
