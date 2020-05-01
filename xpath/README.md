@@ -30,6 +30,7 @@
   - [`contains()`](#contains)
   - [`starts-with()`](#starts-with)
   - [`text()`](#text)
+  - [Combining Functions](#combining-functions)
 - [Demo: Selenium ChromeDriver](#demo-selenium-chromedriver)
 - [References](#references)
 
@@ -297,13 +298,12 @@ starts-with(haystack, needle)
 <div align="center">
   <img src="assets/xpath-starts-with.png" width="900">
   <br />
-  <div>Locate the elements that <b>start with https</b></div>
+  <div>Locate images that <b>start with https</b></div>
 </div>
 
 ### `text()`
 
-This expression is used with the text function to locate an element with exact text.
-Let's see a small example to use text().
+> Locate any element with an **exact text**.
 
 ```xpath
 //*[text()='Made with love by']
@@ -311,10 +311,10 @@ Let's see a small example to use text().
 
 <div align="center"><img src="assets/xpath-text-match.png" width="900"></div>
 
-Here my condition is:
-
 - Go anywhere inside this document, irrespective of the tag,
   but, it must contain a text whose value is `Made with love by`.
+
+- The asterisk (`*`) implies any tag with the same value.
 
 <br />
 
@@ -324,23 +324,20 @@ Here my condition is:
 
 <div align="center"><img src="assets/xpath-text-no-match.png" width="900"></div>
 
-The asterisk (`*`) implies any tag with the same value. This give me an XPath query that looks like:
+<br />
 
-This is how you can use text() function.
-Now let's try to use two functions i.e. contains() and text() together in one XPath query.
+### Combining Functions
 
-<div align="center"><img src="assets/xpath-two-functions.png" width="900"></div>
+Now, let's try to use two XPath functions together
+i.e. `contains()` and `text()` together in one XPath query.
 
 ```xpath
 //*[contains(text(), 'Made with love')]
 ```
 
-As you can see in the above snippet, first I have used contains(),
-and passed the first argument as text().
-Now, text() should hold a value Search Google or type a URL.
-As you might notice, I have not used @ because the text() is a function
-and not an attribute.
-This is how you can use two XPath functions together.
+<div align="center"><img src="assets/xpath-two-functions.png" width="900"></div>
+
+We don't use `@` because the `text()` is a **function** and not an **~~attribute~~**.
 
 ## Demo: Selenium ChromeDriver
 
