@@ -281,6 +281,8 @@ contains(haystack, needle)
   <div>The ability to locate a web element with <b>partial text</b></div>
 </div>
 
+<br />
+
 ### `starts-with()`
 
 > Check whether
@@ -302,6 +304,8 @@ starts-with(haystack, needle)
   <br />
   <div>Locating images that <b>start with https</b></div>
 </div>
+
+<br />
 
 ### `text()`
 
