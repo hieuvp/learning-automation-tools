@@ -19,8 +19,8 @@
   - [XPath Search](#xpath-search)
 - [Syntax of XPath](#syntax-of-xpath)
 - [Types of XPath](#types-of-xpath)
-  - [Absolute XPath](#absolute-xpath)
-  - [Relative XPath](#relative-xpath)
+  - [`Absolute XPath`](#absolute-xpath)
+  - [`Relative XPath`](#relative-xpath)
 - [Chrome DevTools](#chrome-devtools)
   - [Copy Full XPath](#copy-full-xpath)
   - [Copy XPath](#copy-xpath)
@@ -163,14 +163,14 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
 
 ## Types of XPath
 
-### Absolute XPath
+### `Absolute XPath`
 
 - **An Example**: `/html/body/div[1]/section/div[1]/div`.
 - A direct way to find the element,
   but the disadvantage of the **absolute XPath** is that,
   if there are any changes made in the path of the element then that XPath gets failed.
 
-### Relative XPath
+### `Relative XPath`
 
 - **An Example**: `//input[@id='ap_email']`.
 - The path starts from the middle of the HTML DOM structure.
