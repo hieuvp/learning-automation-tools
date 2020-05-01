@@ -177,6 +177,8 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
   It begins with the double forward-slash (`//`),
   which means it can search the element anywhere at the webpage.
 
+<br />
+
 ## Chrome DevTools
 
 1. Launch **Google Chrome** and navigate to <https://www.goshopback.vn/>.
