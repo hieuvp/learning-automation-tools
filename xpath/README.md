@@ -236,17 +236,18 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
 
 ### Evaluate XPath Expressions
 
-`$x(path)` returns an array of DOM elements that match the given XPath expression.
-
-- Select the `Console` tab, and check the XPath by typing `$x("your_xpath_here")`.
-  This will return an array of matched values.
-  If it is empty, you know there is no match on the page.
+> `$x(path)` returns an array of DOM elements that match the given XPath expression.
 
 ```js
 $x("//img[@class='brand-image']");
 ```
 
-<div align="center"><img src="assets/chrome-evaluate-xpath.png" width="900"></div>
+<div align="center">
+  <img src="assets/chrome-evaluate-xpath.png" width="900">
+  <br />
+  <div>Select <b>Console</b> tab</div>
+  <br />
+</div>
 
 ## XPath Functions
 
