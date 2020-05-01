@@ -105,6 +105,8 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
 > This action computes a unique XPath expression
 > that matches the currently selected node in the document.
 
+<br />
+
 <div align="center">
   <img src="assets/webstorm-xpath-generation.png" width="560">
   <br />
@@ -116,6 +118,8 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
 ### [XPath Search](https://www.jetbrains.com/help/idea/xpath-search.html)
 
 > Find occurrences of certain XPath expressions in all XML files in a specific scope.
+
+<br />
 
 ```xpath
 /bookstore/book[@category='children']/author
