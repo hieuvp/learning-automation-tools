@@ -143,9 +143,10 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
   <img src="assets/syntax.png" width="720">
   <br />
   <div>The figure depicts XPath syntax</div>
-  <br />
 </div>
 
+<br />
+  
 |   Terminology   | Description                               |
 | :-------------: | ----------------------------------------- |
 |    **`//`**     | Used to select the current node.          |
@@ -153,6 +154,8 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
 |     **`@`**     | Used to select attribute.                 |
 | **`Attribute`** | The name of the attribute of the node.    |
 |   **`Value`**   | The value of the attribute.               |
+
+<br />
 
 ## Types of XPath
 
