@@ -21,9 +21,6 @@
 - [Types of XPath](#types-of-xpath)
   - [`Absolute XPath`](#absolute-xpath)
   - [`Relative XPath`](#relative-xpath)
-- [Chrome DevTools](#chrome-devtools)
-  - [Copy Full XPath](#copy-full-xpath)
-  - [Copy XPath](#copy-xpath)
 - [References](#references)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -174,35 +171,6 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
 - The path starts from the middle of the HTML DOM structure,
   it begins with the **double forward-slash** (**`//`**),
   which means it can search the element anywhere at the webpage.
-
-<br />
-
-## Chrome DevTools
-
-1. Launch **Google Chrome** and navigate to <https://www.goshopback.vn/>.
-1. Try to **Inspect** a random web element.
-
-<div align="center"><img src="assets/chrome-inspect-elements.png" width="900"></div>
-
-<br />
-
-<div align="center"><img src="assets/chrome-copy-tools.png" width="700"></div>
-
-### Copy Full XPath
-
-> Returns an **Absolute XPath**.
-
-```xpath
-/html/body/div[1]/div[5]/div/div/div/section/section[7]/section/div/section/div[1]/a/img
-```
-
-### Copy XPath
-
-> Returns a **Relative XPath**.
-
-```xpath
-//*[@id="home-page-container"]/div/div/section/section[7]/section/div/section/div[1]/a/img
-```
 
 <br />
 
