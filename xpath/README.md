@@ -153,9 +153,9 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
 
 |   Terminology   | Explanation                               |
 | :-------------: | ----------------------------------------- |
-|    **`//`**     | Used to select the current node.          |
+|    **`//`**     | To select the current node.               |
 |  **`tagname`**  | The name of the tag of a particular node. |
-|     **`@`**     | Used to select attribute.                 |
+|     **`@`**     | To select attribute.                      |
 | **`Attribute`** | The name of the attribute of the node.    |
 |   **`Value`**   | The value of the attribute.               |
 
