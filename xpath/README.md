@@ -373,10 +373,6 @@ As you might notice, I have not used @ because the text() is a function
 and not an attribute.
 This is how you can use two XPath functions together.
 
-In the next section of this article,
-we will see how to register the drivers for chrome
-and how to send keys to search element using Eclipse.
-
 ## Demo: Selenium ChromeDriver
 
 - You need to install a [Chrome Driver](https://github.com/giggio/node-chromedriver) in your system.
