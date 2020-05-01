@@ -167,7 +167,7 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
 
 - **An Example**: `/html/body/div[1]/section/div[1]/div`.
 - A direct way to find the element,
-  but the disadvantage of the **absolute XPath** is that,
+  but the disadvantage of the **Absolute XPath** is that,
   if there are any changes made in the path of the element then that XPath gets failed.
 
 ### `Relative XPath`
