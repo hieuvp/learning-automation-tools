@@ -146,6 +146,7 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
   <img src="assets/syntax.png" width="720">
   <br />
   <div>The figure depicts XPath syntax</div>
+  <br />
 </div>
 
 <br />
