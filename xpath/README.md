@@ -19,6 +19,7 @@
   - [XPath Search](#xpath-search)
 - [Syntax of XPath](#syntax-of-xpath)
 - [Types of XPath](#types-of-xpath)
+<<<<<<< HEAD
   - [Absolute XPath](#absolute-xpath)
   - [Relative XPath](#relative-xpath)
 - [Chrome DevTools](#chrome-devtools)
@@ -31,6 +32,10 @@
   - [`starts-with()`](#starts-with)
   - [`text()`](#text)
 - [Demo: Selenium ChromeDriver](#demo-selenium-chromedriver)
+=======
+  - [`Absolute XPath`](#absolute-xpath)
+  - [`Relative XPath`](#relative-xpath)
+>>>>>>> master
 - [References](#references)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -80,16 +85,26 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
 
 ### [XPath Expression Evaluation](https://www.jetbrains.com/help/idea/xpath-expression-evaluation.html)
 
+<<<<<<< HEAD
 > An XPath expression needs evaluation to test it
 > before using in program code
 > or before making structured queries against XML documents.
+=======
+> An XPath expression needs evaluation to test it before making structured queries against XML documents.
+
+<br />
+>>>>>>> master
 
 ```xpath
 /bookstore/book[@category='children']/author
 ```
 
 <div align="center">
+<<<<<<< HEAD
   <img src="assets/webstorm-xpath-evaluation.png" width="500">
+=======
+  <img src="assets/webstorm-xpath-evaluation.png" width="480">
+>>>>>>> master
   <br />
   <div>Action: <b>Evaluate XPath...</b></div>
 </div>
@@ -97,7 +112,11 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
 <br />
 
 <div align="center">
+<<<<<<< HEAD
   <img src="assets/webstorm-xpath-evaluation-outcome.png" width="550">
+=======
+  <img src="assets/webstorm-xpath-evaluation-outcome.png" width="530">
+>>>>>>> master
   <br />
   <div>Matched nodes got highlighted</div>
 </div>
@@ -109,8 +128,15 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
 > This action computes a unique XPath expression
 > that matches the currently selected node in the document.
 
+<<<<<<< HEAD
 <div align="center">
   <img src="assets/webstorm-xpath-generation.png" width="560">
+=======
+<br />
+
+<div align="center">
+  <img src="assets/webstorm-xpath-generation.png" width="540">
+>>>>>>> master
   <br />
   <div>Action: <b>Unique XPath</b></div>
 </div>
@@ -121,6 +147,11 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
 
 > Find occurrences of certain XPath expressions in all XML files in a specific scope.
 
+<<<<<<< HEAD
+=======
+<br />
+
+>>>>>>> master
 ```xpath
 /bookstore/book[@category='children']/author
 ```
@@ -133,7 +164,15 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
 
 <br />
 
+<<<<<<< HEAD
 <div align="center"><img src="assets/webstorm-xpath-search-outcome.png" width="620"></div>
+=======
+<div align="center">
+  <img src="assets/webstorm-xpath-search-outcome.png" width="610">
+  <br />
+  <div>The results are shown in <b>Usage View</b></div>
+</div>
+>>>>>>> master
 
 <br />
 
@@ -146,6 +185,7 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
   <br />
 </div>
 
+<<<<<<< HEAD
 |   Terminology   | Description                               |
 | :-------------: | ----------------------------------------- |
 |    **`//`**     | Used to select the current node.          |
@@ -437,6 +477,38 @@ node .
   <br />
 </div>
 
+=======
+<br />
+
+|   Terminology   | Explanation                               |
+| :-------------: | ----------------------------------------- |
+|    **`//`**     | To select the current node.               |
+|  **`tagname`**  | The name of the tag of a particular node. |
+|     **`@`**     | To select attribute.                      |
+| **`Attribute`** | The name of the attribute of the node.    |
+|   **`Value`**   | The value of the attribute.               |
+
+<br />
+
+## Types of XPath
+
+### `Absolute XPath`
+
+- **An Example**: `/html/body/div[1]/section/div[1]/div`.
+- A direct way to find the element,
+  but the disadvantage of the **Absolute XPath** is that,
+  if there are any changes made in the path of the element then that XPath gets failed.
+
+### `Relative XPath`
+
+- **An Example**: `//input[@id='ap_email']`.
+- The path starts in the middle of an HTML DOM structure,
+  it begins with the **double forward-slash** (**`//`**),
+  which means it can search the element anywhere in a webpage.
+
+<br />
+
+>>>>>>> master
 ## References
 
 - [How to Get Started with XPath in Selenium](https://www.edureka.co/blog/xpath-in-selenium)
