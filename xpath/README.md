@@ -12,32 +12,6 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [What is XPath](#what-is-xpath)
-- [IntelliJ-Based IDEs](#intellij-based-ides)
-  - [XPath Expression Evaluation](#xpath-expression-evaluation)
-  - [XPath Expression Generation](#xpath-expression-generation)
-  - [XPath Search](#xpath-search)
-- [Syntax of XPath](#syntax-of-xpath)
-- [Types of XPath](#types-of-xpath)
-<<<<<<< HEAD
-  - [Absolute XPath](#absolute-xpath)
-  - [Relative XPath](#relative-xpath)
-- [Chrome DevTools](#chrome-devtools)
-  - [Copy Full XPath](#copy-full-xpath)
-  - [Copy XPath](#copy-xpath)
-  - [Find Elements by XPath](#find-elements-by-xpath)
-  - [Evaluate XPath Expressions](#evaluate-xpath-expressions)
-- [XPath Functions](#xpath-functions)
-  - [`contains()`](#contains)
-  - [`starts-with()`](#starts-with)
-  - [`text()`](#text)
-- [Demo: Selenium ChromeDriver](#demo-selenium-chromedriver)
-=======
-  - [`Absolute XPath`](#absolute-xpath)
-  - [`Relative XPath`](#relative-xpath)
->>>>>>> master
-- [References](#references)
-
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## What is XPath
@@ -85,15 +59,9 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
 
 ### [XPath Expression Evaluation](https://www.jetbrains.com/help/idea/xpath-expression-evaluation.html)
 
-<<<<<<< HEAD
-> An XPath expression needs evaluation to test it
-> before using in program code
-> or before making structured queries against XML documents.
-=======
 > An XPath expression needs evaluation to test it before making structured queries against XML documents.
 
 <br />
->>>>>>> master
 
 ```xpath
 /bookstore/book[@category='children']/author
