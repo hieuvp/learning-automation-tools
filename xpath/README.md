@@ -258,7 +258,7 @@ $x("//img[@class='brand-image']");
 
 ### `contains()`
 
-> The `contains` function determines whether
+> Determine whether
 > the first argument `haystack` contains the second argument `needle`
 > and returns boolean `true` or `false`.
 
@@ -280,7 +280,7 @@ contains(haystack, needle)
 
 ### `starts-with()`
 
-> The `starts-with` checks whether
+> Check whether
 > the first string `haystack` starts with the second string `needle`
 > and returns `true` or `false`.
 
@@ -288,29 +288,17 @@ contains(haystack, needle)
 starts-with(haystack, needle)
 ```
 
-This function is used to find a web element whose value of an attribute changes on the refresh
-or on any other dynamic operation on the web page.
-In this, we match the starting text of the attribute
-to locate an element whose attribute has changed dynamically.
-
-For Example: On the web page,
-ID of a particular element changes dynamically such as ‘id1’, ‘id2’, ‘id3’, etc.,
-but the remaining text will be the same.
-
-Let's now try demonstrating it using the same object.
-Here, instead of `contains()`, you have to change it to `starts-with()`.
-
-<div align="center"><img src="assets/xpath-starts-with.png" width="900"></div>
-
-As you can see in the figure src attribute starts with https.
-It will locate the elements that start with https.
-Thus, this is how starts-with function is used to locate a particular element on the webpage.
-
-XPath query looks like:
+<br />
 
 ```xpath
 //img[starts-with(@src,'https')]
 ```
+
+<div align="center">
+  <img src="assets/xpath-starts-with.png" width="900">
+  <br />
+  <div>Locate the elements that <b>start with https</b></div>
+</div>
 
 ### `text()`
 
