@@ -12,6 +12,27 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
+- [What is XPath](#what-is-xpath)
+- [IntelliJ-Based IDEs](#intellij-based-ides)
+  - [XPath Expression Evaluation](#xpath-expression-evaluation)
+  - [XPath Expression Generation](#xpath-expression-generation)
+  - [XPath Search](#xpath-search)
+- [Syntax of XPath](#syntax-of-xpath)
+- [Types of XPath](#types-of-xpath)
+  - [`Absolute XPath`](#absolute-xpath)
+  - [`Relative XPath`](#relative-xpath)
+- [Chrome DevTools](#chrome-devtools)
+  - [Copy Full XPath](#copy-full-xpath)
+  - [Copy XPath](#copy-xpath)
+  - [Find Elements by XPath](#find-elements-by-xpath)
+  - [Evaluate XPath Expressions](#evaluate-xpath-expressions)
+- [XPath Functions](#xpath-functions)
+  - [`contains()`](#contains)
+  - [`starts-with()`](#starts-with)
+  - [`text()`](#text)
+- [Demo: Selenium ChromeDriver](#demo-selenium-chromedriver)
+- [References](#references)
+
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## What is XPath
@@ -133,30 +154,35 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
   <br />
 </div>
 
-<<<<<<< HEAD
-|   Terminology   | Description                               |
+<br />
+
+|   Terminology   | Explanation                               |
 | :-------------: | ----------------------------------------- |
-|    **`//`**     | Used to select the current node.          |
+|    **`//`**     | To select the current node.               |
 |  **`tagname`**  | The name of the tag of a particular node. |
-|     **`@`**     | Used to select attribute.                 |
+|     **`@`**     | To select attribute.                      |
 | **`Attribute`** | The name of the attribute of the node.    |
 |   **`Value`**   | The value of the attribute.               |
 
+<br />
+
 ## Types of XPath
 
-### Absolute XPath
+### `Absolute XPath`
 
-- **Example**: `/html/body/div[1]/section/div[1]/div`.
-- It is the direct way to find the element,
-  but the disadvantage of the absolute XPath is that,
+- **An Example**: `/html/body/div[1]/section/div[1]/div`.
+- A direct way to find the element,
+  but the disadvantage of the **Absolute XPath** is that,
   if there are any changes made in the path of the element then that XPath gets failed.
 
-### Relative XPath
+### `Relative XPath`
 
-- **Example**: `//input[@id='ap_email']`.
-- The path starts from the middle of the HTML DOM structure.
-  It begins with the double forward-slash (`//`),
-  which means it can search the element anywhere at the webpage.
+- **An Example**: `//input[@id='ap_email']`.
+- The path starts in the middle of an HTML DOM structure,
+  it begins with the **double forward-slash** (**`//`**),
+  which means it can search the element anywhere in a webpage.
+
+<br />
 
 ## Chrome DevTools
 
@@ -425,38 +451,6 @@ node .
   <br />
 </div>
 
-=======
-<br />
-
-|   Terminology   | Explanation                               |
-| :-------------: | ----------------------------------------- |
-|    **`//`**     | To select the current node.               |
-|  **`tagname`**  | The name of the tag of a particular node. |
-|     **`@`**     | To select attribute.                      |
-| **`Attribute`** | The name of the attribute of the node.    |
-|   **`Value`**   | The value of the attribute.               |
-
-<br />
-
-## Types of XPath
-
-### `Absolute XPath`
-
-- **An Example**: `/html/body/div[1]/section/div[1]/div`.
-- A direct way to find the element,
-  but the disadvantage of the **Absolute XPath** is that,
-  if there are any changes made in the path of the element then that XPath gets failed.
-
-### `Relative XPath`
-
-- **An Example**: `//input[@id='ap_email']`.
-- The path starts in the middle of an HTML DOM structure,
-  it begins with the **double forward-slash** (**`//`**),
-  which means it can search the element anywhere in a webpage.
-
-<br />
-
->>>>>>> master
 ## References
 
 - [How to Get Started with XPath in Selenium](https://www.edureka.co/blog/xpath-in-selenium)
