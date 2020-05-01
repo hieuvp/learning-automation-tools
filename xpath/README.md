@@ -234,4 +234,3 @@ $x("//img[@class='brand-image']");
 - [How to Get Started with XPath in Selenium](https://www.edureka.co/blog/xpath-in-selenium)
 - [Xpath in Selenium | Selenium Xpath Tutorial | Selenium Xpath Examples](https://www.youtube.com/watch?v=9-iVt0MIqNY)
 - [XPath in Selenium WebDriver](https://www.guru99.com/xpath-selenium.html)
-- [XPath Functions](https://developer.mozilla.org/en-US/docs/Web/XPath/Functions)
