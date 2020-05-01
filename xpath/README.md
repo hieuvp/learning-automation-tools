@@ -149,8 +149,8 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
 </div>
 
 <br />
-  
-|   Terminology   | Description                               |
+
+|   Terminology   | Explanation                               |
 | :-------------: | ----------------------------------------- |
 |    **`//`**     | Used to select the current node.          |
 |  **`tagname`**  | The name of the tag of a particular node. |
