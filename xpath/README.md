@@ -328,6 +328,8 @@ starts-with(haystack, needle)
 
 ### Combining Functions
 
+We Don't use `@` because the `text()` is a **function** and not an **~~attribute~~**.
+
 ```xpath
 //*[contains(text(), 'Made with love')]
 ```
@@ -338,7 +340,7 @@ starts-with(haystack, needle)
   <div>Using two functions together in one XPath query</div>
 </div>
 
-- Don't use `@` because the `text()` is a **function** and not an **~~attribute~~**.
+<br />
 
 ## Demo: Selenium ChromeDriver
 
