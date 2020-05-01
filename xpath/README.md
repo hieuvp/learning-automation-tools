@@ -303,7 +303,9 @@ starts-with(haystack, needle)
 
 ### `text()`
 
-> Locate any element with an **exact text**.
+> Return text value of specific node.
+
+- Locate any element with an **exact text**.
 
 ```xpath
 //*[text()='Made with love by']
