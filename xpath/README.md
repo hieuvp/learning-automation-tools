@@ -170,7 +170,7 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
 - **An Example**: `//input[@id='ap_email']`.
 - The path starts from the middle of an HTML DOM structure,
   it begins with the **double forward-slash** (**`//`**),
-  which means it can search the element anywhere in the webpage.
+  which means it can search the element anywhere in a webpage.
 
 <br />
 
