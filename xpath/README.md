@@ -92,7 +92,7 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
 <br />
 
 <div align="center">
-  <img src="assets/webstorm-xpath-evaluation-outcome.png" width="540">
+  <img src="assets/webstorm-xpath-evaluation-outcome.png" width="520">
   <br />
   <div>Matched nodes got highlighted</div>
 </div>
@@ -107,7 +107,7 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
 <br />
 
 <div align="center">
-  <img src="assets/webstorm-xpath-generation.png" width="560">
+  <img src="assets/webstorm-xpath-generation.png" width="540">
   <br />
   <div>Action: <b>Unique XPath</b></div>
 </div>
