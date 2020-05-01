@@ -75,8 +75,7 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
 
 ### [XPath Expression Evaluation](https://www.jetbrains.com/help/idea/xpath-expression-evaluation.html)
 
-> An XPath expression needs evaluation to test it before using in program code
-> or before making structured queries against XML documents.
+> An XPath expression needs evaluation to test it before making structured queries against XML documents.
 
 <br />
 
