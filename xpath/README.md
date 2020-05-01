@@ -328,7 +328,7 @@ starts-with(haystack, needle)
 
 ### Combining Functions
 
-We Don't use `@` because the `text()` is a **function** and not an **~~attribute~~**.
+- We don't use `@` because the `text()` is a **function** and not an **~~attribute~~**.
 
 ```xpath
 //*[contains(text(), 'Made with love')]
