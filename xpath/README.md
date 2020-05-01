@@ -24,8 +24,6 @@
 - [Chrome DevTools](#chrome-devtools)
   - [Copy Full XPath](#copy-full-xpath)
   - [Copy XPath](#copy-xpath)
-  - [Find Elements by XPath](#find-elements-by-xpath)
-  - [Evaluate XPath Expressions](#evaluate-xpath-expressions)
 - [References](#references)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -207,41 +205,6 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
 ```
 
 <br />
-
-### Find Elements by XPath
-
-- On the `Elements` panel, press `Command-F` to open a **search box**.
-
-<div align="center"><img src="assets/chrome-search-box.png" width="900"></div>
-
-<br />
-
-- Starting with `//`, we will use `img` as a `tagname` and `class` as an `attribute`
-  to construct an XPath expression.
-
-```xpath
-//img[@class='brand-image']
-```
-
-<div align="center">
-  <img src="assets/chrome-find-by-xpath.png" width="900">
-  <br />
-  <div>The located elements are highlighted</div>
-</div>
-
-### Evaluate XPath Expressions
-
-`$x(path)` returns an array of DOM elements that match the given XPath expression.
-
-- Select the `Console` tab, and check the XPath by typing `$x("your_xpath_here")`.
-  This will return an array of matched values.
-  If it is empty, you know there is no match on the page.
-
-```js
-$x("//img[@class='brand-image']");
-```
-
-<div align="center"><img src="assets/chrome-evaluate-xpath.png" width="900"></div>
 
 ## References
 
