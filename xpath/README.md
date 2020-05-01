@@ -68,11 +68,7 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
 ```
 
 <div align="center">
-<<<<<<< HEAD
-  <img src="assets/webstorm-xpath-evaluation.png" width="500">
-=======
   <img src="assets/webstorm-xpath-evaluation.png" width="480">
->>>>>>> master
   <br />
   <div>Action: <b>Evaluate XPath...</b></div>
 </div>
@@ -80,11 +76,7 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
 <br />
 
 <div align="center">
-<<<<<<< HEAD
-  <img src="assets/webstorm-xpath-evaluation-outcome.png" width="550">
-=======
   <img src="assets/webstorm-xpath-evaluation-outcome.png" width="530">
->>>>>>> master
   <br />
   <div>Matched nodes got highlighted</div>
 </div>
@@ -96,15 +88,10 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
 > This action computes a unique XPath expression
 > that matches the currently selected node in the document.
 
-<<<<<<< HEAD
-<div align="center">
-  <img src="assets/webstorm-xpath-generation.png" width="560">
-=======
 <br />
 
 <div align="center">
   <img src="assets/webstorm-xpath-generation.png" width="540">
->>>>>>> master
   <br />
   <div>Action: <b>Unique XPath</b></div>
 </div>
