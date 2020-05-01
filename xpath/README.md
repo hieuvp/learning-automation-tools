@@ -248,7 +248,7 @@ $x("//img[@class='brand-image']");
 <div align="center">
   <img src="assets/chrome-evaluate-xpath.png" width="900">
   <br />
-  <div>Select the <b>Console</b> tab</div>
+  <div>Selecting the <b>Console</b> tab</div>
   <br />
 </div>
 
