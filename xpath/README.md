@@ -346,7 +346,9 @@ starts-with(haystack, needle)
 
 ## Demo: Selenium ChromeDriver
 
-- You need to install a [Chrome Driver](https://github.com/giggio/node-chromedriver) in your system.
+- You will need to install a
+  [Chrome Driver](https://github.com/giggio/node-chromedriver)
+  in your system.
 
 ```shell script
 npm --global install chromedriver
@@ -423,5 +425,5 @@ node .
 - [How to Get Started with XPath in Selenium](https://www.edureka.co/blog/xpath-in-selenium)
 - [Xpath in Selenium | Selenium Xpath Tutorial | Selenium Xpath Examples](https://www.youtube.com/watch?v=9-iVt0MIqNY)
 - [XPath in Selenium WebDriver](https://www.guru99.com/xpath-selenium.html)
-- [XPath Functions](https://developer.mozilla.org/en-US/docs/Web/XPath/Functions)
-- [XPath Functions](https://www.way2tutorial.com/xml/xpath-functions.php)
+- [XPath Functions - Mozilla](https://developer.mozilla.org/en-US/docs/Web/XPath/Functions)
+- [XPath Functions - Way2tutorial](https://www.way2tutorial.com/xml/xpath-functions.php)
