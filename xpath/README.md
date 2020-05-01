@@ -132,7 +132,11 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
 
 <br />
 
-<div align="center"><img src="assets/webstorm-xpath-search-outcome.png" width="610"></div>
+<div align="center">
+  <img src="assets/webstorm-xpath-search-outcome.png" width="610">
+  <br />
+  <div>The results are shown in <b>Usage View</b></div>
+</div>
 
 <br />
 
