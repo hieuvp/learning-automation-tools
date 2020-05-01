@@ -102,11 +102,8 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
 
 > Find occurrences of certain XPath expressions in all XML files in a specific scope.
 
-<<<<<<< HEAD
-=======
 <br />
 
->>>>>>> master
 ```xpath
 /bookstore/book[@category='children']/author
 ```
@@ -119,15 +116,11 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
 
 <br />
 
-<<<<<<< HEAD
-<div align="center"><img src="assets/webstorm-xpath-search-outcome.png" width="620"></div>
-=======
 <div align="center">
   <img src="assets/webstorm-xpath-search-outcome.png" width="610">
   <br />
   <div>The results are shown in <b>Usage View</b></div>
 </div>
->>>>>>> master
 
 <br />
 
