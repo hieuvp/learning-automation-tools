@@ -245,64 +245,44 @@ $x("//img[@class='brand-image']");
 <div align="center">
   <img src="assets/chrome-evaluate-xpath.png" width="900">
   <br />
-  <div>Select <b>Console</b> tab</div>
+  <div>Select the <b>Console</b> tab</div>
   <br />
 </div>
 
 ## XPath Functions
 
 - Sometimes we do face problems in identifying the objects on a page
-  which having the same attributes or names, ids.
+  which having the same **attributes** or **names**, **ids**.
 - In such cases, it is challenging to identify a particular object on a web page
   and this is where XPath functions come to our rescue.
 
 ### `contains()`
 
-The contains function determines whether the first argument string contains the second argument string
-and returns boolean true or false.
+> The `contains` function determines whether
+> the first argument `haystack` contains the second argument `needle`
+> and returns boolean `true` or `false`.
 
 ```xpath
 contains(haystack, needle)
 ```
 
-- haystack: the string to be searched
-- needle: the string to look for as a substring of haystack.
-
-It is a method used in an XPath expression.
-When the value of any attribute changes dynamically
-e.g. login information, this method comes into use.
-It can locate a web element with the available partial text.
-Let me show you how to use `contains()` method.
-
-I will again open google.com and choose a <img> tag to inspect its element tab.
-So what's next?
-
-As you can see in the above source code snippet,
-it has a <img> tag, followed by its attributes.
-Now let's say, I want to locate its src attribute using XPath.
-In order to do this, I will start with // followed by input tag,
-then I will use the select attribute, followed by its attribute name src.
-Finally, I will copy and paste the value of src.
-But by doing this, our XPath will become too lengthy.
-
-And, this is one of the biggest reasons for constructing a partial XPath query.
-As an src attribute contains the URL in its value,
-there are chances that its value or some part of the URL might change while you reload the page.
-So the bottom line here is, a part of the attribute value is static while the rest is dynamic,
-in such cases, we generally prefer using partial XPath.
-
-XPath query looks like:
+<br />
 
 ```xpath
 //img[contains(@src,'shopily-vn')]
 ```
 
-<div align="center"><img src="assets/xpath-contains.png" width="900"></div>
+<div align="center">
+  <img src="assets/xpath-contains.png" width="900">
+  <br />
+  <div>The ability to locate a web element with <b>partial text</b></div>
+</div>
 
 ### `starts-with()`
 
-The starts-with checks whether the first string starts with the second string
-and returns true or false.
+> The `starts-with` checks whether
+> the first string `haystack` starts with the second string `needle`
+> and returns `true` or `false`.
 
 ```xpath
 starts-with(haystack, needle)
