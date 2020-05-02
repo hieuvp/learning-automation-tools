@@ -294,7 +294,7 @@ $x("//img[@class='brand-image']");
 <div align="center">
   <img src="assets/xpath-starts-with.png" width="900">
   <br />
-  <div>Locating images that <b>start with https</b></div>
+  <div>Locating images that <b>start with</b> https</div>
 </div>
 
 <br />
