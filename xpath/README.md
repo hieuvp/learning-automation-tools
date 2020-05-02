@@ -423,7 +423,10 @@ node .
 <div align="center">
   <img src="assets/ebay-results.png" width="900">
   <br />
-  <div><b>ChromeDriver</b> will launch <b>Google Chrome</b> and redirect to ebay.com</div>
+  <div>
+    <b>ChromeDriver</b> will launch <b>Google Chrome</b> and redirect to
+    <a href="https://www.ebay.com/">ebay.com</a>
+  </div>
   <div>Providing the preferred search automatically</div>
 </div>
 
