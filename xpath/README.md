@@ -332,7 +332,7 @@ $x("//img[@class='brand-image']");
 
 ### Combining Functions
 
-- We don't use `@` because the `text()` is a **function** and not an **~~attribute~~**.
+- We don't use **`@`** because the **`text()`** is a **function** and not an **~~attribute~~**.
 
 ```xpath
 //*[contains(text(), 'Made with love')]
@@ -348,13 +348,15 @@ $x("//img[@class='brand-image']");
 
 ## Demo: Selenium ChromeDriver
 
-- You will need to install a
+- We will need to install a
   [Chrome Driver](https://github.com/giggio/node-chromedriver)
   in your system.
 
 ```shell script
 npm --global install chromedriver
 ```
+
+<br />
 
 <!-- AUTO-GENERATED-CONTENT:START (CODE:src=labs/ebay/package.json) -->
 <!-- The below code snippet is automatically added from labs/ebay/package.json -->
@@ -427,5 +429,5 @@ node .
 - [How to Get Started with XPath in Selenium](https://www.edureka.co/blog/xpath-in-selenium)
 - [Xpath in Selenium | Selenium Xpath Tutorial | Selenium Xpath Examples](https://www.youtube.com/watch?v=9-iVt0MIqNY)
 - [XPath in Selenium WebDriver](https://www.guru99.com/xpath-selenium.html)
-- [XPath Functions - Mozilla](https://developer.mozilla.org/en-US/docs/Web/XPath/Functions)
+- [XPath Functions - MDN](https://developer.mozilla.org/en-US/docs/Web/XPath/Functions)
 - [XPath Functions - Way2tutorial](https://www.way2tutorial.com/xml/xpath-functions.php)
