@@ -261,13 +261,9 @@ $x("//img[@class='brand-image']");
 
 ### `contains()`
 
-> Determine whether
+> **`contains(haystack, needle)`** determines whether
 > the first argument `haystack` contains the second argument `needle`
 > and returns boolean `true` or `false`.
-
-```xpath
-contains(haystack, needle)
-```
 
 <br />
 
@@ -285,13 +281,9 @@ contains(haystack, needle)
 
 ### `starts-with()`
 
-> Check whether
+> **`starts-with(haystack, needle)`** checks whether
 > the first string `haystack` starts with the second string `needle`
 > and returns `true` or `false`.
-
-```xpath
-starts-with(haystack, needle)
-```
 
 <br />
 
@@ -309,7 +301,7 @@ starts-with(haystack, needle)
 
 ### `text()`
 
-> Return text value of specific node.
+> **`text()`** returns text value of specific node.
 
 <br />
 
