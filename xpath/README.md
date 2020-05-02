@@ -188,17 +188,17 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
 ## Chrome DevTools
 
 <div align="center"><img src="assets/chrome-inspect-elements.png" width="900"></div>
-
-1. Launch **Google Chrome** and navigate to <https://www.goshopback.vn/>.
-1. Try to **Inspect** a random web element.
-
 <br />
 
+1. Launch **Google Chrome** and navigate to <https://www.goshopback.vn/>.
+1. Try to **Inspect** a random **Element**.
+
+<br />
 <div align="center"><img src="assets/chrome-copy-tools.png" width="700"></div>
 
 ### `Copy Full XPath`
 
-> Returns an **Absolute XPath**.
+> Return an **Absolute XPath**.
 
 ```xpath
 /html/body/div[1]/div[5]/div/div/div/section/section[7]/section/div/section/div[1]/a/img
@@ -206,7 +206,7 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
 
 ### `Copy XPath`
 
-> Returns a **Relative XPath**.
+> Return a **Relative XPath**.
 
 ```xpath
 //*[@id="home-page-container"]/div/div/section/section[7]/section/div/section/div[1]/a/img
