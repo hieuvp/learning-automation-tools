@@ -27,8 +27,8 @@
   - [Find Elements by XPath](#find-elements-by-xpath)
   - [Evaluate XPath Expressions](#evaluate-xpath-expressions)
 - [XPath Functions](#xpath-functions)
-  - [`contains()`](#contains)
-  - [`starts-with()`](#starts-with)
+  - [`contains(haystack, needle)`](#containshaystack-needle)
+  - [`starts-with(haystack, needle)`](#starts-withhaystack-needle)
   - [`text()`](#text)
   - [Combining Functions](#combining-functions)
 - [Demo: Selenium ChromeDriver](#demo-selenium-chromedriver)
@@ -259,9 +259,9 @@ $x("//img[@class='brand-image']");
 
 ## XPath Functions
 
-### `contains()`
+### `contains(haystack, needle)`
 
-> **`contains(haystack, needle)`** determines whether
+> Determine whether
 > the first argument `haystack` contains the second argument `needle`
 > and returns boolean `true` or `false`.
 
@@ -279,9 +279,9 @@ $x("//img[@class='brand-image']");
 
 <br />
 
-### `starts-with()`
+### `starts-with(haystack, needle)`
 
-> **`starts-with(haystack, needle)`** checks whether
+> Check whether
 > the first string `haystack` starts with the second string `needle`
 > and returns `true` or `false`.
 
@@ -301,7 +301,7 @@ $x("//img[@class='brand-image']");
 
 ### `text()`
 
-> **`text()`** returns text value of specific node.
+> Return text value of specific node.
 
 <br />
 
