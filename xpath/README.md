@@ -354,8 +354,8 @@ $x("//img[@class='brand-image']");
 ## Demo: Selenium ChromeDriver
 
 We will need to install a
-[Chrome Driver](https://github.com/giggio/node-chromedriver)
-in our system:
+[**ChromeDriver**](https://github.com/giggio/node-chromedriver)
+into our system:
 
 ```shell script
 npm --global install chromedriver
