@@ -313,7 +313,7 @@ $x("//img[@class='brand-image']");
   <img src="assets/xpath-text-match.png" width="900">
   <br />
   <div>
-    Irrespective of tagname, the element must contain a text whose value is
+    Irrespective of tagname, the element must have a text whose value is
     <em>"Made with love by"</em>
   </div>
   <br />
