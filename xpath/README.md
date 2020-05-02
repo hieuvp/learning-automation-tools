@@ -22,8 +22,8 @@
   - [`Absolute XPath`](#absolute-xpath)
   - [`Relative XPath`](#relative-xpath)
 - [Chrome DevTools](#chrome-devtools)
-  - [Copy Full XPath](#copy-full-xpath)
-  - [Copy XPath](#copy-xpath)
+  - [`Copy Full XPath`](#copy-full-xpath)
+  - [`Copy XPath`](#copy-xpath)
   - [Find Elements by XPath](#find-elements-by-xpath)
   - [Evaluate XPath Expressions](#evaluate-xpath-expressions)
 - [XPath Functions](#xpath-functions)
@@ -196,7 +196,7 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
 
 <div align="center"><img src="assets/chrome-copy-tools.png" width="700"></div>
 
-### Copy Full XPath
+### `Copy Full XPath`
 
 > Returns an **Absolute XPath**.
 
@@ -204,7 +204,7 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
 /html/body/div[1]/div[5]/div/div/div/section/section[7]/section/div/section/div[1]/a/img
 ```
 
-### Copy XPath
+### `Copy XPath`
 
 > Returns a **Relative XPath**.
 
