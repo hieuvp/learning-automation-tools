@@ -212,7 +212,7 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
 //*[@id="home-page-container"]/div/div/section/section[6]/section/div/section/div[1]/a/img
 ```
 
-- The asterisk (`*`) implies any **tagname**.
+- The asterisk (`*`) here implies any **tagname**.
 
 <br />
 
