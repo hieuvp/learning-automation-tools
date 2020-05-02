@@ -263,7 +263,7 @@ $x("//img[@class='brand-image']");
 
 > Determine whether
 > the first argument `haystack` contains the second argument `needle`
-> and returns boolean `true` or `false`.
+> and returns `true` or `false`.
 
 <br />
 
@@ -283,7 +283,7 @@ $x("//img[@class='brand-image']");
 
 > Check whether
 > the first string `haystack` starts with the second string `needle`
-> and returns `true` or `false`.
+> and returns boolean `true` or `false`.
 
 <br />
 
