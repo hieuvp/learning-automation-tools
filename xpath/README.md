@@ -311,6 +311,8 @@ starts-with(haystack, needle)
 
 > Return text value of specific node.
 
+<br />
+
 ```xpath
 //*[text()='Made with love by']
 ```
@@ -319,6 +321,7 @@ starts-with(haystack, needle)
   <img src="assets/xpath-text-match.png" width="900">
   <br />
   <div>Irrespective of the tag, it must contain a text whose value is <b>Made with love by</b></div>
+  <br />
 </div>
 
 <br />
