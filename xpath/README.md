@@ -21,6 +21,17 @@
 - [Types of XPath](#types-of-xpath)
   - [`Absolute XPath`](#absolute-xpath)
   - [`Relative XPath`](#relative-xpath)
+- [Chrome DevTools](#chrome-devtools)
+  - [`Copy Full XPath`](#copy-full-xpath)
+  - [`Copy XPath`](#copy-xpath)
+  - [Find Elements by XPath](#find-elements-by-xpath)
+  - [Evaluate XPath Expressions](#evaluate-xpath-expressions)
+- [XPath Functions](#xpath-functions)
+  - [`contains(haystack, needle)`](#containshaystack-needle)
+  - [`starts-with(haystack, needle)`](#starts-withhaystack-needle)
+  - [`text()`](#text)
+  - [Combining Functions](#combining-functions)
+- [Demo: Selenium ChromeDriver](#demo-selenium-chromedriver)
 - [References](#references)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -174,8 +185,257 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
 
 <br />
 
+## Chrome DevTools
+
+<div align="center"><img src="assets/chrome-inspect-elements.png" width="900"></div>
+<br />
+
+1. Launch **Google Chrome** and navigate to <https://www.goshopback.vn/>.
+1. Try to **Inspect** a random **Element**.
+
+<br />
+<div align="center"><img src="assets/chrome-copy-tools.png" width="680"></div>
+
+### `Copy Full XPath`
+
+> Return an **Absolute XPath**.
+
+```xpath
+/html/body/div[1]/div[5]/div/div/div/section/section[6]/section/div/section/div[1]/a/img
+```
+
+### `Copy XPath`
+
+> Return a **Relative XPath**.
+
+```xpath
+//*[@id="home-page-container"]/div/div/section/section[6]/section/div/section/div[1]/a/img
+```
+
+- The asterisk (**`*`**) here implies any **tagname**.
+
+<br />
+
+### Find Elements by XPath
+
+<div align="center">
+  <img src="assets/chrome-search-box.png" width="900">
+  <br />
+  <div>On the <b>Elements</b> panel, press <b>Command-F</b> to open a <b>Search Box</b></div>
+</div>
+
+<br />
+
+```xpath
+//img[@class='brand-image']
+```
+
+<div align="center">
+  <img src="assets/chrome-find-by-xpath.png" width="900">
+  <br />
+  <div>The located elements are highlighted</div>
+</div>
+
+<br />
+
+### Evaluate XPath Expressions
+
+> **`$x(path)`** returns an array of DOM elements
+> that match the given XPath expression.
+
+<br />
+
+```js
+$x("//img[@class='brand-image']");
+```
+
+<div align="center">
+  <img src="assets/chrome-evaluate-xpath.png" width="900">
+  <br />
+  <div>On the <b>Console</b> tab</div>  
+</div>
+
+<br />
+
+## XPath Functions
+
+### `contains(haystack, needle)`
+
+> Determine whether
+> the first argument `haystack` contains the second argument `needle`
+> and returns `true` or `false`.
+
+<br />
+
+```xpath
+//img[contains(@src,'shopily-vn')]
+```
+
+<div align="center">
+  <img src="assets/xpath-contains.png" width="900">
+  <br />
+  <div>Locating a web element with <b>partial text</b></div>
+</div>
+
+<br />
+
+### `starts-with(haystack, needle)`
+
+> Check whether
+> the first string `haystack` starts with the second string `needle`
+> and returns boolean `true` or `false`.
+
+<br />
+
+```xpath
+//img[starts-with(@src,'https')]
+```
+
+<div align="center">
+  <img src="assets/xpath-starts-with.png" width="900">
+  <br />
+  <div>Locating elements that <b>start with</b> <em>"https"</em></div>
+</div>
+
+<br />
+
+### `text()`
+
+> Return text value of a specific node.
+
+<br />
+
+```xpath
+//*[text()='Made with love by']
+```
+
+<div align="center">
+  <img src="assets/xpath-text-match.png" width="900">
+  <br />
+  <div>
+    Irrespective of tagname, the element must have a text whose value is
+    <em>"Made with love by"</em>
+  </div>
+  <br />
+</div>
+
+<br />
+
+```xpath
+//*[text()='Made with love']
+```
+
+<div align="center">
+  <img src="assets/xpath-text-no-match.png" width="900">
+  <br />
+  <div>Not an <del><b>exact text</b></del> match</div>
+</div>
+
+<br />
+
+### Combining Functions
+
+```xpath
+//*[contains(text(), 'Made with love')]
+```
+
+> We don't use **`@`** because **`text()`** is a **function** and not an **~~attribute~~**.
+
+<br />
+
+<div align="center">
+  <img src="assets/xpath-two-functions.png" width="900">
+  <br />
+  <div>Using two functions together in one XPath query</div>
+</div>
+
+<br />
+
+## Demo: Selenium ChromeDriver
+
+We will need to install a
+[**ChromeDriver**](https://github.com/giggio/node-chromedriver)
+into our system:
+
+```shell script
+npm --global install chromedriver
+```
+
+<br />
+
+<!-- AUTO-GENERATED-CONTENT:START (CODE:src=labs/ebay/package.json) -->
+<!-- The below code snippet is automatically added from labs/ebay/package.json -->
+
+```json
+{
+  "name": "ebay",
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "selenium-webdriver": "3.6.0",
+    "sleep": "6.1.0"
+  }
+}
+```
+
+<!-- AUTO-GENERATED-CONTENT:END -->
+
+<!-- AUTO-GENERATED-CONTENT:START (CODE:src=labs/ebay/index.js) -->
+<!-- The below code snippet is automatically added from labs/ebay/index.js -->
+
+```js
+const { Builder, By } = require("selenium-webdriver");
+const { sleep } = require("sleep");
+
+(async function main() {
+  const driver = await new Builder().forBrowser("chrome").build();
+
+  driver.manage().window().setSize(1280, 720);
+  driver.manage().deleteAllCookies();
+
+  try {
+    // Navigate to ebay.com
+    await driver.get("https://www.ebay.com");
+
+    // By using XPath, we are able to locate the search box,
+    // and "sendKeys()" to search for a value of "DevOps"
+    await driver.findElement(By.xpath("//input[@id='gh-ac']")).sendKeys("DevOps");
+
+    // Hit the "Search" button to redirect to the results page
+    await driver.findElement(By.xpath("//input[@id='gh-btn']")).click();
+
+    sleep(5);
+  } finally {
+    driver.quit();
+  }
+})();
+```
+
+<!-- AUTO-GENERATED-CONTENT:END -->
+
+<br />
+
+```shell script
+cd labs/ebay && npm install
+node .
+```
+
+<div align="center">
+  <img src="assets/ebay-results.png" width="900">
+  <br />
+  <div>
+    <b>ChromeDriver</b> will launch <b>Google Chrome</b> and redirect to
+    <a href="https://www.ebay.com/">ebay.com</a>
+  </div>
+  <div>Providing the preferred search automatically</div>
+</div>
+
+<br />
+
 ## References
 
 - [How to Get Started with XPath in Selenium](https://www.edureka.co/blog/xpath-in-selenium)
 - [Xpath in Selenium | Selenium Xpath Tutorial | Selenium Xpath Examples](https://www.youtube.com/watch?v=9-iVt0MIqNY)
 - [XPath in Selenium WebDriver](https://www.guru99.com/xpath-selenium.html)
+- [XPath Functions - MDN](https://developer.mozilla.org/en-US/docs/Web/XPath/Functions)
+- [XPath Functions - Way2tutorial](https://www.way2tutorial.com/xml/xpath-functions.php)
