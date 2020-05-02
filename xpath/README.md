@@ -398,7 +398,7 @@ const sleep = require("sleep");
     await driver.get("https://www.ebay.com");
 
     // By using XPath, we are able to locate the search box,
-    // and sendKeys() to search for a value of "DevOps"
+    // and "sendKeys()" to search for a value of "DevOps"
     await driver.findElement(By.xpath("//input[@id='gh-ac']")).sendKeys("DevOps");
 
     // Hit the search button to redirect to the results page
