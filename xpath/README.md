@@ -187,10 +187,10 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
 
 ## Chrome DevTools
 
+<div align="center"><img src="assets/chrome-inspect-elements.png" width="900"></div>
+
 1. Launch **Google Chrome** and navigate to <https://www.goshopback.vn/>.
 1. Try to **Inspect** a random web element.
-
-<div align="center"><img src="assets/chrome-inspect-elements.png" width="900"></div>
 
 <br />
 
