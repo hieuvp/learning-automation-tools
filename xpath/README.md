@@ -274,7 +274,7 @@ $x("//img[@class='brand-image']");
 <div align="center">
   <img src="assets/xpath-contains.png" width="900">
   <br />
-  <div>The ability to locate a web element with <b>partial text</b></div>
+  <div>Locating a web element with <b>partial text</b></div>
 </div>
 
 <br />
@@ -294,7 +294,7 @@ $x("//img[@class='brand-image']");
 <div align="center">
   <img src="assets/xpath-starts-with.png" width="900">
   <br />
-  <div>Locating images that <b>start with</b> https</div>
+  <div>Locating elements that <b>start with</b> https</div>
 </div>
 
 <br />
@@ -312,7 +312,7 @@ $x("//img[@class='brand-image']");
 <div align="center">
   <img src="assets/xpath-text-match.png" width="900">
   <br />
-  <div>Irrespective of the tag, it must contain a text whose value is <b>Made with love by</b></div>
+  <div>Irrespective of the tag, element must contain a text whose value is <b>Made with love by</b></div>
   <br />
 </div>
 
