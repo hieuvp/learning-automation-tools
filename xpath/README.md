@@ -332,11 +332,13 @@ $x("//img[@class='brand-image']");
 
 ### Combining Functions
 
-- We don't use **`@`** because the **`text()`** is a **function** and not an **~~attribute~~**.
-
 ```xpath
 //*[contains(text(), 'Made with love')]
 ```
+
+We don't use **`@`** because the **`text()`** is a **function** and not an **~~attribute~~**.
+
+<br />
 
 <div align="center">
   <img src="assets/xpath-two-functions.png" width="900">
