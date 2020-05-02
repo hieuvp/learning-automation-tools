@@ -301,7 +301,7 @@ $x("//img[@class='brand-image']");
 
 ### `text()`
 
-> Return text value of specific node.
+> Return text value of a specific node.
 
 <br />
 
