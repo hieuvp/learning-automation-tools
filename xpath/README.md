@@ -311,16 +311,15 @@ starts-with(haystack, needle)
 
 > Return text value of specific node.
 
-- Locate any element with an **exact text**.
-
 ```xpath
 //*[text()='Made with love by']
 ```
 
-<div align="center"><img src="assets/xpath-text-match.png" width="900"></div>
-
-- Go anywhere inside this document, irrespective of the tag,
-  but, it must contain a text whose value is `Made with love by`.
+<div align="center">
+  <img src="assets/xpath-text-match.png" width="900">
+  <br />
+  <div>Irrespective of the tag, it must contain a text whose value is <b>Made with love by</b></div>
+</div>
 
 <br />
 
@@ -328,7 +327,11 @@ starts-with(haystack, needle)
 //*[text()='Made with love']
 ```
 
-<div align="center"><img src="assets/xpath-text-no-match.png" width="900"></div>
+<div align="center">
+  <img src="assets/xpath-text-no-match.png" width="900">
+  <br />
+  <div>Not an <b>exact text</b> match</div>
+</div>
 
 <br />
 
