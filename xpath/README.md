@@ -328,7 +328,7 @@ $x("//img[@class='brand-image']");
 <div align="center">
   <img src="assets/xpath-text-no-match.png" width="900">
   <br />
-  <div>Not an <b>exact text</b> match</div>
+  <div>Not an <del><b>exact text</b></del> match</div>
 </div>
 
 <br />
