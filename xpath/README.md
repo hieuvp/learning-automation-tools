@@ -194,7 +194,7 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
 1. Try to **Inspect** a random **Element**.
 
 <br />
-<div align="center"><img src="assets/chrome-copy-tools.png" width="700"></div>
+<div align="center"><img src="assets/chrome-copy-tools.png" width="680"></div>
 
 ### `Copy Full XPath`
 
