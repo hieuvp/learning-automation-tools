@@ -350,9 +350,9 @@ We don't use **`@`** because the **`text()`** is a **function** and not an **~~a
 
 ## Demo: Selenium ChromeDriver
 
-- We will need to install a
-  [Chrome Driver](https://github.com/giggio/node-chromedriver)
-  in your system.
+We will need to install a
+[Chrome Driver](https://github.com/giggio/node-chromedriver)
+in our system.
 
 ```shell script
 npm --global install chromedriver
