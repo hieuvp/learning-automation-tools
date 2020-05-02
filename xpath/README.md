@@ -416,8 +416,7 @@ const sleep = require("sleep");
 <br />
 
 ```shell script
-cd labs/ebay
-npm install
+cd labs/ebay && npm install
 node .
 ```
 
@@ -426,8 +425,9 @@ node .
   <br />
   <div><b>Chrome Driver</b> will launch <b>Google Chrome</b> and redirect to ebay.com</div>
   <div>Providing the preferred search automatically</div>
-  <br />
 </div>
+
+<br />
 
 ## References
 
