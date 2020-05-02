@@ -212,6 +212,8 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
 //*[@id="home-page-container"]/div/div/section/section[6]/section/div/section/div[1]/a/img
 ```
 
+- The asterisk (`*`) implies any **tagname**.
+
 <br />
 
 ### Find Elements by XPath
@@ -252,11 +254,6 @@ $x("//img[@class='brand-image']");
 </div>
 
 ## XPath Functions
-
-- Sometimes we do face problems in identifying the objects on a page
-  which having the same **attributes** or **names**, **ids**.
-- In such cases, it is challenging to identify a particular object on a web page
-  and this is where XPath functions come to our rescue.
 
 ### `contains()`
 
@@ -320,8 +317,6 @@ starts-with(haystack, needle)
 
 - Go anywhere inside this document, irrespective of the tag,
   but, it must contain a text whose value is `Made with love by`.
-
-- The asterisk (`*`) implies any tag with the same value.
 
 <br />
 
