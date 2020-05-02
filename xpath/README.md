@@ -385,7 +385,7 @@ npm --global install chromedriver
 
 ```js
 const { Builder, By } = require("selenium-webdriver");
-const sleep = require("sleep");
+const { sleep } = require("sleep");
 
 (async function main() {
   const driver = await new Builder().forBrowser("chrome").build();
@@ -404,7 +404,7 @@ const sleep = require("sleep");
     // Hit the "Search" button to redirect to the results page
     await driver.findElement(By.xpath("//input[@id='gh-btn']")).click();
 
-    sleep.sleep(5);
+    sleep(5);
   } finally {
     driver.quit();
   }
