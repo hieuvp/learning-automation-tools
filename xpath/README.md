@@ -240,7 +240,7 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
 
 ### Evaluate XPath Expressions
 
-> `$x(path)` returns an array of DOM elements
+> **`$x(path)`** returns an array of DOM elements
 > that match the given XPath expression.
 
 <br />
