@@ -201,7 +201,7 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
 > Return an **Absolute XPath**.
 
 ```xpath
-/html/body/div[1]/div[5]/div/div/div/section/section[7]/section/div/section/div[1]/a/img
+/html/body/div[1]/div[5]/div/div/div/section/section[6]/section/div/section/div[1]/a/img
 ```
 
 ### `Copy XPath`
@@ -209,21 +209,20 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
 > Return a **Relative XPath**.
 
 ```xpath
-//*[@id="home-page-container"]/div/div/section/section[7]/section/div/section/div[1]/a/img
+//*[@id="home-page-container"]/div/div/section/section[6]/section/div/section/div[1]/a/img
 ```
 
 <br />
 
 ### Find Elements by XPath
 
-- On the `Elements` panel, press `Command-F` to open a **search box**.
-
-<div align="center"><img src="assets/chrome-search-box.png" width="900"></div>
+<div align="center">
+  <img src="assets/chrome-search-box.png" width="900">
+  <br />
+  <div>On the <b>Elements</b> panel, press <b>Command-F</b> to open a <b>Search Box</b></div>
+</div>
 
 <br />
-
-- Starting with `//`, we will use `img` as a `tagname` and `class` as an `attribute`
-  to construct an XPath expression.
 
 ```xpath
 //img[@class='brand-image']
