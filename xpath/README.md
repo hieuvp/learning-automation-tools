@@ -336,7 +336,7 @@ $x("//img[@class='brand-image']");
 //*[contains(text(), 'Made with love')]
 ```
 
-We don't use **`@`** because the **`text()`** is a **function** and not an **~~attribute~~**.
+> We don't use **`@`** because the **`text()`** is a **function** and not an **~~attribute~~**.
 
 <br />
 
