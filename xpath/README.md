@@ -236,6 +236,8 @@ Here is an **XPath query** to locate the `author` of a `book` which `category` i
   <div>The located elements are highlighted</div>
 </div>
 
+<br />
+
 ### Evaluate XPath Expressions
 
 > `$x(path)` returns an array of DOM elements
@@ -250,9 +252,10 @@ $x("//img[@class='brand-image']");
 <div align="center">
   <img src="assets/chrome-evaluate-xpath.png" width="900">
   <br />
-  <div>On the <b>Console</b> tab</div>
-  <br />
+  <div>On the <b>Console</b> tab</div>  
 </div>
+
+<br />
 
 ## XPath Functions
 
