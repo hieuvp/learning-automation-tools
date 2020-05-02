@@ -294,7 +294,7 @@ $x("//img[@class='brand-image']");
 <div align="center">
   <img src="assets/xpath-starts-with.png" width="900">
   <br />
-  <div>Locating elements that <b>start with</b> <em>https</em></div>
+  <div>Locating elements that <b>start with</b> <em>"https"</em></div>
 </div>
 
 <br />
@@ -314,7 +314,7 @@ $x("//img[@class='brand-image']");
   <br />
   <div>
     Irrespective of tagname, the element must contain a text whose value is
-    <em>Made with love by</em>
+    <em>"Made with love by"</em>
   </div>
   <br />
 </div>
