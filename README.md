@@ -17,7 +17,23 @@
 
 ### Getting Started with Ansible
 
+1. [ ] [Course Overview](README.md)
+1. [ ] [Ad Hoc Configuration with Idempotent Modules](README.md)
+1. [ ] [Declaring Desired State with Playbooks](README.md)
+1. [ ] [Configuring Multiple Hosts](README.md)
+1. [ ] [Productively Learning and Using Ansible](README.md)
+1. [ ] [Alternatives to SSH for Connecting to Hosts](README.md)
+1. [ ] [Exploiting Roles and Collections with ansible-galaxy](README.md)
+
 ### Ansible Fundamentals
+
+1. [ ] [Course Overview](README.md)
+1. [ ] [Managing the Inventory](README.md)
+1. [ ] [Running a One-off Task with Ad Hoc Commands](README.md)
+1. [ ] [Writing Ansible Playbooks](README.md)
+1. [ ] [Using Jinja2 Templates and Filters](README.md)
+1. [ ] [Working with Roles for Automation Reuse](README.md)
+1. [ ] [Managing Complex Inventories](README.md)
 
 ## Topics
 
