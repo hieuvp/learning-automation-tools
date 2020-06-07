@@ -17,13 +17,13 @@
 
 ### Getting Started with Ansible
 
-1. [ ] [Course Overview](README.md)
-1. [ ] [Ad Hoc Configuration with Idempotent Modules](README.md)
-1. [ ] [Declaring Desired State with Playbooks](README.md)
-1. [ ] [Configuring Multiple Hosts](README.md)
-1. [ ] [Productively Learning and Using Ansible](README.md)
-1. [ ] [Alternatives to SSH for Connecting to Hosts](README.md)
-1. [ ] [Exploiting Roles and Collections with ansible-galaxy](README.md)
+1. [ ] [Course Overview](getting-started-with-ansible/course-overview/README.md)
+1. [ ] [Ad Hoc Configuration with Idempotent Modules](getting-started-with-ansible/ad-hoc-configuration-with-idempotent-modules/README.md)
+1. [ ] [Declaring Desired State with Playbooks](getting-started-with-ansible/declaring-desired-state-with-playbooks/README.md)
+1. [ ] [Configuring Multiple Hosts](getting-started-with-ansible/configuring-multiple-hosts/README.md)
+1. [ ] [Productively Learning and Using Ansible](getting-started-with-ansible/productively-learning-and-using-ansible/README.md)
+1. [ ] [Alternatives to SSH for Connecting to Hosts](getting-started-with-ansible/alternatives-to-ssh-for-connecting-to-hosts/README.md)
+1. [ ] [Exploiting Roles and Collections with ansible-galaxy](getting-started-with-ansible/exploiting-roles-and-collections-with-ansible-galaxy/README.md)
 
 ### Ansible Fundamentals
 
