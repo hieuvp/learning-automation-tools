@@ -11,7 +11,7 @@
 - [`git config --add` Is Not Idempotent Because It Duplicates Config](#git-config---add-is-not-idempotent-because-it-duplicates-config)
 - [Desired State Reconciliation and the Power of Ansible](#desired-state-reconciliation-and-the-power-of-ansible)
 - [Installing Ansible and the Installation Guide Docs](#installing-ansible-and-the-installation-guide-docs)
-- [Updating Ansible via pip or Otherwise](#updating-ansible-via-pip-or-otherwise)
+- [Updating Ansible via `pip` or Otherwise](#updating-ansible-via-pip-or-otherwise)
 - [Leverage the Porting Guides](#leverage-the-porting-guides)
 - [Know How to Know What You Need to Know as You Go](#know-how-to-know-what-you-need-to-know-as-you-go)
 - [Why Installs and Even Updates Are Easy - Control Node Architecture](#why-installs-and-even-updates-are-easy---control-node-architecture)
@@ -36,7 +36,7 @@
 
 ## Installing Ansible and the Installation Guide Docs
 
-## Updating Ansible via pip or Otherwise
+## Updating Ansible via `pip` or Otherwise
 
 ## Leverage the Porting Guides
 
