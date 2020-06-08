@@ -6,7 +6,7 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 - [Ansible Is a Framework for Idempotent Commands](#ansible-is-a-framework-for-idempotent-commands)
-- [How About Just Scripting Multiple Ad-hoc Calls!](#how-about-just-scripting-multiple-ad-hoc-calls)
+- [How About Just Scripting Multiple Ad-hoc Calls](#how-about-just-scripting-multiple-ad-hoc-calls)
 - [Morphing Ad-hoc Calls or Scripted Ad-hoc Calls into Ansible Playbooks](#morphing-ad-hoc-calls-or-scripted-ad-hoc-calls-into-ansible-playbooks)
 - [docker Is to docker-compose What ansible Is to ansible-playbook](#docker-is-to-docker-compose-what-ansible-is-to-ansible-playbook)
 - [What a Script of Ad-hoc Ansible Calls Looks Like](#what-a-script-of-ad-hoc-ansible-calls-looks-like)
