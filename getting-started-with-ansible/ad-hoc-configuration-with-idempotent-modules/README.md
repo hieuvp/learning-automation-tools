@@ -6,8 +6,8 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 - [Configuring an Explosion of Devices](#configuring-an-explosion-of-devices)
-- [Using the git config Command to Manually Configure User Name and Email](#using-the-git-config-command-to-manually-configure-user-name-and-email)
-- [A Repeatable Script to Automatically Configure Git with user.name and user.email](#a-repeatable-script-to-automatically-configure-git-with-username-and-useremail)
+- [Using the `git config` Command to Manually Configure User Name and Email](#using-the-git-config-command-to-manually-configure-user-name-and-email)
+- [A Repeatable Script to Automatically Configure Git with `user.name` and `user.email`](#a-repeatable-script-to-automatically-configure-git-with-username-and-useremail)
 - [`git config --add` Is Not Idempotent Because It Duplicates Config](#git-config---add-is-not-idempotent-because-it-duplicates-config)
 - [Desired State Reconciliation and the Power of Ansible](#desired-state-reconciliation-and-the-power-of-ansible)
 - [Installing Ansible and the Installation Guide Docs](#installing-ansible-and-the-installation-guide-docs)
@@ -26,9 +26,9 @@
 
 ## Configuring an Explosion of Devices
 
-## Using the git config Command to Manually Configure User Name and Email
+## Using the `git config` Command to Manually Configure User Name and Email
 
-## A Repeatable Script to Automatically Configure Git with user.name and user.email
+## A Repeatable Script to Automatically Configure Git with `user.name` and `user.email`
 
 ## `git config --add` Is Not Idempotent Because It Duplicates Config
 
