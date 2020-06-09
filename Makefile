@@ -39,3 +39,14 @@ git-add: fmt lint
 	@printf "\n"
 	git add --all .
 	@printf "\n"
+
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Utils
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.PHONY: export-drawio
+export-drawio:
+	@printf "\n"
+	scripts/export-drawio.sh getting-started-with-ansible/ad-hoc-configuration-with-idempotent-modules/assets/scenario-progression.drawio 2
+	@printf "\n"

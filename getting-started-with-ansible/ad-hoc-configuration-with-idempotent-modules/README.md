@@ -1,5 +1,7 @@
 # Ad Hoc Configuration with Idempotent Modules
 
+<div align="center"><img src="assets/scenario-progression.png" width="900"></div>
+
 ## Table of Contents
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
