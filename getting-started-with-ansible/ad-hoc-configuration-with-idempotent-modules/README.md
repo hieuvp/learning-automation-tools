@@ -3,7 +3,7 @@
 <br />
 
 <div align="center">
-  <h2>Scenario Progression</h2>
+  <b>Scenario Progression</b>
   <img src="assets/scenario-progression.png" width="900">
 </div>
 
