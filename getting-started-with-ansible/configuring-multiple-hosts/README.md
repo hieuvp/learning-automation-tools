@@ -1,5 +1,7 @@
 # Configuring Multiple Hosts
 
+<div align="center"><img src="assets/ansible-architecture.png" width="900"></div>
+
 ## Table of Contents
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->

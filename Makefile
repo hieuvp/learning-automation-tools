@@ -49,4 +49,5 @@ git-add: fmt lint
 export-drawio:
 	@printf "\n"
 	scripts/export-drawio.sh getting-started-with-ansible/ad-hoc-configuration-with-idempotent-modules/assets/scenario-progression.drawio 2
+	scripts/export-drawio.sh getting-started-with-ansible/configuring-multiple-hosts/assets/ansible-architecture.drawio 1
 	@printf "\n"
