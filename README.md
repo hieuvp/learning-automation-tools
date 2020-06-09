@@ -17,7 +17,7 @@
 
 ### Getting Started with Ansible
 
-1. [ ] [Ad Hoc Configuration with Idempotent Modules](getting-started-with-ansible/ad-hoc-configuration-with-idempotent-modules/README.md)
+1. [Ad Hoc Configuration with Idempotent Modules](getting-started-with-ansible/ad-hoc-configuration-with-idempotent-modules/README.md)
 1. [ ] [Declaring Desired State with Playbooks](getting-started-with-ansible/declaring-desired-state-with-playbooks/README.md)
 1. [ ] [Configuring Multiple Hosts](getting-started-with-ansible/configuring-multiple-hosts/README.md)
 1. [ ] [Productively Learning and Using Ansible](getting-started-with-ansible/productively-learning-and-using-ansible/README.md)
