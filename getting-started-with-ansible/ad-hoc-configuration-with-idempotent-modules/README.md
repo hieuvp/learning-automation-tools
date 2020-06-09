@@ -1,6 +1,9 @@
-# Ad Hoc Configuration with Idempotent Modules
+# Ad-Hoc Configuration with Idempotent Modules
 
-<div align="center"><img src="assets/scenario-progression.png" width="900"></div>
+<div align="center">
+  <img src="assets/scenario-progression.png" width="900">
+  <b>Scenario Progression</b>
+</div>
 
 ## Table of Contents
 
