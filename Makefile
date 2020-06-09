@@ -17,6 +17,10 @@ fmt:
 	@printf "\n"
 
 	@printf "\n"
+	$(MAKEFILE_SCRIPT_PATH)/fmt-terraform.sh
+	@printf "\n"
+
+	@printf "\n"
 	$(MAKEFILE_SCRIPT_PATH)/fmt-javascript.sh
 	@printf "\n"
 
@@ -28,6 +32,10 @@ fmt:
 lint:
 	@printf "\n"
 	$(MAKEFILE_SCRIPT_PATH)/lint-shell.sh
+	@printf "\n"
+
+	@printf "\n"
+	$(MAKEFILE_SCRIPT_PATH)/lint-terraform.sh
 	@printf "\n"
 
 	@printf "\n"

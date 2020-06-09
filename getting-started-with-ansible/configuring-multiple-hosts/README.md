@@ -27,6 +27,15 @@
 
 ## Creating Test VMs with Vagrant
 
+<!-- AUTO-GENERATED-CONTENT:START (CODE:src=terraform/main.tf) -->
+<!-- The below code snippet is automatically added from terraform/main.tf -->
+
+```tf
+
+```
+
+<!-- AUTO-GENERATED-CONTENT:END -->
+
 ## Perusing My Inventory Directory Example and a Bit About `ansible-config list` and `INVENTORY_IGNORE_EXTS`
 
 ## VMs Are Operational with No Git Configuration
