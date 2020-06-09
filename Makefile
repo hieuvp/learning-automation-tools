@@ -5,6 +5,10 @@
 .PHONY: fmt
 fmt:
 	@printf "\n"
+	$(MAKEFILE_SCRIPT_PATH)/fmt-shell.sh
+	@printf "\n"
+
+	@printf "\n"
 	$(MAKEFILE_SCRIPT_PATH)/fmt-xml.sh
 	@printf "\n"
 
@@ -22,6 +26,9 @@ fmt:
 
 .PHONY: lint
 lint:
+	@printf "\n"
+	$(MAKEFILE_SCRIPT_PATH)/lint-shell.sh
+	@printf "\n"
 
 .PHONY: git-add
 git-add: fmt lint
