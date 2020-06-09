@@ -1,8 +1,8 @@
 # Ad-Hoc Configuration with Idempotent Modules
 
 <div align="center">
+  <h3>Scenario Progression</h3>
   <img src="assets/scenario-progression.png" width="900">
-  <b>Scenario Progression</b>
 </div>
 
 ## Table of Contents
