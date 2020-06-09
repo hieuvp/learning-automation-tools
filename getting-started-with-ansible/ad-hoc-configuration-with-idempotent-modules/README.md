@@ -5,7 +5,6 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [Configuring an Explosion of Devices](#configuring-an-explosion-of-devices)
 - [Using the `git config` Command to Manually Configure User Name and Email](#using-the-git-config-command-to-manually-configure-user-name-and-email)
 - [A Repeatable Script to Automatically Configure Git with `user.name` and `user.email`](#a-repeatable-script-to-automatically-configure-git-with-username-and-useremail)
 - [`git config --add` Is Not Idempotent Because It Duplicates Config](#git-config---add-is-not-idempotent-because-it-duplicates-config)
@@ -23,8 +22,6 @@
 - [The `--diff` Flag Shows What Will Change or Did Change](#the---diff-flag-shows-what-will-change-or-did-change)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-## Configuring an Explosion of Devices
 
 ## Using the `git config` Command to Manually Configure User Name and Email
 
