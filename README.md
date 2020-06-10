@@ -7,7 +7,6 @@
 
 - [Courses](#courses)
   - [Getting Started with Ansible](#getting-started-with-ansible)
-    - [Scenario Progression](#scenario-progression)
   - [Ansible Fundamentals](#ansible-fundamentals)
 - [Topics](#topics)
 - [References](#references)
@@ -18,11 +17,7 @@
 
 ### Getting Started with Ansible
 
-#### Scenario Progression
-
 ![Scenario Progression](assets/ansible-scenario-progression.png)
-
-<div align="center"><img src="assets/ansible-scenario-progression.png" width="900"></div>
 
 1. [ ] [Ad-Hoc Configuration with Idempotent Modules](getting-started-with-ansible/ad-hoc-configuration-with-idempotent-modules/README.md)
 1. [ ] [Declaring Desired State with Playbooks](getting-started-with-ansible/declaring-desired-state-with-playbooks/README.md)
