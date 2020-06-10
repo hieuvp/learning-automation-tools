@@ -31,6 +31,10 @@ Tính từ
 Danh từ
 Số lượng toán học (thuộc ma trận) không thay đổi giá trị sau khi tự nó nhân lên
 
+- ad hoc `/ˌæd ˈhɒk/` adjective
+  ​arranged or happening when necessary and not planned in advance
+  Không dự tính trước
+
 ## [Glossary - Ansible Documentation](https://docs.ansible.com/ansible/latest/reference_appendices/glossary.html)
 
 - Idempotency
