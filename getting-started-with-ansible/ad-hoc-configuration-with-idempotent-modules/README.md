@@ -1,20 +1,50 @@
 # Ad-Hoc Configuration with Idempotent Modules
 
-English
+## English Definitions
 
-- Idempotent `/aɪ.dəmˈpoʊ.tənt/` adjective
-  <https://en.wiktionary.org/wiki/idempotent>
-  <https://dictionary.cambridge.org/pronunciation/english/idempotent>
-- Idempotence
-- Idempotent
+- Idempotent `/aɪ.dəmˈpoʊ.tənt/` `/ɪ.dəmˈpoʊ.tənt/` adjective
+
+- Idempotency noun
+  <https://en.wiktionary.org/wiki/idempotency>
+
+<https://en.wiktionary.org/wiki/idempotent>
+idem (“same”) +‎ potent (“having power”) – literally, “having the same power”.
+
+<https://dictionary.cambridge.org/pronunciation/english/idempotent>
+<https://www.vocabulary.com/dictionary/idempotent>
+<https://www.dictionary.com/browse/idempotent>
+<http://tratu.soha.vn/dict/en_vn/idempotent>
+
+idempotent
+Mathematics
+adjective
+unchanged when multiplied by itself.
+
+In mathematics, a number that is idempotent keeps the same value when multiplied by itself,
+no matter how many times the function is applied.
+
+adj
+unchanged in value following multiplication by itself
+
+Tính từ
+(toán học) (thuộc ma trận) không thay đổi giá trị (sau khi tự nó nhân lên)
+Danh từ
+Số lượng toán học (thuộc ma trận) không thay đổi giá trị sau khi tự nó nhân lên
+
+## [Glossary - Ansible Documentation](https://docs.ansible.com/ansible/latest/reference_appendices/glossary.html)
+
 - Idempotency
+  An operation is idempotent if the result of performing it once is exactly the same as
+  the result of performing it repeatedly without any intervening actions.
 
-idempotence (uncountable)
-(mathematics, computing) A quality of an action such that repetitions of the action have no further effect on outcome
-– being idempotent.
-
-- Idempotency
-  An operation is idempotent if the result of performing it once is exactly the same as the result of performing it repeatedly without any intervening actions.
+- Ad Hoc
+  Refers to running Ansible to perform some quick command,
+  using `/usr/bin/ansible`,
+  rather than the orchestration language,
+  which is `/usr/bin/ansible-playbook`.
+  An example of an ad hoc command might be rebooting 50 machines in your infrastructure.
+  Anything you can do ad hoc can be accomplished by writing a playbook
+  and playbooks can also glue lots of other operations together.
 
 ## Table of Contents
 
@@ -36,7 +66,6 @@ idempotence (uncountable)
 - [How Ansible's Copy Module Handles Drift Thanks to Idempotence](#how-ansibles-copy-module-handles-drift-thanks-to-idempotence)
 - [The `--check` Flag Simply Checks if Changes Would Be Made](#the---check-flag-simply-checks-if-changes-would-be-made)
 - [The `--diff` Flag Shows What Will Change or Did Change](#the---diff-flag-shows-what-will-change-or-did-change)
-- [References](#references)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -69,7 +98,3 @@ idempotence (uncountable)
 ## The `--check` Flag Simply Checks if Changes Would Be Made
 
 ## The `--diff` Flag Shows What Will Change or Did Change
-
-## References
-
-- [Glossary - Ansible Documentation](https://docs.ansible.com/ansible/latest/reference_appendices/glossary.html)
