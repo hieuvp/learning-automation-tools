@@ -1,5 +1,14 @@
 # Ad-Hoc Configuration with Idempotent Modules
 
+English
+
+- Idempotent
+- Idempotency
+
+* <https://docs.ansible.com/ansible/latest/reference_appendices/glossary.html>
+  Idempotency
+* An operation is idempotent if the result of performing it once is exactly the same as the result of performing it repeatedly without any intervening actions.
+
 <div align="center"><img src="assets/scenario-progression.png" width="900"></div>
 
 ## Table of Contents
