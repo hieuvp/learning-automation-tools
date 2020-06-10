@@ -2,14 +2,19 @@
 
 English
 
+- Idempotent `/aɪ.dəmˈpoʊ.tənt/` adjective
+  <https://en.wiktionary.org/wiki/idempotent>
+  <https://dictionary.cambridge.org/pronunciation/english/idempotent>
+- Idempotence
 - Idempotent
 - Idempotency
 
-- <https://docs.ansible.com/ansible/latest/reference_appendices/glossary.html>
+idempotence (uncountable)
+(mathematics, computing) A quality of an action such that repetitions of the action have no further effect on outcome
+– being idempotent.
+
 - Idempotency
-- An operation is idempotent if the result of performing it once
-  is exactly the same as the result of performing it repeatedly
-  without any intervening actions.
+  An operation is idempotent if the result of performing it once is exactly the same as the result of performing it repeatedly without any intervening actions.
 
 ## Table of Contents
 
@@ -31,6 +36,7 @@ English
 - [How Ansible's Copy Module Handles Drift Thanks to Idempotence](#how-ansibles-copy-module-handles-drift-thanks-to-idempotence)
 - [The `--check` Flag Simply Checks if Changes Would Be Made](#the---check-flag-simply-checks-if-changes-would-be-made)
 - [The `--diff` Flag Shows What Will Change or Did Change](#the---diff-flag-shows-what-will-change-or-did-change)
+- [References](#references)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -63,3 +69,7 @@ English
 ## The `--check` Flag Simply Checks if Changes Would Be Made
 
 ## The `--diff` Flag Shows What Will Change or Did Change
+
+## References
+
+- [Glossary - Ansible Documentation](https://docs.ansible.com/ansible/latest/reference_appendices/glossary.html)
