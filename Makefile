@@ -56,6 +56,9 @@ git-add: fmt lint
 .PHONY: export-drawio
 export-drawio:
 	@printf "\n"
-	$(MAKEFILE_SCRIPT_PATH)/export-drawio.sh getting-started-with-ansible/ad-hoc-configuration-with-idempotent-modules/assets/scenario-progression.drawio 2
+	$(MAKEFILE_SCRIPT_PATH)/export-drawio.sh assets/scenario-progression.drawio 2
+	@printf "\n"
+
+	@printf "\n"
 	$(MAKEFILE_SCRIPT_PATH)/export-drawio.sh getting-started-with-ansible/configuring-multiple-hosts/assets/ansible-architecture.drawio 2
 	@printf "\n"
