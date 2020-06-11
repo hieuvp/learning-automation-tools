@@ -6,7 +6,7 @@
 
 > ad hoc `/ˌæd ˈhɒk/` (adjective).
 
-| **English**                                                      | **Vietnamese**       |
+| English                                                          | Vietnamese           |
 | ---------------------------------------------------------------- | -------------------- |
 | Arranged or happening when necessary and not planned in advance. | Không dự tính trước. |
 
@@ -18,12 +18,8 @@
 
 <table>
   <tr>
-    <th>
-      <a href="https://www.vocabulary.com/dictionary/idempotent">
-        <b>English</b>
-      </a>
-    </th>
-    <th><b>Vietnamese</b></th>
+    <th><a href="https://www.vocabulary.com/dictionary/idempotent">English</a></th>
+    <th>Vietnamese</th>
   </tr>
   <tr>
     <td>
@@ -32,7 +28,7 @@
       no matter how many times the function is applied.
     </td>
     <td>
-      (toán học) (thuộc ma trận)<br />
+      (Toán học) (Thuộc ma trận)<br />
       Không thay đổi giá trị sau khi tự nó nhân lên.
     </td>
   </tr>
