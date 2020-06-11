@@ -2,9 +2,14 @@
 
 ## Dictionary
 
-### Ad Hoc - English Definitions
+### Ad Hoc - Definitions
 
-### Idempotency - English Definitions
+> ad hoc `/ˌæd ˈhɒk/` adjective
+
+- **EN**: Arranged or happening when necessary and not planned in advance.
+- **VI**: Không dự tính trước.
+
+### Idempotency - Definitions
 
 - Idempotent `/aɪ.dəmˈpoʊ.tənt/` `/ɪ.dəmˈpoʊ.tənt/` adjective
 
@@ -35,18 +40,12 @@ Tính từ
 Danh từ
 Số lượng toán học (thuộc ma trận) không thay đổi giá trị sau khi tự nó nhân lên
 
-- ad hoc `/ˌæd ˈhɒk/` adjective
-  ​arranged or happening when necessary and not planned in advance
-  Không dự tính trước
-
 ## [Ansible Glossary](https://docs.ansible.com/ansible/latest/reference_appendices/glossary.html)
 
 ### Ad Hoc
 
-> Refers to running Ansible to perform some quick command,
-> using `/usr/bin/ansible`,
-> rather than the orchestration language,
-> which is `/usr/bin/ansible-playbook`.
+> Refers to running Ansible to perform some quick command, using `/usr/bin/ansible`,
+> rather than the orchestration language, which is `/usr/bin/ansible-playbook`.
 > An example of an ad hoc command might be rebooting 50 machines in your infrastructure.
 > Anything you can do ad hoc can be accomplished by writing a playbook
 > and playbooks can also glue lots of other operations together.
