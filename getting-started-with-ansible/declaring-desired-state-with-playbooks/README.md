@@ -2,11 +2,12 @@
 
 ## [Ansible Glossary](https://docs.ansible.com/ansible/latest/reference_appendices/glossary.html)
 
-- Playbooks
-  Playbooks are the language by which
-  Ansible orchestrates, configures, administers, or deploys systems.
-  They are called playbooks partially because it's a sports analogy,
-  and it's supposed to be fun using them. They aren't workbooks :)
+### Playbooks
+
+> Playbooks are the language by which
+> Ansible orchestrates, configures, administers, or deploys systems.
+> They are called playbooks partially because it's a sports analogy,
+> and it's supposed to be fun using them. They aren't workbooks :)
 
 ## Table of Contents
 
