@@ -63,8 +63,6 @@ clean:
 export-drawio:
 	@printf "\n"
 	$(MAKEFILE_SCRIPT_PATH)/export-drawio.sh assets/ansible-scenario-progression.drawio 2
-	@printf "\n"
-
-	@printf "\n"
+	$(MAKEFILE_SCRIPT_PATH)/export-drawio.sh getting-started-with-ansible/alternatives-to-ssh-for-connecting-to-hosts/assets/ansible-pull-model.drawio 2
 	$(MAKEFILE_SCRIPT_PATH)/export-drawio.sh getting-started-with-ansible/configuring-multiple-hosts/assets/ansible-push-model.drawio 2
 	@printf "\n"
