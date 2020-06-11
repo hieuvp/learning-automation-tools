@@ -1,3 +1,5 @@
+# Source: terraform/outputs.tf
+
 output "region" {
   value       = var.region
   description = "The region where all of your ec2 instances are located"

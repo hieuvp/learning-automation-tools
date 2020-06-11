@@ -39,6 +39,8 @@
 <!-- The below code snippet is automatically added from terraform/variables.tf -->
 
 ```tf
+# Source: terraform/variables.tf
+
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Variables
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -77,6 +79,8 @@ locals {
 <!-- The below code snippet is automatically added from terraform/main.tf -->
 
 ```tf
+# Source: terraform/main.tf
+
 provider "aws" {
   region = var.region
 }
@@ -172,6 +176,8 @@ resource "aws_instance" "ubuntu" {
 <!-- The below code snippet is automatically added from terraform/outputs.tf -->
 
 ```tf
+# Source: terraform/outputs.tf
+
 output "region" {
   value       = var.region
   description = "The region where all of your ec2 instances are located"
