@@ -66,5 +66,5 @@ export-drawio:
 	@printf "\n"
 
 	@printf "\n"
-	$(MAKEFILE_SCRIPT_PATH)/export-drawio.sh getting-started-with-ansible/configuring-multiple-hosts/assets/ansible-architecture.drawio 2
+	$(MAKEFILE_SCRIPT_PATH)/export-drawio.sh getting-started-with-ansible/configuring-multiple-hosts/assets/ansible-push-model.drawio 2
 	@printf "\n"

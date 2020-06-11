@@ -1,6 +1,6 @@
 # Configuring Multiple Hosts
 
-![Ansible Architecture](assets/ansible-architecture.png)
+![Ansible's Push Model](assets/ansible-push-model.png)
 
 ## [Ansible Glossary](https://docs.ansible.com/ansible/latest/reference_appendices/glossary.html)
 
