@@ -16,7 +16,7 @@
 > (`idem` +‎ `potent`) (adjective).
 > <br />[idempotency](https://en.wiktionary.org/wiki/idempotency) (noun).
 
-<table style="width:100%">
+<table>
   <tr>
     <th>
       <a href="https://www.vocabulary.com/dictionary/idempotent">
@@ -27,8 +27,8 @@
   </tr>
   <tr>
     <td>
-      In mathematics,<br />
-      a number that is idempotent keeps the same value when multiplied by itself,<br />
+      In mathematics, a number that is idempotent<br />
+      keeps the same value when multiplied by itself,<br />
       no matter how many times the function is applied.
     </td>
     <td>
