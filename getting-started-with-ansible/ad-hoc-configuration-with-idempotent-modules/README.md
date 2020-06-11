@@ -6,8 +6,9 @@
 
 > ad hoc `/ˌæd ˈhɒk/` (adjective).
 
-- **English**: arranged or happening when necessary and not planned in advance.
-- **Vietnamese**: không dự tính trước.
+| **English**                                                      | **Vietnamese**       |
+| ---------------------------------------------------------------- | -------------------- |
+| Arranged or happening when necessary and not planned in advance. | Không dự tính trước. |
 
 ### Idempotency - Definitions
 
@@ -15,12 +16,26 @@
 > (`idem` +‎ `potent`) (adjective).
 > <br />[idempotency](https://en.wiktionary.org/wiki/idempotency) (noun).
 
-- [**English**](https://www.vocabulary.com/dictionary/idempotent):
-  in mathematics,
-  a number that is idempotent keeps the same value when multiplied by itself,
-  no matter how many times the function is applied.
-- **Vietnamese**: (toán học) (thuộc ma trận)
-  không thay đổi giá trị sau khi tự nó nhân lên.
+<table style="width:100%">
+  <tr>
+    <th>
+      <a href="https://www.vocabulary.com/dictionary/idempotent">
+        <b>English</b>
+      </a>
+    </th>
+    <th><b>Vietnamese</b></th>
+  </tr>
+  <tr>
+    <td>
+      In mathematics,
+      a number that is idempotent keeps the same value when multiplied by itself,
+      no matter how many times the function is applied.
+    </td>
+    <td>
+      (toán học) (thuộc ma trận) Không thay đổi giá trị sau khi tự nó nhân lên.
+    </td>
+  </tr>
+</table>
 
 ## [Ansible Glossary](https://docs.ansible.com/ansible/latest/reference_appendices/glossary.html)
 
