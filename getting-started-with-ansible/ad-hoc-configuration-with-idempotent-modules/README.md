@@ -27,12 +27,13 @@
   </tr>
   <tr>
     <td>
-      In mathematics,
-      a number that is idempotent keeps the same value when multiplied by itself,
+      In mathematics,<br />
+      a number that is idempotent keeps the same value when multiplied by itself,<br />
       no matter how many times the function is applied.
     </td>
     <td>
-      (toán học) (thuộc ma trận) Không thay đổi giá trị sau khi tự nó nhân lên.
+      (toán học) (thuộc ma trận)<br />
+      Không thay đổi giá trị sau khi tự nó nhân lên.
     </td>
   </tr>
 </table>
