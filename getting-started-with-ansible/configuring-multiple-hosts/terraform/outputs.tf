@@ -1,8 +1,7 @@
 output "region" {
   value       = var.region
-  description = "The region where all of your instances are located"
+  description = "The region where all of your ec2 instances are located"
 }
-
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Amazon Linux 2 (HVM)
@@ -17,7 +16,6 @@ output "amazon_linux_private_ips" {
   value       = aws_instance.amazon_linux[*].private_ip
   description = "The private IPs of Amazon Linux instances"
 }
-
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Ubuntu Server 18 LTS (HVM)

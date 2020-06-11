@@ -43,7 +43,6 @@ provider "aws" {
   region = var.region
 }
 
-
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Amazon Linux 2 (HVM)
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -81,9 +80,11 @@ resource "aws_instance" "amazon_linux" {
   instance_type = local.instance_type
   key_name      = var.key_name
 
-  tags = local.tags
+  tags = merge(local.tags, {
+    Name     = "${local.tags.Name}-amazon-linux-${count.index + 1}"
+    Platform = "Amazon Linux"
+  })
 }
-
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Ubuntu Server 18 LTS (HVM)
@@ -122,7 +123,10 @@ resource "aws_instance" "ubuntu" {
   instance_type = local.instance_type
   key_name      = var.key_name
 
-  tags = local.tags
+  tags = merge(local.tags, {
+    Name     = "${local.tags.Name}-ubuntu-${count.index + 1}"
+    Platform = "Ubuntu"
+  })
 }
 ```
 
