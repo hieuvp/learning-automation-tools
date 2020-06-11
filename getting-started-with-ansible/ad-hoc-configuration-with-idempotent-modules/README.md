@@ -23,7 +23,7 @@
   </tr>
   <tr>
     <td>
-      In mathematics, a number that is idempotent<br />
+      In mathematics, a number that is <b>idempotent</b><br />
       keeps the same value when multiplied by itself,<br />
       no matter how many times the function is applied.
     </td>
