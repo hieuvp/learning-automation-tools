@@ -4,20 +4,19 @@
 
 ### Ad Hoc - Definitions
 
-> ad hoc `/ˌæd ˈhɒk/` adjective
+> ad hoc `/ˌæd ˈhɒk/` (adjective)
 
-- **EN**: Arranged or happening when necessary and not planned in advance.
-- **VI**: Không dự tính trước.
+- **EN**: arranged or happening when necessary and not planned in advance.
+- **VI**: không dự tính trước.
 
 ### Idempotency - Definitions
 
-- Idempotent `/aɪ.dəmˈpoʊ.tənt/` `/ɪ.dəmˈpoʊ.tənt/` adjective
+> [idempotent](https://en.wiktionary.org/wiki/idempotent) `/aɪ.dəmˈpoʊ.tənt/` `/ɪ.dəmˈpoʊ.tənt/`
+> (adjective): `idem` +‎ `potent`
 
-- Idempotency noun
-  <https://en.wiktionary.org/wiki/idempotency>
+<br />
 
-<https://en.wiktionary.org/wiki/idempotent>
-idem (“same”) +‎ potent (“having power”) – literally, “having the same power”.
+> [idempotency](https://en.wiktionary.org/wiki/idempotency) (noun)
 
 <https://dictionary.cambridge.org/pronunciation/english/idempotent>
 <https://www.vocabulary.com/dictionary/idempotent>
