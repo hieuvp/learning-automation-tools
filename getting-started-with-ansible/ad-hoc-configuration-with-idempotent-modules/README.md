@@ -38,6 +38,8 @@
   </tr>
 </table>
 
+<br />
+
 ## [Ansible Glossary](https://docs.ansible.com/ansible/latest/reference_appendices/glossary.html)
 
 ### Ad Hoc
