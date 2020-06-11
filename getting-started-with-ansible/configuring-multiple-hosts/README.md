@@ -2,6 +2,14 @@
 
 <div align="center"><img src="assets/ansible-architecture.png" width="900"></div>
 
+## [Glossary - Ansible Documentation](https://docs.ansible.com/ansible/latest/reference_appendices/glossary.html)
+
+- Inventory
+  A file (by default, Ansible uses a simple INI format)
+  that describes Hosts and Groups in Ansible.
+  Inventory can also be provided via an Inventory Script
+  (sometimes called an `External Inventory Script`).
+
 ## Table of Contents
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
@@ -31,7 +39,38 @@
 <!-- The below code snippet is automatically added from terraform/main.tf -->
 
 ```tf
+locals {
+  application = "Ansible"
+  environment = "Test"
 
+  region        = "ap-southeast-1"
+  instance_type = "t2.nano"
+}
+
+data "aws_ami" "ubuntu" {
+  owners      = ["amazon", "aws-marketplace"]
+  most_recent = true
+
+  filter {
+    name   = "name"
+    values = ["github-actions-runner"]
+  }
+}
+
+resource "aws_instance" "ubuntu" {
+  count = 2
+
+  ami = data.aws_ami.ubuntu.id
+
+  instance_type = local.instance_type
+  key_name      = var.ssh_key_name
+
+  tags = {
+    Name        = "${upper(local.environment)}-${lower(local.application)}"
+    Application = local.application
+    Environment = local.environment
+  }
+}
 ```
 
 <!-- AUTO-GENERATED-CONTENT:END -->

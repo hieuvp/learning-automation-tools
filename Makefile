@@ -53,6 +53,12 @@ git-add: fmt lint
 # Utils
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.PHONY: clean
+clean:
+	@printf "\n"
+	$(MAKEFILE_SCRIPT_PATH)/clean-terraform.sh
+	@printf "\n"
+
 .PHONY: export-drawio
 export-drawio:
 	@printf "\n"
