@@ -11,32 +11,16 @@
 
 ### Idempotency - Definitions
 
-> [idempotent](https://en.wiktionary.org/wiki/idempotent) `/aɪ.dəmˈpoʊ.tənt/` `/ɪ.dəmˈpoʊ.tənt/`
-> (adjective): `idem` +‎ `potent`.
+> [idempotent](https://en.wiktionary.org/wiki/idempotent) [`/aɪ.dəmˈpoʊ.tənt/`](https://dictionary.cambridge.org/pronunciation/english/idempotent)
+> (`idem` +‎ `potent`) (adjective).
 > <br />[idempotency](https://en.wiktionary.org/wiki/idempotency) (noun).
 
-<https://dictionary.cambridge.org/pronunciation/english/idempotent>
-<https://www.vocabulary.com/dictionary/idempotent>
-<https://www.dictionary.com/browse/idempotent>
-<http://tratu.soha.vn/dict/en_vn/idempotent>
-
-- **English**:
-- **Vietnamese**:
-
-idempotent
-Mathematics
-adjective
-unchanged when multiplied by itself.
-
-In mathematics, a number that is idempotent keeps the same value when multiplied by itself,
-no matter how many times the function is applied.
-
-adj
-unchanged in value following multiplication by itself
-
-Tính từ
-(toán học) (thuộc ma trận) không thay đổi giá trị sau khi tự nó nhân lên
-
+- [**English**](https://www.vocabulary.com/dictionary/idempotent):
+  in mathematics,
+  a number that is idempotent keeps the same value when multiplied by itself,
+  no matter how many times the function is applied.
+- **Vietnamese**: (toán học) (thuộc ma trận)
+  không thay đổi giá trị sau khi tự nó nhân lên.
 
 ## [Ansible Glossary](https://docs.ansible.com/ansible/latest/reference_appendices/glossary.html)
 
