@@ -214,6 +214,11 @@ output "ubuntu_private_ips" {
 
 <!-- AUTO-GENERATED-CONTENT:END -->
 
+```shell script
+cd getting-started-with-ansible/configuring-multiple-hosts/terraform
+terraform apply
+```
+
 ## Perusing My Inventory Directory Example and a Bit About `ansible-config list` and `INVENTORY_IGNORE_EXTS`
 
 ## VMs Are Operational with No Git Configuration
