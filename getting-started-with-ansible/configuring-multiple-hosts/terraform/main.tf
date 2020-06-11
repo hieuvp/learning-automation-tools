@@ -34,8 +34,7 @@ data "aws_ami" "amazon_linux" {
 resource "aws_instance" "amazon_linux" {
   count = 2
 
-  ami = data.aws_ami.amazon_linux.id
-
+  ami           = data.aws_ami.amazon_linux.id
   instance_type = local.instance_type
   key_name      = var.key_name
 
@@ -77,8 +76,7 @@ data "aws_ami" "ubuntu" {
 resource "aws_instance" "ubuntu" {
   count = 2
 
-  ami = data.aws_ami.ubuntu.id
-
+  ami           = data.aws_ami.ubuntu.id
   instance_type = local.instance_type
   key_name      = var.key_name
 

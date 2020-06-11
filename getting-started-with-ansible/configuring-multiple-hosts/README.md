@@ -35,6 +35,44 @@
 
 ## Creating Test VMs with Vagrant
 
+<!-- AUTO-GENERATED-CONTENT:START (CODE:src=terraform/variables.tf) -->
+<!-- The below code snippet is automatically added from terraform/variables.tf -->
+
+```tf
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Variables
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+variable "region" {
+  type = string
+}
+
+variable "key_name" {
+  type = string
+}
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Locals
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+locals {
+  application = "Ansible"
+  environment = "Test"
+
+  tags = {
+    Name        = "${upper(local.environment)}-${lower(local.application)}"
+    Application = local.application
+    Environment = local.environment
+  }
+}
+
+locals {
+  instance_type = "t2.nano"
+}
+```
+
+<!-- AUTO-GENERATED-CONTENT:END -->
+
 <!-- AUTO-GENERATED-CONTENT:START (CODE:src=terraform/main.tf) -->
 <!-- The below code snippet is automatically added from terraform/main.tf -->
 
@@ -75,8 +113,7 @@ data "aws_ami" "amazon_linux" {
 resource "aws_instance" "amazon_linux" {
   count = 2
 
-  ami = data.aws_ami.amazon_linux.id
-
+  ami           = data.aws_ami.amazon_linux.id
   instance_type = local.instance_type
   key_name      = var.key_name
 
@@ -118,8 +155,7 @@ data "aws_ami" "ubuntu" {
 resource "aws_instance" "ubuntu" {
   count = 2
 
-  ami = data.aws_ami.ubuntu.id
-
+  ami           = data.aws_ami.ubuntu.id
   instance_type = local.instance_type
   key_name      = var.key_name
 
@@ -127,6 +163,46 @@ resource "aws_instance" "ubuntu" {
     Name     = "${local.tags.Name}-ubuntu-${count.index + 1}"
     Platform = "Ubuntu"
   })
+}
+```
+
+<!-- AUTO-GENERATED-CONTENT:END -->
+
+<!-- AUTO-GENERATED-CONTENT:START (CODE:src=terraform/outputs.tf) -->
+<!-- The below code snippet is automatically added from terraform/outputs.tf -->
+
+```tf
+output "region" {
+  value       = var.region
+  description = "The region where all of your ec2 instances are located"
+}
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Amazon Linux 2 (HVM)
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+output "amazon_linux_ami" {
+  value       = data.aws_ami.amazon_linux.name
+  description = "The Amazon Linux AMI name"
+}
+
+output "amazon_linux_private_ips" {
+  value       = aws_instance.amazon_linux[*].private_ip
+  description = "The private IPs of Amazon Linux instances"
+}
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Ubuntu Server 18 LTS (HVM)
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+output "ubuntu_ami" {
+  value       = data.aws_ami.ubuntu.name
+  description = "The Ubuntu AMI name"
+}
+
+output "ubuntu_private_ips" {
+  value       = aws_instance.amazon_linux[*].private_ip
+  description = "The private IPs of Ubuntu instances"
 }
 ```
 
