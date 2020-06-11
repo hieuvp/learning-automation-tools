@@ -1,6 +1,10 @@
 # Ad-Hoc Configuration with Idempotent Modules
 
-## English Definitions
+## Dictionary
+
+### Ad Hoc - English Definitions
+
+### Idempotency - English Definitions
 
 - Idempotent `/aɪ.dəmˈpoʊ.tənt/` `/ɪ.dəmˈpoʊ.tənt/` adjective
 
@@ -37,18 +41,20 @@ Số lượng toán học (thuộc ma trận) không thay đổi giá trị sau 
 
 ## [Ansible Glossary](https://docs.ansible.com/ansible/latest/reference_appendices/glossary.html)
 
-- Idempotency
-  An operation is idempotent if the result of performing it once is exactly the same as
-  the result of performing it repeatedly without any intervening actions.
+### Ad Hoc
 
-- Ad Hoc
-  Refers to running Ansible to perform some quick command,
-  using `/usr/bin/ansible`,
-  rather than the orchestration language,
-  which is `/usr/bin/ansible-playbook`.
-  An example of an ad hoc command might be rebooting 50 machines in your infrastructure.
-  Anything you can do ad hoc can be accomplished by writing a playbook
-  and playbooks can also glue lots of other operations together.
+> Refers to running Ansible to perform some quick command,
+> using `/usr/bin/ansible`,
+> rather than the orchestration language,
+> which is `/usr/bin/ansible-playbook`.
+> An example of an ad hoc command might be rebooting 50 machines in your infrastructure.
+> Anything you can do ad hoc can be accomplished by writing a playbook
+> and playbooks can also glue lots of other operations together.
+
+### Idempotency
+
+> An operation is idempotent if the result of performing it once is exactly the same as
+> the result of performing it repeatedly without any intervening actions.
 
 ## Table of Contents
 
