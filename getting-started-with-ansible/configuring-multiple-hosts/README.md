@@ -1,14 +1,15 @@
 # Configuring Multiple Hosts
 
-<div align="center"><img src="assets/ansible-architecture.png" width="900"></div>
+![Ansible Architecture](assets/ansible-architecture.png)
 
-## [Glossary - Ansible Documentation](https://docs.ansible.com/ansible/latest/reference_appendices/glossary.html)
+## [Ansible Glossary](https://docs.ansible.com/ansible/latest/reference_appendices/glossary.html)
 
-- Inventory
-  A file (by default, Ansible uses a simple INI format)
-  that describes Hosts and Groups in Ansible.
-  Inventory can also be provided via an Inventory Script
-  (sometimes called an `External Inventory Script`).
+### Inventory
+
+> A file (by default, Ansible uses a simple INI format)
+> that describes Hosts and Groups in Ansible.
+> Inventory can also be provided via an Inventory Script
+> (sometimes called an `External Inventory Script`).
 
 ## Table of Contents
 

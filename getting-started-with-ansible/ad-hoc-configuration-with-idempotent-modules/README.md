@@ -35,7 +35,7 @@ Số lượng toán học (thuộc ma trận) không thay đổi giá trị sau 
   ​arranged or happening when necessary and not planned in advance
   Không dự tính trước
 
-## [Glossary - Ansible Documentation](https://docs.ansible.com/ansible/latest/reference_appendices/glossary.html)
+## [Ansible Glossary](https://docs.ansible.com/ansible/latest/reference_appendices/glossary.html)
 
 - Idempotency
   An operation is idempotent if the result of performing it once is exactly the same as

@@ -1,6 +1,6 @@
 # Declaring Desired State with Playbooks
 
-## [Glossary - Ansible Documentation](https://docs.ansible.com/ansible/latest/reference_appendices/glossary.html)
+## [Ansible Glossary](https://docs.ansible.com/ansible/latest/reference_appendices/glossary.html)
 
 - Playbooks
   Playbooks are the language by which

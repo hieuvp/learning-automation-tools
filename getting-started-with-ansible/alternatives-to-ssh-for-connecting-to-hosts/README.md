@@ -1,6 +1,6 @@
 # Alternatives to SSH for Connecting to Hosts
 
-## [Glossary - Ansible Documentation](https://docs.ansible.com/ansible/latest/reference_appendices/glossary.html)
+## [Ansible Glossary](https://docs.ansible.com/ansible/latest/reference_appendices/glossary.html)
 
 - Push Mode
   Push mode is the default mode of Ansible.
