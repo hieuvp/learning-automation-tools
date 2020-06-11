@@ -1,9 +1,31 @@
-variable "ssh_key_name" {
-  type        = string
-  description = "The key name to use for the ec2 instance"
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Variables
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+variable "region" {
+  type = string
 }
 
-variable "ssh_key_path" {
-  type        = string
-  description = "The key path to use for the ec2 instance"
+variable "key_name" {
+  type = string
+}
+
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Locals
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+locals {
+  application = "Ansible"
+  environment = "Test"
+
+  instance_type = "t2.nano"
+}
+
+locals {
+  tags = {
+    Name        = "${upper(local.environment)}-${lower(local.application)}"
+    Application = local.application
+    Environment = local.environment
+  }
 }
