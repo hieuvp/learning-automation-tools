@@ -7,7 +7,7 @@
 ### Inventory
 
 > A file (by default, Ansible uses a simple INI format)
-> that describes Hosts and Groups in Ansible.
+> that describes Hosts and Groups in Ansible.<br />
 > Inventory can also be provided via an Inventory Script
 > (sometimes called an `External Inventory Script`).
 
