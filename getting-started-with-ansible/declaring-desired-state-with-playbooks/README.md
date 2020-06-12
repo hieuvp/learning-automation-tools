@@ -1,5 +1,12 @@
 # Declaring Desired State with Playbooks
 
+## [Ansible Glossary](https://docs.ansible.com/ansible/latest/reference_appendices/glossary.html)
+
+### Playbooks
+
+> **Playbooks** are the language by which
+> Ansible **orchestrates**, **configures**, **administers**, or **deploys** systems.
+
 ## Table of Contents
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->

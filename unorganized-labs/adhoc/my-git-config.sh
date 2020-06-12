@@ -1,2 +1,2 @@
-git config --global --add user.name "Wesley Higbee"
-git config --global --add user.email "wes.mcclure@gmail.com"
+git config --global --add user.name "Harrison Van"
+git config --global --add user.email "software.engineer@shopback.com"
