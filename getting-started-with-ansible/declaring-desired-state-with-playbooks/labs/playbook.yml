@@ -2,15 +2,16 @@
 - name: Ensure ~/.gitconfig copied from master.gitconfig
   hosts: localhost
   tasks:
-    - copy: src="../adhoc/master.gitconfig" dest="~/.gitconfig"
-
-- name: Ensure homebrew packages are installed.
-  hosts: localhost
-  tasks:
-    # $ ansible -m homebrew -a "name=bat state=latest" localhost
-    - homebrew: name=bat state=latest
-
-    # $ ansible -m homebrew -a "name=jq state=latest" localhost
-    - homebrew:
-        name: jq
-        state: latest
+    - file: path="/tmp/learning-ansible" state=directory mode=0755
+    - copy: src="master.gitconfig" dest="/tmp/learning-ansible/.gitconfig"
+#
+# - name: Ensure homebrew packages are installed.
+#   hosts: localhost
+#   tasks:
+#     # $ ansible -m homebrew -a "name=bat state=latest" localhost
+#     - homebrew: name=bat state=latest
+#
+#     # $ ansible -m homebrew -a "name=jq state=latest" localhost
+#     - homebrew:
+#         name: jq
+#         state: latest

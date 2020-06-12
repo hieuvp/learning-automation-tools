@@ -7,6 +7,35 @@
 > **Playbooks** are the language by which
 > Ansible **orchestrates**, **configures**, **administers**, or **deploys** systems.
 
+### Task
+
+> Playbooks exist to run tasks.
+> Tasks combine an action (a module and its arguments) with a name
+> and optionally some other keywords (like looping directives).
+> Handlers are also tasks, but they are a special kind of task
+> that do not run unless they are notified by name
+> when a task reports an underlying change on a remote system.
+
+### Host
+
+> A host is simply a remote machine that Ansible manages.
+> They can have individual variables assigned to them,
+> and can also be organized in groups.
+> All hosts have a name they can be reached at (which is either an IP address or a domain name) and,
+> optionally, a port number, if they are not to be accessed on the default SSH port.
+
+### Modules
+
+> Modules are the units of work that Ansible ships out to remote machines.
+> Modules are kicked off by either `/usr/bin/ansible` or `/usr/bin/ansible-playbook`
+> (where multiple tasks use lots of different modules in conjunction).
+> Modules can be implemented in any language, including Perl, Bash, or Ruby –
+> but can leverage some useful communal library code if written in Python.
+> Modules just have to return JSON.
+> Once modules are executed on remote machines,
+> they are removed, so no long-running daemons are used.
+> Ansible refers to the collection of available modules as a library.
+
 ## Table of Contents
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
@@ -47,18 +76,19 @@
 - name: Ensure ~/.gitconfig copied from master.gitconfig
   hosts: localhost
   tasks:
-    - copy: src="../adhoc/master.gitconfig" dest="~/.gitconfig"
-
-- name: Ensure homebrew packages are installed.
-  hosts: localhost
-  tasks:
-    # $ ansible -m homebrew -a "name=bat state=latest" localhost
-    - homebrew: name=bat state=latest
-
-    # $ ansible -m homebrew -a "name=jq state=latest" localhost
-    - homebrew:
-        name: jq
-        state: latest
+    - file: path="/tmp/learning-ansible" state=directory mode=0755
+    - copy: src="master.gitconfig" dest="/tmp/learning-ansible/.gitconfig"
+#
+# - name: Ensure homebrew packages are installed.
+#   hosts: localhost
+#   tasks:
+#     # $ ansible -m homebrew -a "name=bat state=latest" localhost
+#     - homebrew: name=bat state=latest
+#
+#     # $ ansible -m homebrew -a "name=jq state=latest" localhost
+#     - homebrew:
+#         name: jq
+#         state: latest
 ```
 
 <!-- AUTO-GENERATED-CONTENT:END -->
