@@ -17,6 +17,8 @@
 
 ### Getting Started with Ansible
 
+<br />
+
 ![Scenario Progression](assets/ansible-scenario-progression.png)
 
 1. [ ] [Ad-Hoc Configuration with Idempotent Modules](getting-started-with-ansible/ad-hoc-configuration-with-idempotent-modules/README.md)
