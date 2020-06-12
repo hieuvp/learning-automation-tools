@@ -189,7 +189,7 @@ resource "aws_instance" "ubuntu" {
 
 output "region" {
   value       = var.region
-  description = "The region where all of your ec2 instances are located"
+  description = "The region where all instances are hosted"
 }
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
