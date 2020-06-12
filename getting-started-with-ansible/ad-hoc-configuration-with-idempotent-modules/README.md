@@ -28,7 +28,7 @@
       no matter how many times the function is applied.
     </td>
     <td>
-      (Toán học) (Thuộc ma trận)<br />
+      (Toán học)<br />
       Không thay đổi giá trị sau khi tự nó nhân lên.
     </td>
   </tr>
