@@ -1,5 +1,23 @@
 # Alternatives to SSH for Connecting to Hosts
 
+![Ansible's Pull Model](assets/ansible-pull-model.png)
+
+## [Ansible Glossary](https://docs.ansible.com/ansible/latest/reference_appendices/glossary.html)
+
+### Pull Mode
+
+> By default, Ansible runs in push mode,
+> which allows it very fine-grained control over when it talks to each system.
+> Pull mode is provided for
+> when you would rather have nodes check in every N minutes on a particular schedule.
+> It uses a program called `ansible-pull`
+> and can also be set up (or reconfigured) using a `push-mode` playbook.
+> Most Ansible users use push mode,
+> but pull mode is included for variety and the sake of having choices.
+> `ansible-pull` works by checking configuration orders out of git on a crontab
+> and then managing the machine locally,
+> using the local connection plugin.
+
 ## Table of Contents
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->

@@ -1,11 +1,66 @@
-# Ad Hoc Configuration with Idempotent Modules
+# Ad-Hoc Configuration with Idempotent Modules
+
+## Dictionary
+
+### Ad Hoc - English Vietnamese
+
+> ad hoc `/ˌæd ˈhɒk/` (adjective).
+
+| English                                                          | Vietnamese                              | Example                                     |
+| ---------------------------------------------------------------- | --------------------------------------- | ------------------------------------------- |
+| Arranged or happening when necessary and not planned in advance. | Không dự tính trước, không lường trước. | An ad hoc meeting to deal with the problem. |
+
+### Idempotency - English Vietnamese
+
+> [idempotent](https://en.wiktionary.org/wiki/idempotent) [`/aɪ.dəmˈpoʊ.tənt/`](https://dictionary.cambridge.org/pronunciation/english/idempotent)
+> (`idem` +‎ `potent`) (adjective).
+> <br />idempotency (`idem` +‎ `potency`) (noun).
+
+<table>
+  <tr>
+    <th><a href="https://www.vocabulary.com/dictionary/idempotent">English</a></th>
+    <th>Vietnamese</th>
+    <th>Example</th>
+  </tr>
+  <tr>
+    <td>
+      In mathematics, a number that is <b>idempotent</b><br />
+      keeps the same value when multiplied by itself,<br />
+      no matter how many times the function is applied.
+    </td>
+    <td>
+      (Toán học)<br />
+      Không thay đổi giá trị sau khi tự nó nhân lên.
+    </td>
+    <td>
+      1 x 1 = 1<br />
+      0 x 0 = 0<br />
+    </td>
+  </tr>
+</table>
+
+<br />
+
+## [Ansible Glossary](https://docs.ansible.com/ansible/latest/reference_appendices/glossary.html)
+
+### Ad Hoc
+
+> Referring to running Ansible to perform some quick command, using `/usr/local/bin/ansible`,
+> <br />rather than the orchestration language, which is `/usr/local/bin/ansible-playbook`.
+> <br />Anything you can do **ad hoc** can be accomplished by writing a **playbook**
+> and **playbooks** can also glue lots of other operations together.
+
+### Idempotency
+
+> An operation is **idempotent** if
+> <br />the result of performing it once is exactly the same as
+> <br />the result of performing it repeatedly without any intervening actions.
 
 ## Table of Contents
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [Configuring an Explosion of Devices](#configuring-an-explosion-of-devices)
 - [Using the `git config` Command to Manually Configure User Name and Email](#using-the-git-config-command-to-manually-configure-user-name-and-email)
 - [A Repeatable Script to Automatically Configure Git with `user.name` and `user.email`](#a-repeatable-script-to-automatically-configure-git-with-username-and-useremail)
 - [`git config --add` Is Not Idempotent Because It Duplicates Config](#git-config---add-is-not-idempotent-because-it-duplicates-config)
@@ -23,8 +78,6 @@
 - [The `--diff` Flag Shows What Will Change or Did Change](#the---diff-flag-shows-what-will-change-or-did-change)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-## Configuring an Explosion of Devices
 
 ## Using the `git config` Command to Manually Configure User Name and Email
 
