@@ -2,15 +2,15 @@
 
 ## Dictionary
 
-### Ad Hoc - Definitions
+### Ad Hoc - English Vietnamese
 
 > ad hoc `/ˌæd ˈhɒk/` (adjective).
 
-| English                                                          | Vietnamese           |
-| ---------------------------------------------------------------- | -------------------- |
-| Arranged or happening when necessary and not planned in advance. | Không dự tính trước. |
+| English                                                          | Vietnamese           | Example                                     |
+| ---------------------------------------------------------------- | -------------------- | ------------------------------------------- |
+| Arranged or happening when necessary and not planned in advance. | Không dự tính trước. | An ad hoc meeting to deal with the problem. |
 
-### Idempotency - Definitions
+### Idempotency - English Vietnamese
 
 > [idempotent](https://en.wiktionary.org/wiki/idempotent) [`/aɪ.dəmˈpoʊ.tənt/`](https://dictionary.cambridge.org/pronunciation/english/idempotent)
 > (`idem` +‎ `potent`) (adjective).
