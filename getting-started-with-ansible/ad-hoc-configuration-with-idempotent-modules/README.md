@@ -20,6 +20,7 @@
   <tr>
     <th><a href="https://www.vocabulary.com/dictionary/idempotent">English</a></th>
     <th>Vietnamese</th>
+    <th>Example</th>
   </tr>
   <tr>
     <td>
@@ -30,6 +31,10 @@
     <td>
       (Toán học)<br />
       Không thay đổi giá trị sau khi tự nó nhân lên.
+    </td>
+    <td>
+      1 x 1 = 1<br />
+      0 x 0 = 0<br />
     </td>
   </tr>
 </table>
