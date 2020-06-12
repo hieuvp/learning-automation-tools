@@ -6,7 +6,7 @@ output "region" {
 }
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# Amazon Linux 2 (HVM)
+# Amazon Linux 2 Instances
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 output "amazon_linux_ami" {
@@ -20,7 +20,7 @@ output "amazon_linux_private_ips" {
 }
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# Ubuntu Server 18 LTS (HVM)
+# Ubuntu Server 18 LTS Instances
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 output "ubuntu_ami" {

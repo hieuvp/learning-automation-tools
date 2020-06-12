@@ -5,7 +5,7 @@ provider "aws" {
 }
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# Amazon Linux 2 (HVM)
+# Amazon Linux 2 Instances
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 data "aws_ami" "amazon_linux" {
@@ -47,7 +47,7 @@ resource "aws_instance" "amazon_linux" {
 }
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# Ubuntu Server 18 LTS (HVM)
+# Ubuntu Server 18 LTS Instances
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 data "aws_ami" "ubuntu" {
