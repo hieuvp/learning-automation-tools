@@ -14,7 +14,7 @@
 
 > [idempotent](https://en.wiktionary.org/wiki/idempotent) [`/aɪ.dəmˈpoʊ.tənt/`](https://dictionary.cambridge.org/pronunciation/english/idempotent)
 > (`idem` +‎ `potent`) (adjective).
-> <br />[idempotency](https://en.wiktionary.org/wiki/idempotency) (noun).
+> <br />idempotency (noun).
 
 <table>
   <tr>
@@ -48,7 +48,8 @@
 
 ### Idempotency
 
-> An operation is **idempotent** if the result of performing it once is exactly the same as
+> An operation is **idempotent** if
+> the result of performing it once is exactly the same as
 > the result of performing it repeatedly without any intervening actions.
 
 ## Table of Contents
