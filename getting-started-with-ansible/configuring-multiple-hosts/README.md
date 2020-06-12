@@ -216,7 +216,7 @@ output "ubuntu_ami" {
 }
 
 output "ubuntu_private_ips" {
-  value       = aws_instance.amazon_linux[*].private_ip
+  value       = aws_instance.ubuntu[*].private_ip
   description = "The private IPs of Ubuntu instances"
 }
 ```
