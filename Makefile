@@ -35,10 +35,6 @@ lint:
 	@printf "\n"
 
 	@printf "\n"
-	$(MAKEFILE_SCRIPT_PATH)/lint-terraform.sh
-	@printf "\n"
-
-	@printf "\n"
 	scripts/lint-ansible.sh
 	@printf "\n"
 
@@ -46,6 +42,16 @@ lint:
 git-add: fmt lint
 	@printf "\n"
 	git add --all .
+	@printf "\n"
+
+.PHONY: git-pre-merge
+git-pre-merge: clean export-drawio
+	@printf "\n"
+	$(MAKEFILE_SCRIPT_PATH)/lint-terraform.sh
+	@printf "\n"
+
+	@printf "\n"
+	make git-add
 	@printf "\n"
 
 
