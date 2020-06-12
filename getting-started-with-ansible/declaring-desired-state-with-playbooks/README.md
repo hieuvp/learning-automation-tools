@@ -5,7 +5,7 @@
 ### Playbooks
 
 > **Playbooks** are the language by which
-> Ansible orchestrates, configures, administers, or deploys systems.
+> Ansible **orchestrates**, **configures**, **administers**, or **deploys** systems.
 
 ## Table of Contents
 
