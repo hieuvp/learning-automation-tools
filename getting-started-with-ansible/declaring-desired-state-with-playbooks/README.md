@@ -4,10 +4,8 @@
 
 ### Playbooks
 
-> Playbooks are the language by which
+> **Playbooks** are the language by which
 > Ansible orchestrates, configures, administers, or deploys systems.
-> They are called playbooks partially because it's a sports analogy,
-> and it's supposed to be fun using them. They aren't workbooks :)
 
 ## Table of Contents
 
