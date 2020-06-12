@@ -54,7 +54,7 @@
 
 > An operation is **idempotent** if
 > <br />the result of performing it once is exactly the same as
-> the result of performing it repeatedly without any intervening actions.
+> <br />the result of performing it repeatedly without any intervening actions.
 
 ## Table of Contents
 
