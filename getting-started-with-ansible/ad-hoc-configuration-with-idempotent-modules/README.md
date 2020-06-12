@@ -40,10 +40,9 @@
 
 ### Ad Hoc
 
-> Refers to running Ansible to perform some quick command, using `/usr/bin/ansible`,<br />
-> rather than the orchestration language, which is `/usr/bin/ansible-playbook`.<br />
-> An example of an ad hoc command might be rebooting 50 machines in your infrastructure.<br />
-> Anything you can do ad hoc can be accomplished by writing a playbook
+> Referring to running Ansible to perform some quick command, using `/usr/local/bin/ansible`,
+> <br />rather than the orchestration language, which is `/usr/local/bin/ansible-playbook`.
+> <br />Anything you can do ad hoc can be accomplished by writing a playbook
 > and playbooks can also glue lots of other operations together.
 
 ### Idempotency
