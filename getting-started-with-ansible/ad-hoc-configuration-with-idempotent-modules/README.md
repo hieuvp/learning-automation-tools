@@ -6,9 +6,9 @@
 
 > ad hoc `/ˌæd ˈhɒk/` (adjective).
 
-| English                                                          | Vietnamese           | Example                                     |
-| ---------------------------------------------------------------- | -------------------- | ------------------------------------------- |
-| Arranged or happening when necessary and not planned in advance. | Không dự tính trước. | An ad hoc meeting to deal with the problem. |
+| English                                                          | Vietnamese                              | Example                                     |
+| ---------------------------------------------------------------- | --------------------------------------- | ------------------------------------------- |
+| Arranged or happening when necessary and not planned in advance. | Không dự tính trước, không lường trước. | An ad hoc meeting to deal with the problem. |
 
 ### Idempotency - English Vietnamese
 
