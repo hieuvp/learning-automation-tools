@@ -7,6 +7,14 @@
 > **Playbooks** are the language by which
 > Ansible **orchestrates**, **configures**, **administers**, or **deploys** systems.
 
+### Host
+
+> A host is simply a remote machine that Ansible manages.
+> They can have individual variables assigned to them,
+> and can also be organized in groups.
+> All hosts have a name they can be reached at (which is either an IP address or a domain name) and,
+> optionally, a port number, if they are not to be accessed on the default SSH port.
+
 ### Task
 
 > Playbooks exist to run tasks.
@@ -15,14 +23,6 @@
 > Handlers are also tasks, but they are a special kind of task
 > that do not run unless they are notified by name
 > when a task reports an underlying change on a remote system.
-
-### Host
-
-> A host is simply a remote machine that Ansible manages.
-> They can have individual variables assigned to them,
-> and can also be organized in groups.
-> All hosts have a name they can be reached at (which is either an IP address or a domain name) and,
-> optionally, a port number, if they are not to be accessed on the default SSH port.
 
 ### Modules
 
