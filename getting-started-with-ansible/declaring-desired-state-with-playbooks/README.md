@@ -39,7 +39,35 @@
 
 ## Writing a First Playbook to Ensure Our `.gitconfig` Is Setup
 
+<!-- AUTO-GENERATED-CONTENT:START (CODE:src=labs/playbook.yml) -->
+<!-- The below code snippet is automatically added from labs/playbook.yml -->
+
+```yml
+# $ ansible -m copy -a "src=../adhoc/master.gitconfig dest=~/.gitconfig" localhost
+- name: Ensure ~/.gitconfig copied from master.gitconfig
+  hosts: localhost
+  tasks:
+    - copy: src="../adhoc/master.gitconfig" dest="~/.gitconfig"
+
+- name: Ensure homebrew packages are installed.
+  hosts: localhost
+  tasks:
+    # $ ansible -m homebrew -a "name=bat state=latest" localhost
+    - homebrew: name=bat state=latest
+
+    # $ ansible -m homebrew -a "name=jq state=latest" localhost
+    - homebrew:
+        name: jq
+        state: latest
+```
+
+<!-- AUTO-GENERATED-CONTENT:END -->
+
 ## Running `ansible-playbook` for the First Time
+
+```shell script
+ansible-playbook playbook.yml
+```
 
 ## Testing `ansible-playbook` by Removing and Restoring Our `.gitconfig`
 
