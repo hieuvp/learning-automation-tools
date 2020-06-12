@@ -42,8 +42,8 @@
 
 > Referring to running Ansible to perform some quick command, using `/usr/local/bin/ansible`,
 > <br />rather than the orchestration language, which is `/usr/local/bin/ansible-playbook`.
-> <br />Anything you can do ad hoc can be accomplished by writing a playbook
-> and playbooks can also glue lots of other operations together.
+> <br />Anything you can do ad hoc can be accomplished by writing a **playbook**
+> and **playbooks** can also glue lots of other operations together.
 
 ### Idempotency
 
