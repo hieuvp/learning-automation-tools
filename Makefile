@@ -21,11 +21,11 @@ fmt:
 	@printf "\n"
 
 	@printf "\n"
-	$(MAKEFILE_SCRIPT_PATH)/fmt-terraform.sh
+	$(MAKEFILE_SCRIPT_PATH)/fmt-javascript.sh
 	@printf "\n"
 
 	@printf "\n"
-	$(MAKEFILE_SCRIPT_PATH)/fmt-javascript.sh
+	$(MAKEFILE_SCRIPT_PATH)/fmt-terraform.sh
 	@printf "\n"
 
 	@printf "\n"
