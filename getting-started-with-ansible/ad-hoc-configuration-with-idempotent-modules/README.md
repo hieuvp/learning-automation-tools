@@ -14,7 +14,7 @@
 
 > [idempotent](https://en.wiktionary.org/wiki/idempotent) [`/aɪ.dəmˈpoʊ.tənt/`](https://dictionary.cambridge.org/pronunciation/english/idempotent)
 > (`idem` +‎ `potent`) (adjective).
-> <br />idempotency (noun).
+> <br />idempotency (`idem` +‎ `potency`) (noun).
 
 <table>
   <tr>
