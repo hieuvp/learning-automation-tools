@@ -238,12 +238,36 @@ terraform apply
 
 ## Perusing My Inventory Directory Example and a Bit About `ansible-config list` and `INVENTORY_IGNORE_EXTS`
 
+```shell script
+ansible-config list
+```
+
 - `inventory_dir` is the pathname of the directory holding Ansible's inventory host file,
 - `inventory_file` is the pathname and the filename pointing to the Ansible's inventory host file.
+
+```yaml
+INVENTORY_IGNORE_EXTS:
+  default: "{{(BLACKLIST_EXTS + ( '.orig', '.ini', '.cfg', '.retry'))}}"
+  description: List of extensions to ignore when using a directory as an inventory
+    source
+  env:
+    - name: ANSIBLE_INVENTORY_IGNORE
+  ini:
+    - key: inventory_ignore_extensions
+      section: defaults
+    - key: ignore_extensions
+      section: inventory
+  name: Inventory ignore extensions
+  type: list
+```
 
 ## VMs Are Operational with No Git Configuration
 
 ## Groups and Hosts and Ansible Ad-hoc with Multiple Hosts
+
+```shell script
+ansible-inventory --list
+```
 
 ## Walking through the Playbook We Will Run against All VM Hosts
 
@@ -251,7 +275,57 @@ terraform apply
 
 ## Destroying and Recreating Is Scalable and Reproducible
 
-## Configuring Ansible with `ansible.cfg`
+## [Configuring Ansible with `ansible.cfg`](https://docs.ansible.com/ansible/latest/installation_guide/intro_configuration.html)
+
+> Certain settings in Ansible are adjustable via a configuration file (`ansible.cfg`).
+> The stock configuration should be sufficient for most users,
+> but there may be reasons you would want to change them.
+> Paths where configuration file is searched are listed in reference documentation.
+
+<https://docs.ansible.com/ansible/latest/reference_appendices/config.html#ansible-configuration-settings-locations>
+<https://docs.ansible.com/ansible/latest/reference_appendices/config.html#the-configuration-file>
+<https://docs.ansible.com/ansible/latest/reference_appendices/config.html#the-configuration-file>
+
+Changes can be made and used in a configuration file
+which will be searched for in the following order:
+
+- `ANSIBLE_CONFIG` (environment variable if set)
+- `ansible.cfg` (in the current directory)
+- `~/.ansible.cfg` (in the home directory)
+- `/etc/ansible/ansible.cfg`
+
+Ansible will process the above list and use the first file found,
+all others are ignored.
+
+The configuration file is one variant of an INI format.
+Both the hash sign (`#`) and semicolon (`;`)
+are allowed as comment markers when the comment starts the line.
+However, if the comment is inline with regular values,
+only the semicolon is allowed to introduce the comment.
+For instance:
+
+```ini
+# some basic default values...
+inventory = /etc/ansible/hosts  ; This points to the file that lists your hosts
+```
+
+https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html
+
+<!-- AUTO-GENERATED-CONTENT:START (CODE:src=labs/ansible.cfg) -->
+<!-- The below code snippet is automatically added from labs/ansible.cfg -->
+
+```cfg
+[defaults]
+# disable host_key_checking
+# https://docs.ansible.com/ansible/latest/user_guide/connection_details.html#host-key-checking
+host_key_checking = False
+
+inventory=inventory_dir
+# inventory=inventory_file # use -i or env var ANSIBLE_INVENTORY to override
+# FYI `vagrant ssh-config` is a great guide for configuring ansible to connect directly to VMs created by vagrant
+```
+
+<!-- AUTO-GENERATED-CONTENT:END -->
 
 ## Summarizing Inventory with `ansible-inventory --graph` and with `--vars`
 
