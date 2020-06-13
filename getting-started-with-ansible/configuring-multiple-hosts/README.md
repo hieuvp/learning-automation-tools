@@ -309,7 +309,7 @@ For instance:
 inventory = /etc/ansible/hosts  ; This points to the file that lists your hosts
 ```
 
-https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html
+<https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html>
 
 <!-- AUTO-GENERATED-CONTENT:START (CODE:src=labs/ansible.cfg) -->
 <!-- The below code snippet is automatically added from labs/ansible.cfg -->
@@ -323,6 +323,78 @@ host_key_checking = False
 inventory=inventory_dir
 # inventory=inventory_file # use -i or env var ANSIBLE_INVENTORY to override
 # FYI `vagrant ssh-config` is a great guide for configuring ansible to connect directly to VMs created by vagrant
+```
+
+<!-- AUTO-GENERATED-CONTENT:END -->
+
+<!-- AUTO-GENERATED-CONTENT:START (CODE:src=scripts/ansible-inventory-list.console) -->
+<!-- The below code snippet is automatically added from scripts/ansible-inventory-list.console -->
+
+```console
++ ansible-inventory --list
+{
+    "_meta": {
+        "hostvars": {
+            "centos20": {
+                "ansible_host": "192.168.50.20",
+                "ansible_port": 22,
+                "ansible_private_key_file": ".vagrant/machines/centos20/virtualbox/private_key",
+                "ansible_user": "vagrant"
+            },
+            "centos21": {
+                "ansible_host": "192.168.50.21",
+                "ansible_port": 22,
+                "ansible_private_key_file": ".vagrant/machines/centos21/virtualbox/private_key",
+                "ansible_user": "vagrant"
+            },
+            "localhost": {
+                "ansible_connection": "local",
+                "ansible_python_interpreter": "/usr/local/bin/python3"
+            },
+            "ubuntu10": {
+                "ansible_host": "192.168.50.10",
+                "ansible_port": 22,
+                "ansible_private_key_file": ".vagrant/machines/ubuntu10/virtualbox/private_key",
+                "ansible_user": "vagrant"
+            },
+            "ubuntu11": {
+                "ansible_host": "192.168.50.11",
+                "ansible_port": 22,
+                "ansible_private_key_file": ".vagrant/machines/ubuntu11/virtualbox/private_key",
+                "ansible_user": "vagrant"
+            }
+        }
+    },
+    "all": {
+        "children": [
+            "ungrouped",
+            "vagrant"
+        ]
+    },
+    "centos": {
+        "hosts": [
+            "centos20",
+            "centos21"
+        ]
+    },
+    "ubuntu": {
+        "hosts": [
+            "ubuntu10",
+            "ubuntu11"
+        ]
+    },
+    "ungrouped": {
+        "hosts": [
+            "localhost"
+        ]
+    },
+    "vagrant": {
+        "children": [
+            "centos",
+            "ubuntu"
+        ]
+    }
+}
 ```
 
 <!-- AUTO-GENERATED-CONTENT:END -->
