@@ -19,6 +19,14 @@
 > Inventory can also be provided via an Inventory Script
 > (sometimes called an `External Inventory Script`).
 
+### Inventory Script
+
+> A very simple program (or a complicated one) that looks up hosts, group membership for hosts,
+> and variable information from an external resource –
+> whether that be a SQL database, a CMDB solution, or something like LDAP.
+> This concept was adapted from Puppet (where it is called an `External Nodes Classifier`)
+> and works more or less exactly the same way.
+
 ## Table of Contents
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
