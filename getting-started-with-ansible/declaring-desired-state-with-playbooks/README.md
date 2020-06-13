@@ -7,6 +7,14 @@
 > **Playbooks** are the language by which
 > Ansible **orchestrates**, **configures**, **administers**, or **deploys** systems.
 
+### Plays
+
+> A playbook is a list of plays.
+> A play is minimally a mapping between a set of hosts selected by a host specifier
+> (usually chosen by groups but sometimes by hostname globs)
+> and the tasks which run on those hosts to define the role that those systems will perform.
+> There can be one or many plays in a playbook.
+
 ### Host
 
 > A host is simply a remote machine that Ansible manages.
@@ -72,32 +80,67 @@
 <!-- The below code snippet is automatically added from labs/playbook.yml -->
 
 ```yml
-# $ ansible -m copy -a "src=../adhoc/master.gitconfig dest=~/.gitconfig" localhost
 - name: Ensure ~/.gitconfig copied from master.gitconfig
   hosts: localhost
   tasks:
     - file: path="/tmp/learning-ansible" state=directory mode=0755
     - copy: src="master.gitconfig" dest="/tmp/learning-ansible/.gitconfig"
-#
-# - name: Ensure homebrew packages are installed.
-#   hosts: localhost
-#   tasks:
-#     # $ ansible -m homebrew -a "name=bat state=latest" localhost
-#     - homebrew: name=bat state=latest
-#
-#     # $ ansible -m homebrew -a "name=jq state=latest" localhost
-#     - homebrew:
-#         name: jq
-#         state: latest
 ```
 
 <!-- AUTO-GENERATED-CONTENT:END -->
 
 ## Running `ansible-playbook` for the First Time
 
-```shell script
-ansible-playbook playbook.yml
+<!-- AUTO-GENERATED-CONTENT:START (CODE:src=labs/playbook.console) -->
+<!-- The below code snippet is automatically added from labs/playbook.console -->
+
+```console
++ rm -f /tmp/learning-ansible/.gitconfig
++ cat /tmp/learning-ansible/.gitconfig
+cat: /tmp/learning-ansible/.gitconfig: No such file or directory
++ ansible-playbook playbook.yml
+[WARNING]: No inventory was parsed, only implicit localhost is available
+[WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+PLAY [Ensure ~/.gitconfig copied from master.gitconfig] **********************************************************************************************************************
+
+TASK [Gathering Facts] *******************************************************************************************************************************************************
+ok: [localhost]
+
+TASK [file] ******************************************************************************************************************************************************************
+ok: [localhost]
+
+TASK [copy] ******************************************************************************************************************************************************************
+changed: [localhost]
+
+PLAY RECAP *******************************************************************************************************************************************************************
+localhost                  : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+
++ ansible-playbook playbook.yml
+[WARNING]: No inventory was parsed, only implicit localhost is available
+[WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+PLAY [Ensure ~/.gitconfig copied from master.gitconfig] **********************************************************************************************************************
+
+TASK [Gathering Facts] *******************************************************************************************************************************************************
+ok: [localhost]
+
+TASK [file] ******************************************************************************************************************************************************************
+ok: [localhost]
+
+TASK [copy] ******************************************************************************************************************************************************************
+ok: [localhost]
+
+PLAY RECAP *******************************************************************************************************************************************************************
+localhost                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+
++ cat /tmp/learning-ansible/.gitconfig
+[user]
+	name = Harrison Van
+	email = software.engineer@shopback.com
 ```
+
+<!-- AUTO-GENERATED-CONTENT:END -->
 
 ## Testing `ansible-playbook` by Removing and Restoring Our `.gitconfig`
 

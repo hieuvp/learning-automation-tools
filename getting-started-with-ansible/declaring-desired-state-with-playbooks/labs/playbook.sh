@@ -1,5 +1,15 @@
 #!/usr/bin/env bash
 
-set -eoux pipefail
+set -u pipefail
+
+readonly FILE_PATH="/tmp/learning-ansible/.gitconfig"
+
+set -x
+
+rm -f "$FILE_PATH"
+cat "$FILE_PATH"
 
 ansible-playbook playbook.yml
+ansible-playbook playbook.yml
+
+cat "$FILE_PATH"
