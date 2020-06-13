@@ -80,7 +80,7 @@
 <!-- The below code snippet is automatically added from labs/playbook.yml -->
 
 ```yml
-- name: Ensure ~/.gitconfig copied from master.gitconfig
+- name: Ensure .gitconfig copied from master.gitconfig
   hosts: localhost
   tasks:
     - file: path="/tmp/learning-ansible" state=directory mode=0755
