@@ -96,11 +96,9 @@
 
 ```console
 + rm -f /tmp/learning-ansible/.gitconfig
-+ printf '\n'
-
 + cat /tmp/learning-ansible/.gitconfig
 cat: /tmp/learning-ansible/.gitconfig: No such file or directory
-+ printf '\n'
++ echo
 
 + ansible-playbook playbook.yml
 [WARNING]: No inventory was parsed, only implicit localhost is available
