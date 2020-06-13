@@ -33,7 +33,7 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 - [What Is Inventory](#what-is-inventory)
-- [Creating Test VMs with Vagrant](#creating-test-vms-with-vagrant)
+- [Creating Test EC2 Instances with Terraform](#creating-test-ec2-instances-with-terraform)
 - [Perusing My Inventory Directory Example and a Bit About `ansible-config list` and `INVENTORY_IGNORE_EXTS`](#perusing-my-inventory-directory-example-and-a-bit-about-ansible-config-list-and-inventory_ignore_exts)
 - [VMs Are Operational with No Git Configuration](#vms-are-operational-with-no-git-configuration)
 - [Groups and Hosts and Ansible Ad-hoc with Multiple Hosts](#groups-and-hosts-and-ansible-ad-hoc-with-multiple-hosts)
@@ -50,7 +50,7 @@
 
 ## What Is Inventory
 
-## Creating Test VMs with Vagrant
+## Creating Test EC2 Instances with Terraform
 
 <!-- AUTO-GENERATED-CONTENT:START (CODE:src=terraform/variables.tf) -->
 <!-- The below code snippet is automatically added from terraform/variables.tf -->
@@ -237,6 +237,9 @@ terraform apply
 ```
 
 ## Perusing My Inventory Directory Example and a Bit About `ansible-config list` and `INVENTORY_IGNORE_EXTS`
+
+- `inventory_dir` is the pathname of the directory holding Ansible's inventory host file,
+- `inventory_file` is the pathname and the filename pointing to the Ansible's inventory host file.
 
 ## VMs Are Operational with No Git Configuration
 
