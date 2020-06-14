@@ -88,6 +88,21 @@ locals {
 
 locals {
   instance_type = "t2.nano"
+
+  domain_name = "shopback.engineering"
+  domain_id   = data.cloudflare_zones.this.zones[0].id
+}
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Data
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+data "cloudflare_zones" "this" {
+  filter {
+    name   = local.domain_name
+    status = "active"
+    paused = false
+  }
 }
 ```
 
@@ -145,6 +160,18 @@ resource "aws_instance" "amazon_linux" {
   })
 }
 
+resource "cloudflare_record" "amazon_linux" {
+  count = length(aws_instance.amazon_linux)
+
+  zone_id = local.domain_id
+
+  type    = "A"
+  name    = "${lower(local.application)}-amazon-linux-${count.index + 1}"
+  value   = aws_instance.amazon_linux[count.index].private_ip
+  ttl     = "1"
+  proxied = "false"
+}
+
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Ubuntu Server 18 LTS Instances
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -186,6 +213,18 @@ resource "aws_instance" "ubuntu" {
     Platform = "Ubuntu"
   })
 }
+
+resource "cloudflare_record" "ubuntu" {
+  count = length(aws_instance.ubuntu)
+
+  zone_id = local.domain_id
+
+  type    = "A"
+  name    = "${lower(local.application)}-ubuntu-${count.index + 1}"
+  value   = aws_instance.ubuntu[count.index].private_ip
+  ttl     = "1"
+  proxied = "false"
+}
 ```
 
 <!-- AUTO-GENERATED-CONTENT:END -->
@@ -215,6 +254,11 @@ output "amazon_linux_private_ips" {
   description = "The private IPs of Amazon Linux instances"
 }
 
+output "amazon_linux_dns_records" {
+  value       = cloudflare_record.amazon_linux[*].hostname
+  description = "The DNS records of Amazon Linux instances"
+}
+
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Ubuntu Server 18 LTS Instances
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -227,6 +271,11 @@ output "ubuntu_ami" {
 output "ubuntu_private_ips" {
   value       = aws_instance.ubuntu[*].private_ip
   description = "The private IPs of Ubuntu instances"
+}
+
+output "ubuntu_dns_records" {
+  value       = cloudflare_record.ubuntu[*].hostname
+  description = "The DNS records of Ubuntu instances"
 }
 ```
 

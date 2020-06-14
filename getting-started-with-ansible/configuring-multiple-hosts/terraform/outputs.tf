@@ -19,6 +19,11 @@ output "amazon_linux_private_ips" {
   description = "The private IPs of Amazon Linux instances"
 }
 
+output "amazon_linux_dns_records" {
+  value       = cloudflare_record.amazon_linux[*].hostname
+  description = "The DNS records of Amazon Linux instances"
+}
+
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Ubuntu Server 18 LTS Instances
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -31,4 +36,9 @@ output "ubuntu_ami" {
 output "ubuntu_private_ips" {
   value       = aws_instance.ubuntu[*].private_ip
   description = "The private IPs of Ubuntu instances"
+}
+
+output "ubuntu_dns_records" {
+  value       = cloudflare_record.ubuntu[*].hostname
+  description = "The DNS records of Ubuntu instances"
 }
