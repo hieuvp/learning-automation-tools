@@ -7,11 +7,6 @@ and pushing out small programs (called `Ansible modules`) to them.
 These programs are written to be resource models of the desired state of the system.
 Ansible then executes these modules (over SSH by default), and removes them when finished.
 
-Your library of modules can reside on any machine,
-and there are no servers, daemons, or databases required.
-Typically, you will work with your favorite terminal program, a text editor,
-and probably a version control system to keep track of changes to your content.
-
 ## [Basic Concepts](https://docs.ansible.com/ansible/latest/network/getting_started/basic_concepts.html)
 
 ### Control Node
