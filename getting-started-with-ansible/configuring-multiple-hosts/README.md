@@ -5,9 +5,9 @@
 1. Ansible works by connecting to your managed nodes and pushing out `Ansible modules` to them.
 1. Ansible then executes these modules (over SSH by default), and removes them when finished.
 
-## [Basic Concepts](https://docs.ansible.com/ansible/latest/network/getting_started/basic_concepts.html)
+## [Ansible Glossary](https://docs.ansible.com/ansible/latest/reference_appendices/glossary.html)
 
-### Control Node
+### [Control Node](https://docs.ansible.com/ansible/latest/network/getting_started/basic_concepts.html#control-node)
 
 Any machine with Ansible installed.
 You can run commands and playbooks,
@@ -17,21 +17,19 @@ laptops, shared desktops, and servers can all run Ansible.
 However, you cannot use a Windows machine as a control node.
 You can have multiple control nodes.
 
-### Managed Nodes
+### [Managed Nodes](https://docs.ansible.com/ansible/latest/network/getting_started/basic_concepts.html#managed-nodes)
 
 The network devices (and/or servers) you manage with Ansible.
 Managed nodes are also sometimes called `hosts`.
 Ansible is not installed on managed nodes.
 
-### Inventory
+### [Inventory](https://docs.ansible.com/ansible/latest/network/getting_started/basic_concepts.html#inventory)
 
 A list of managed nodes.
 An inventory file is also sometimes called a `hostfile`.
 Your inventory can specify information like IP address for each managed node.
 An inventory can also organize managed nodes, creating and nesting groups for easier scaling.
 To learn more about inventory, see the Working with Inventory section.
-
-## [Ansible Glossary](https://docs.ansible.com/ansible/latest/reference_appendices/glossary.html)
 
 ### Push Mode
 
