@@ -13,11 +13,6 @@ On the other hand, we still have our manage nodes.
 
 ## [Basic Concepts](https://docs.ansible.com/ansible/latest/network/getting_started/basic_concepts.html)
 
-These concepts are common to all uses of Ansible,
-including network automation.
-You need to understand them to use Ansible for network automation.
-This basic introduction provides the background you need to follow the examples in this guide.
-
 ### Control Node
 
 Any machine with Ansible installed.
@@ -31,7 +26,8 @@ You can have multiple control nodes.
 ### Managed Nodes
 
 The network devices (and/or servers) you manage with Ansible.
-Managed nodes are also sometimes called “hosts”. Ansible is not installed on managed nodes.
+Managed nodes are also sometimes called `hosts`.
+Ansible is not installed on managed nodes.
 
 ### Inventory
 
