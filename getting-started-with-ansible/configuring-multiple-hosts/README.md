@@ -34,6 +34,7 @@
 
 - [What Is Inventory](#what-is-inventory)
 - [Creating Test EC2 Instances with Terraform](#creating-test-ec2-instances-with-terraform)
+- [Creating Test VMs with Vagrant](#creating-test-vms-with-vagrant)
 - [Perusing My Inventory Directory Example and a Bit About `ansible-config list` and `INVENTORY_IGNORE_EXTS`](#perusing-my-inventory-directory-example-and-a-bit-about-ansible-config-list-and-inventory_ignore_exts)
 - [VMs Are Operational with No Git Configuration](#vms-are-operational-with-no-git-configuration)
 - [Groups and Hosts and Ansible Ad-hoc with Multiple Hosts](#groups-and-hosts-and-ansible-ad-hoc-with-multiple-hosts)
@@ -236,6 +237,8 @@ cd getting-started-with-ansible/configuring-multiple-hosts/terraform
 terraform apply
 ```
 
+## Creating Test VMs with Vagrant
+
 ## Perusing My Inventory Directory Example and a Bit About `ansible-config list` and `INVENTORY_IGNORE_EXTS`
 
 ```shell script
@@ -320,9 +323,7 @@ inventory = /etc/ansible/hosts  ; This points to the file that lists your hosts
 # https://docs.ansible.com/ansible/latest/user_guide/connection_details.html#host-key-checking
 host_key_checking = False
 
-inventory=inventory_dir
-# inventory=inventory_file # use -i or env var ANSIBLE_INVENTORY to override
-# FYI `vagrant ssh-config` is a great guide for configuring ansible to connect directly to VMs created by vagrant
+inventory = hosts.yml
 ```
 
 <!-- AUTO-GENERATED-CONTENT:END -->

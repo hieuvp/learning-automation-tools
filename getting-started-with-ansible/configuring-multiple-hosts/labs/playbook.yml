@@ -1,14 +1,15 @@
 - name: Ensure git installed
-  hosts: centos
+  hosts: amazon_linux
   tags: ["install-git"]
   tasks:
     - package: name=git state=latest
       when: ansible_os_family == 'RedHat' # conditional task
-      become: yes # https://docs.ansible.com/ansible/latest/user_guide/become.html
+      # https://docs.ansible.com/ansible/latest/user_guide/become.html
+      become: yes
 
 # Note: since we have a group of centos hosts we don't really need the when condition but it is here to demo conditional tasks and in the event we have a mistake or a group that contains a host that isn't a RHEL derivative
 - name: Ensure ~/.gitconfig copied from master.gitconfig
-  hosts: vagrant
+  hosts: amazon_linux:ubuntu
   tasks:
     - name: git_config module simplifies listing configuration
       git_config: list_all=yes scope=global
@@ -33,7 +34,3 @@
 
     - name: ensure to show git config after with debug - this time only show stdout_lines
       debug: var=git_config_after.stdout_lines
-#
-## Notes
-# - This is a great read on error handling: https://docs.ansible.com/ansible/latest/user_guide/playbooks_error_handling.html
-# - Valid variable names: https://docs.ansible.com/ansible/latest/user_guide/playbooks_variables.html?highlight=register#creating-valid-variable-names
