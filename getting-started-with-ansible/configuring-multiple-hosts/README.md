@@ -2,9 +2,7 @@
 
 ![Ansible Push Model](assets/ansible-push-model.png)
 
-Now, one more aspect of connecting,
-if you will, is to turn on its head the entire notion
-that we've talked about in this course of Ansel reaching out to these other nodes,
+Ansible reaching out to these other nodes,
 sitting out commands or files and then executing those files or commands
 and then getting results back,
 turning that on its head, that push model into a pull model.
