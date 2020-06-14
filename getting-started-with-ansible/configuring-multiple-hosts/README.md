@@ -2,23 +2,15 @@
 
 ![Ansible Push Model](assets/ansible-push-model.png)
 
-Ansible reaching out to these other nodes,
-sitting out commands or files and then executing those files or commands
-and then getting results back,
-turning that on its head, that push model into a pull model.
-And that's what the answer will Pole command does with danceable pull.
-On the other hand, we still have our manage nodes.
-
 Ansible works by connecting to your nodes and pushing out small programs,
-called "Ansible modules" to them.
+called `Ansible modules` to them.
 These programs are written to be resource models of the desired state of the system.
 Ansible then executes these modules (over SSH by default),
 and removes them when finished.
 
 Your library of modules can reside on any machine,
 and there are no servers, daemons, or databases required.
-Typically you'll work with your favorite terminal program,
-a text editor,
+Typically, you will work with your favorite terminal program, a text editor,
 and probably a version control system to keep track of changes to your content.
 
 ## [Basic Concepts](https://docs.ansible.com/ansible/latest/network/getting_started/basic_concepts.html)
