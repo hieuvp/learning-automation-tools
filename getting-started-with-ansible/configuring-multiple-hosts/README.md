@@ -2,10 +2,8 @@
 
 ![Ansible Push Model](assets/ansible-push-model.png)
 
-Ansible works by connecting to your nodes
-and pushing out small programs (called `Ansible modules`) to them.
-These programs are written to be resource models of the desired state of the system.
-Ansible then executes these modules (over SSH by default), and removes them when finished.
+1. Ansible works by connecting to your managed nodes and pushing out `Ansible modules` to them.
+1. Ansible then executes these modules (over SSH by default), and removes them when finished.
 
 ## [Basic Concepts](https://docs.ansible.com/ansible/latest/network/getting_started/basic_concepts.html)
 

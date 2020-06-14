@@ -60,6 +60,8 @@ You can invoke a single module with a task, or invoke several different modules 
 For an idea of how many modules Ansible includes,
 take a look at the list of all modules.
 
+These programs are written to be resource models of the desired state of the system.
+
 Your library of modules can reside on any machine,
 and there are no servers, daemons, or databases required.
 
