@@ -1,4 +1,3 @@
----
 - name: Ensure git installed
   hosts: centos
   tags: ["install-git"]
@@ -20,6 +19,7 @@
       # https://docs.ansible.com/ansible/latest/user_guide/playbooks_error_handling.html#ignoring-failed-commands
       # we know git config lookup will fail so ensure we don't stop playbook execution with ignore_errors
       register: git_config_before # how to register variables, in this case we capture the module output
+
     - name: show git config output always - verbosity 0 is default for debug module
       debug: var=git_config_before # how to use variables!
 
@@ -30,8 +30,10 @@
       command: git config --global --list
       ignore_errors: yes
       register: git_config_after
+
     - name: ensure to show git config after with debug - this time only show stdout_lines
       debug: var=git_config_after.stdout_lines
+#
 ## Notes
 # - This is a great read on error handling: https://docs.ansible.com/ansible/latest/user_guide/playbooks_error_handling.html
 # - Valid variable names: https://docs.ansible.com/ansible/latest/user_guide/playbooks_variables.html?highlight=register#creating-valid-variable-names
