@@ -3,7 +3,7 @@
 ![Ansible Push Model](assets/ansible-push-model.png)
 
 1. Ansible works by connecting to your managed nodes and pushing out `Ansible modules` to them.
-1. Ansible then executes these modules (over SSH by default), and removes them when finished.
+1. Ansible then executes these modules (over **SSH** by **default**), and removes them when finished.
 
 ## [Ansible Glossary](https://docs.ansible.com/ansible/latest/reference_appendices/glossary.html)
 
