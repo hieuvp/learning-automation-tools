@@ -2,6 +2,15 @@
 
 ![Ansible's Push Model](assets/ansible-push-model.png)
 
+Now, one more aspect of connecting,
+if you will, is to turn on its head the entire notion
+that we've talked about in this course of Ansel reaching out to these other nodes,
+sitting out commands or files and then executing those files or commands
+and then getting results back,
+turning that on its head, that push model into a pull model.
+And that's what the answer will Pole command does with danceable pull.
+On the other hand, we still have our manage nodes.
+
 ## [Basic Concepts](https://docs.ansible.com/ansible/latest/network/getting_started/basic_concepts.html)
 
 These concepts are common to all uses of Ansible,
