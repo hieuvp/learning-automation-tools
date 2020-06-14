@@ -7,6 +7,11 @@
 > **Playbooks** are the language by which
 > Ansible **orchestrates**, **configures**, **administers**, or **deploys** systems.
 
+Ordered lists of tasks, saved so you can run those tasks in that order repeatedly.
+Playbooks can include variables as well as tasks.
+Playbooks are written in YAML and are easy to read, write, share and understand.
+To learn more about playbooks, see About Playbooks.
+
 ### Plays
 
 > A playbook is a list of plays.
@@ -32,6 +37,9 @@
 > that do not run unless they are notified by name
 > when a task reports an underlying change on a remote system.
 
+The units of action in Ansible.
+You can execute a single task once with an ad-hoc command.
+
 ### Modules
 
 > Modules are the units of work that Ansible ships out to remote machines.
@@ -43,6 +51,14 @@
 > Once modules are executed on remote machines,
 > they are removed, so no long-running daemons are used.
 > Ansible refers to the collection of available modules as a library.
+
+The units of code Ansible executes.
+Each module has a particular use,
+from administering users on a specific type of database
+to managing VLAN interfaces on a specific type of network device.
+You can invoke a single module with a task, or invoke several different modules in a playbook.
+For an idea of how many modules Ansible includes,
+take a look at the list of all modules.
 
 ## Table of Contents
 

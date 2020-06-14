@@ -39,28 +39,6 @@ Your inventory can specify information like IP address for each managed node.
 An inventory can also organize managed nodes, creating and nesting groups for easier scaling.
 To learn more about inventory, see the Working with Inventory section.
 
-### Modules
-
-The units of code Ansible executes.
-Each module has a particular use,
-from administering users on a specific type of database
-to managing VLAN interfaces on a specific type of network device.
-You can invoke a single module with a task, or invoke several different modules in a playbook.
-For an idea of how many modules Ansible includes,
-take a look at the list of all modules.
-
-### Tasks
-
-The units of action in Ansible.
-You can execute a single task once with an ad-hoc command.
-
-### Playbooks
-
-Ordered lists of tasks, saved so you can run those tasks in that order repeatedly.
-Playbooks can include variables as well as tasks.
-Playbooks are written in YAML and are easy to read, write, share and understand.
-To learn more about playbooks, see About Playbooks.
-
 ## [Ansible Glossary](https://docs.ansible.com/ansible/latest/reference_appendices/glossary.html)
 
 ### Push Mode
