@@ -1,5 +1,7 @@
 # Declaring Desired State with Playbooks
 
+![Ansible Localhost](assets/ansible-localhost.png)
+
 ## [Ansible Glossary](https://docs.ansible.com/ansible/latest/reference_appendices/glossary.html)
 
 ### Playbooks
