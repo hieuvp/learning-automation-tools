@@ -1,6 +1,6 @@
 # Declaring Desired State with Playbooks
 
-<div align="center"><img src="assets/ansible-localhost.png" width="350"></div>
+![Anchoring Analogy](assets/anchoring-analogy.png)
 
 ## [Ansible Glossary](https://docs.ansible.com/ansible/latest/reference_appendices/glossary.html)
 
@@ -9,8 +9,6 @@
 > **Playbooks** are the language by which
 > Ansible **orchestrates**, **configures**, **administers**, or **deploys** systems.
 
-Ordered lists of tasks, saved so you can run those tasks in that order repeatedly.
-Playbooks can include variables as well as tasks.
 Playbooks are written in YAML and are easy to read, write, share and understand.
 
 ### Plays
@@ -95,11 +93,11 @@ and there are no servers, daemons, or databases required.
 
 ## `docker` Is to `docker-compose` What `ansible` Is to `ansible-playbook`
 
-![Anchoring Analogy](assets/anchoring-analogy.png)
-
 ## What a Script of Ad-hoc Ansible Calls Looks Like
 
 ## Writing a First Playbook to Ensure Our `.gitconfig` Is Setup
+
+<div align="center"><img src="assets/ansible-localhost.png" width="350"></div>
 
 <!-- AUTO-GENERATED-CONTENT:START (CODE:src=labs/playbook.yml) -->
 <!-- The below code snippet is automatically added from labs/playbook.yml -->
