@@ -95,6 +95,8 @@ and there are no servers, daemons, or databases required.
 
 ## `docker` Is to `docker-compose` What `ansible` Is to `ansible-playbook`
 
+![Anchoring Analogy](assets/anchoring-analogy.png)
+
 ## What a Script of Ad-hoc Ansible Calls Looks Like
 
 ## Writing a First Playbook to Ensure Our `.gitconfig` Is Setup
