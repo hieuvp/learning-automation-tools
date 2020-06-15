@@ -4,44 +4,41 @@
 
 ## [Ansible Glossary](https://docs.ansible.com/ansible/latest/reference_appendices/glossary.html)
 
-### [Control Node](https://docs.ansible.com/ansible/latest/network/getting_started/basic_concepts.html#control-node)
-
-Any machine with Ansible installed.
-You can run commands and playbooks,
-invoking `/usr/bin/ansible` or `/usr/bin/ansible-playbook`, from any control node.
-You can use any computer that has Python installed on it as a control node -
-laptops, shared desktops, and servers can all run Ansible.
-However, you cannot use a Windows machine as a control node.
-You can have multiple control nodes.
-
-### [Managed Nodes](https://docs.ansible.com/ansible/latest/network/getting_started/basic_concepts.html#managed-nodes)
-
-The network devices (and/or servers) you manage with Ansible.
-Managed nodes are also sometimes called `hosts`.
-Ansible is not installed on managed nodes.
-
-### [Inventory](https://docs.ansible.com/ansible/latest/network/getting_started/basic_concepts.html#inventory)
-
-A list of managed nodes.
-An inventory file is also sometimes called a `hostfile`.
-Your inventory can specify information like IP address for each managed node.
-An inventory can also organize managed nodes, creating and nesting groups for easier scaling.
-To learn more about inventory, see the Working with Inventory section.
-
 ### Push Mode
 
 > Push mode is the default mode of Ansible.
-> In fact, it's not really a mode at all –
-> it's just how Ansible works when you aren't thinking about it.
 > Push mode allows Ansible to be fine-grained
-> and conduct nodes through complex orchestration processes without waiting for them to check in.
+> and conduct nodes through complex orchestration processes
+> without waiting for them to check in.
 
-### Inventory - Temp
+### [Control Node](https://docs.ansible.com/ansible/latest/network/getting_started/basic_concepts.html#control-node)
 
-> A file (by default, Ansible uses a simple INI format)
-> that describes Hosts and Groups in Ansible.<br />
-> Inventory can also be provided via an Inventory Script
-> (sometimes called an `External Inventory Script`).
+> Any machine with Ansible installed.
+> You can run commands (`/usr/bin/ansible`) and playbooks `/usr/bin/ansible-playbook`,
+> from any control node.
+> You can use any computer that has Python installed on it as a control node -
+> laptops, shared desktops, and servers can all run Ansible.
+> However, you cannot use a Windows machine as a control node.
+> You can have multiple control nodes.
+
+### [Managed Nodes](https://docs.ansible.com/ansible/latest/network/getting_started/basic_concepts.html#managed-nodes)
+
+> The network devices (and/or servers) you manage with Ansible.
+> Managed nodes are also sometimes called `hosts`.
+> Ansible is not installed on managed nodes.
+
+### [Inventory](https://docs.ansible.com/ansible/latest/network/getting_started/basic_concepts.html#inventory)
+
+> A list of managed nodes.
+> An inventory file is also sometimes called a `hostfile`.
+> Your inventory can specify information like IP address for each managed node.
+> An inventory can also organize managed nodes, creating and nesting groups for easier scaling.
+> To learn more about inventory, see the Working with Inventory section.
+
+A file (by default, Ansible uses a simple INI format)
+that describes Hosts and Groups in Ansible.<br />
+Inventory can also be provided via an Inventory Script
+(sometimes called an `External Inventory Script`).
 
 ### Inventory Script
 
