@@ -11,7 +11,7 @@
 > and conduct nodes through complex orchestration processes
 > without waiting for them to check in.
 
-### [Control Node](https://docs.ansible.com/ansible/latest/network/getting_started/basic_concepts.html#control-node)
+### Control Node
 
 > Any machine with Ansible installed.
 > You can run commands (`/usr/local/bin/ansible`)
@@ -19,13 +19,13 @@
 > from any control node.
 > You can have multiple control nodes.
 
-### [Managed Nodes](https://docs.ansible.com/ansible/latest/network/getting_started/basic_concepts.html#managed-nodes)
+### Managed Nodes
 
 > The network devices (and/or servers) you manage with Ansible.
 > Managed nodes are also sometimes called `hosts`.
 > Ansible is not installed on managed nodes.
 
-### [Inventory](https://docs.ansible.com/ansible/latest/network/getting_started/basic_concepts.html#inventory)
+### Inventory
 
 > A list of managed nodes.
 > An inventory file is also sometimes called a `hostfile`.
@@ -52,6 +52,7 @@
 - [Drilling into How Inventory Can Be Represented including with Static INI Files and Inventory Scripts](#drilling-into-how-inventory-can-be-represented-including-with-static-ini-files-and-inventory-scripts)
 - [Troubleshooting Inventory Scripts by Running Them Independently before Plugging Them into Ansible](#troubleshooting-inventory-scripts-by-running-them-independently-before-plugging-them-into-ansible)
 - [Ansible Uses Inventory Plugins to Provide Inventory in Any Number of Formats including Static and Dynamic](#ansible-uses-inventory-plugins-to-provide-inventory-in-any-number-of-formats-including-static-and-dynamic)
+- [References](#references)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -467,3 +468,7 @@ inventory = hosts.yml
 ## Troubleshooting Inventory Scripts by Running Them Independently before Plugging Them into Ansible
 
 ## Ansible Uses Inventory Plugins to Provide Inventory in Any Number of Formats including Static and Dynamic
+
+## References
+
+- [Getting Started with Ansible for Network Automation - Basic Concepts](https://docs.ansible.com/ansible/latest/network/getting_started/basic_concepts.html)

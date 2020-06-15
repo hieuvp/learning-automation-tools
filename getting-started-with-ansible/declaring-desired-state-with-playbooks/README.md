@@ -10,7 +10,6 @@
 Ordered lists of tasks, saved so you can run those tasks in that order repeatedly.
 Playbooks can include variables as well as tasks.
 Playbooks are written in YAML and are easy to read, write, share and understand.
-To learn more about playbooks, see About Playbooks.
 
 ### Plays
 
@@ -82,6 +81,7 @@ and there are no servers, daemons, or databases required.
 - [I Cannot Emphasize Enough the Value of Versioning Playbooks with Git](#i-cannot-emphasize-enough-the-value-of-versioning-playbooks-with-git)
 - [Adding a Second Play with Two Tasks](#adding-a-second-play-with-two-tasks)
 - [What Happens When We Have a Syntax Error in a Playbook](#what-happens-when-we-have-a-syntax-error-in-a-playbook)
+- [References](#references)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -174,3 +174,7 @@ localhost                  : ok=3    changed=0    unreachable=0    failed=0    s
 ## Adding a Second Play with Two Tasks
 
 ## What Happens When We Have a Syntax Error in a Playbook
+
+## References
+
+- [Getting Started with Ansible for Network Automation - Basic Concepts](https://docs.ansible.com/ansible/latest/network/getting_started/basic_concepts.html)
