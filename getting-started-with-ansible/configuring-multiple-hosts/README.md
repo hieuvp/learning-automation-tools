@@ -14,11 +14,9 @@
 ### [Control Node](https://docs.ansible.com/ansible/latest/network/getting_started/basic_concepts.html#control-node)
 
 > Any machine with Ansible installed.
-> You can run commands (`/usr/bin/ansible`) and playbooks `/usr/bin/ansible-playbook`,
+> You can run commands (`/usr/local/bin/ansible`)
+> and playbooks `/usr/local/bin/ansible-playbook`,
 > from any control node.
-> You can use any computer that has Python installed on it as a control node -
-> laptops, shared desktops, and servers can all run Ansible.
-> However, you cannot use a Windows machine as a control node.
 > You can have multiple control nodes.
 
 ### [Managed Nodes](https://docs.ansible.com/ansible/latest/network/getting_started/basic_concepts.html#managed-nodes)
@@ -33,7 +31,6 @@
 > An inventory file is also sometimes called a `hostfile`.
 > Your inventory can specify information like IP address for each managed node.
 > An inventory can also organize managed nodes, creating and nesting groups for easier scaling.
-> To learn more about inventory, see the Working with Inventory section.
 
 A file (by default, Ansible uses a simple INI format)
 that describes Hosts and Groups in Ansible.<br />
