@@ -39,7 +39,8 @@ You can execute a single task once with an ad-hoc command.
 
 ### Handlers
 
-> Handlers are just like regular tasks in an Ansible playbook (see Tasks) but are only run if the Task contains a notify directive
+> Handlers are just like regular tasks in an Ansible playbook (see Tasks)
+> but are only run if the Task contains a notify directive
 > and also indicates that it changed something.
 > For example, if a config file is changed,
 > then the task referencing the config file templating operation may notify a service restart handler.
@@ -111,11 +112,20 @@ and there are no servers, daemons, or databases required.
 <!-- The below code snippet is automatically added from labs/playbook.yml -->
 
 ```yml
+# Source: labs/playbook.yml
+
 - name: Ensure .gitconfig copied from master.gitconfig
   hosts: localhost
   tasks:
     - file: path="/tmp/learning-ansible" state=directory mode=0755
-    - copy: src="master.gitconfig" dest="/tmp/learning-ansible/.gitconfig"
+    - copy:
+        src: "master.gitconfig"
+        dest: "/tmp/learning-ansible/.gitconfig"
+      notify: restart test
+
+  handlers:
+    - name: restart test
+      debug: msg='important job'
 ```
 
 <!-- AUTO-GENERATED-CONTENT:END -->
