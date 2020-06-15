@@ -79,5 +79,5 @@ export-drawio:
 	$(MAKEFILE_SCRIPT_PATH)/export-drawio.sh assets/ansible-scenario-progression.drawio 2
 	$(MAKEFILE_SCRIPT_PATH)/export-drawio.sh getting-started-with-ansible/alternatives-to-ssh-for-connecting-to-hosts/assets/ansible-pull-model.drawio 1.8
 	$(MAKEFILE_SCRIPT_PATH)/export-drawio.sh getting-started-with-ansible/configuring-multiple-hosts/assets/ansible-push-model.drawio 2
-	$(MAKEFILE_SCRIPT_PATH)/export-drawio.sh getting-started-with-ansible/declaring-desired-state-with-playbooks/assets/ansible-localhost.drawio 2
+	$(MAKEFILE_SCRIPT_PATH)/export-drawio.sh getting-started-with-ansible/declaring-desired-state-with-playbooks/assets/ansible-localhost.drawio 3
 	@printf "\n"
