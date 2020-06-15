@@ -9,8 +9,6 @@
 > **Playbooks** are the language by which
 > Ansible **orchestrates**, **configures**, **administers**, or **deploys** systems.
 
-Playbooks are written in YAML and are easy to read, write, share and understand.
-
 ### Plays
 
 > A playbook is a list of plays.
@@ -38,6 +36,16 @@ Playbooks are written in YAML and are easy to read, write, share and understand.
 
 The units of action in Ansible.
 You can execute a single task once with an ad-hoc command.
+
+### Handlers
+
+> Handlers are just like regular tasks in an Ansible playbook (see Tasks) but are only run if the Task contains a notify directive
+> and also indicates that it changed something.
+> For example, if a config file is changed,
+> then the task referencing the config file templating operation may notify a service restart handler.
+> This means services can be bounced only if they need to be restarted.
+> Handlers can be used for things other than service restarts,
+> but service restarts are the most common usage.
 
 ### Modules
 
