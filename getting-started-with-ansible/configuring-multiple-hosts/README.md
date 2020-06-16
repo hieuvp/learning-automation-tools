@@ -6,7 +6,7 @@
 
 ### Push Mode
 
-> Push mode is the default mode of Ansible.
+> Push mode is the default mode of Ansible.<br />
 > Push mode allows Ansible to be fine-grained
 > and conduct nodes through complex orchestration processes
 > without waiting for them to check in.
