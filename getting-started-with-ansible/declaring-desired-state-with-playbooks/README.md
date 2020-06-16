@@ -43,6 +43,17 @@
 
 <div align="center"><img src="assets/ansible-localhost.png" width="350"></div>
 
+<!-- AUTO-GENERATED-CONTENT:START (CODE:src=labs/master.gitconfig) -->
+<!-- The below code snippet is automatically added from labs/master.gitconfig -->
+
+```gitconfig
+[user]
+	name = Harrison Van
+	email = software.engineer@shopback.com
+```
+
+<!-- AUTO-GENERATED-CONTENT:END -->
+
 ## Running `ansible-playbook` for the First Time
 
 ## Testing `ansible-playbook` by Removing and Restoring Our `.gitconfig`
