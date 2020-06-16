@@ -279,7 +279,7 @@ make terraform-destroy
 
 ## Destroying and Recreating Is Scalable and Reproducible
 
-## [Configuring Ansible with `ansible.cfg`](https://docs.ansible.com/ansible/latest/installation_guide/intro_configuration.html)
+## [Configuring Ansible with `ansible.cfg`](https://docs.ansible.com/ansible/latest/reference_appendices/config.html)
 
 ## Summarizing Inventory with `ansible-inventory --graph` and with `--vars`
 
