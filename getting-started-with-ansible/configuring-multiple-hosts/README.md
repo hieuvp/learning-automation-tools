@@ -6,30 +6,31 @@
 
 ### Push Mode
 
-> **Push Mode** is the default mode of Ansible.<br /> > **Push Mode** allows Ansible to be fine-grained
+> **Push Mode** is the default mode of Ansible.
+> <br />**Push Mode** allows Ansible to be fine-grained
 > and conduct nodes through complex orchestration processes
 > without waiting for them to check in.
 
 ### Control Node
 
-> Any machine with Ansible installed.<br />
-> You can run commands (`/usr/local/bin/ansible`)
+> Any machine with Ansible installed.
+> <br />You can run commands (`/usr/local/bin/ansible`)
 > and playbooks `/usr/local/bin/ansible-playbook`,
-> from any **Control Node**.<br />
-> You can have multiple **Control Nodes**.
+> from any **Control Node**.
+> <br />You can have multiple **Control Nodes**.
 
 ### Managed Nodes
 
-> The network devices (and/or servers) you manage with Ansible.<br />
-> **Managed Nodes** are also sometimes called `hosts`.<br />
-> Ansible is **~~not~~** installed on **Managed Nodes**.<br />
+> The network devices (and/or servers) you manage with Ansible.
+> <br />**Managed Nodes** are also sometimes called `hosts`.
+> <br />Ansible is **~~not~~** installed on **Managed Nodes**.
 
 ### Inventory
 
-> A list of managed nodes.<br />
-> An **Inventory** file is also sometimes called a `hostfile`.
-> Your **Inventory** can specify information like IP address for each managed node.
-> An **Inventory** can also organize managed nodes,
+> A list of managed nodes.
+> <br />An **Inventory** file is also sometimes called a `hostfile`.
+> <br />Your **Inventory** can specify information like IP address for each managed node.
+> <br />An **Inventory** can also organize managed nodes,
 > creating and nesting groups for easier scaling.
 
 ## Table of Contents
