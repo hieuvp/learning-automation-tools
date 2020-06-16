@@ -4,38 +4,35 @@
 
 ## [Ansible Glossary](https://docs.ansible.com/ansible/latest/reference_appendices/glossary.html)
 
-<<<<<<< HEAD
 ### Push Mode
 
-> Push mode is the default mode of Ansible.
-> Push mode allows Ansible to be fine-grained
+> **Push Mode** is the default mode of Ansible.
+> <br />**Push Mode** allows Ansible to be fine-grained
 > and conduct nodes through complex orchestration processes
 > without waiting for them to check in.
 
 ### Control Node
 
 > Any machine with Ansible installed.
-> You can run commands (`/usr/local/bin/ansible`)
+> <br />You can run commands (`/usr/local/bin/ansible`)
 > and playbooks `/usr/local/bin/ansible-playbook`,
-> from any control node.
-> You can have multiple control nodes.
+> from any **Control Node**.
+> <br />You can have multiple **Control Nodes**.
 
 ### Managed Nodes
 
 > The network devices (and/or servers) you manage with Ansible.
-> Managed nodes are also sometimes called `hosts`.
-> Ansible is not installed on managed nodes.
+> <br />**Managed Nodes** are also sometimes called `hosts`.
+> <br />Ansible is **~~not~~** installed on **Managed Nodes**.
 
 ### Inventory
 
 > A list of managed nodes.
-> An inventory file is also sometimes called a `hostfile`.
-> Your inventory can specify information like IP address for each managed node.
-> An inventory can also organize managed nodes,
+> <br />An **Inventory** file is also sometimes called a `hostfile`.
+> <br />Your **Inventory** can specify information like IP address for each managed node.
+> <br />An **Inventory** can also organize managed nodes,
 > creating and nesting groups for easier scaling.
 
-=======
->>>>>>> master
 ## Table of Contents
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
@@ -51,6 +48,7 @@
 - [Running Our Playbook against Multiple VMs to Install and Configure Git](#running-our-playbook-against-multiple-vms-to-install-and-configure-git)
 - [Destroying and Recreating Is Scalable and Reproducible](#destroying-and-recreating-is-scalable-and-reproducible)
 - [Configuring Ansible with `ansible.cfg`](#configuring-ansible-with-ansiblecfg)
+- [Configuring Ansible with `ansible.cfg`](#configuring-ansible-with-ansiblecfg-1)
 - [Summarizing Inventory with `ansible-inventory --graph` and with `--vars`](#summarizing-inventory-with-ansible-inventory---graph-and-with---vars)
 - [Drilling into How Inventory Can Be Represented including with Static INI Files and Inventory Scripts](#drilling-into-how-inventory-can-be-represented-including-with-static-ini-files-and-inventory-scripts)
 - [Troubleshooting Inventory Scripts by Running Them Independently before Plugging Them into Ansible](#troubleshooting-inventory-scripts-by-running-them-independently-before-plugging-them-into-ansible)
@@ -292,14 +290,9 @@ output "ubuntu_dns_records" {
 <!-- AUTO-GENERATED-CONTENT:END -->
 
 ```shell script
-<<<<<<< HEAD
-cd getting-started-with-ansible/configuring-multiple-hosts/terraform
-terraform apply
-=======
 make terraform-plan
 make terraform-apply
 make terraform-destroy
->>>>>>> master
 ```
 
 ## Creating Test VMs with Vagrant
@@ -348,8 +341,7 @@ ansible-inventory --graph --vars
 
 ## Destroying and Recreating Is Scalable and Reproducible
 
-<<<<<<< HEAD
-## [Configuring Ansible with `ansible.cfg`](https://docs.ansible.com/ansible/latest/installation_guide/intro_configuration.html)
+## [Configuring Ansible with `ansible.cfg`](https://docs.ansible.com/ansible/latest/reference_appendices/config.html)
 
 > Certain settings in Ansible are adjustable via a configuration file (`ansible.cfg`).
 > The stock configuration should be sufficient for most users,
@@ -470,9 +462,6 @@ inventory = hosts.yml
 ```
 
 <!-- AUTO-GENERATED-CONTENT:END -->
-=======
-## [Configuring Ansible with `ansible.cfg`](https://docs.ansible.com/ansible/latest/reference_appendices/config.html)
->>>>>>> master
 
 ## Summarizing Inventory with `ansible-inventory --graph` and with `--vars`
 

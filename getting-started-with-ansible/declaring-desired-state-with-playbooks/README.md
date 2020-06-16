@@ -118,7 +118,17 @@ and there are no servers, daemons, or databases required.
 
 <div align="center"><img src="assets/ansible-localhost.png" width="350"></div>
 
-<<<<<<< HEAD
+<!-- AUTO-GENERATED-CONTENT:START (CODE:src=labs/master.gitconfig) -->
+<!-- The below code snippet is automatically added from labs/master.gitconfig -->
+
+```gitconfig
+[user]
+  name = Harrison Van
+  email = software.engineer@shopback.com
+```
+
+<!-- AUTO-GENERATED-CONTENT:END -->
+
 <!-- AUTO-GENERATED-CONTENT:START (CODE:src=labs/playbook.yml) -->
 <!-- The below code snippet is automatically added from labs/playbook.yml -->
 
@@ -138,15 +148,6 @@ and there are no servers, daemons, or databases required.
   handlers:
     - name: restart test
       debug: msg='important job'
-=======
-<!-- AUTO-GENERATED-CONTENT:START (CODE:src=labs/master.gitconfig) -->
-<!-- The below code snippet is automatically added from labs/master.gitconfig -->
-
-```gitconfig
-[user]
-  name = Harrison Van
-  email = software.engineer@shopback.com
->>>>>>> master
 ```
 
 <!-- AUTO-GENERATED-CONTENT:END -->
