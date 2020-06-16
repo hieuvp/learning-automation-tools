@@ -12,7 +12,8 @@
 ### Plays
 
 > A playbook is a list of plays.
-> A play is minimally a mapping between a set of hosts selected by a host specifier
+> A play is minimally a mapping between
+> a set of hosts selected by a host specifier
 > (usually chosen by groups but sometimes by hostname globs)
 > and the tasks which run on those hosts to define the role that those systems will perform.
 > There can be one or many plays in a playbook.
