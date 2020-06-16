@@ -21,17 +21,17 @@
 
 ### Host
 
-> A host is simply a remote machine that Ansible manages.
-> They can have individual variables assigned to them,
+> A **host** is simply a remote machine that Ansible manages.
+> <br />They can have individual variables assigned to them,
 > and can also be organized in groups.
-> All hosts have a name they can be reached at
+> <br />All hosts have a name they can be reached at
 > (which is either an IP address, or a domain name)
 > and, optionally, a port number,
 > if they are not to be accessed on the default SSH port.
 
 ### Task
 
-> Playbooks exist to run tasks.
+> Playbooks exist to run **tasks**.
 > Tasks combine an action (a module and its arguments) with a name
 > and optionally some other keywords (like looping directives).
 > Handlers are also tasks, but they are a special kind of task
@@ -40,6 +40,12 @@
 
 The units of action in Ansible.
 You can execute a single task once with an ad-hoc command.
+
+### Action
+
+> An action is a part of a task that specifies which of the modules to run
+> and which arguments to pass to that module.
+> Each task can have only one action, but it may also have other parameters.
 
 ### Handlers
 
