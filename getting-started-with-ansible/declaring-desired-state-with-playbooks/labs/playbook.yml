@@ -1,0 +1,15 @@
+# Source: labs/playbook.yml
+
+- name: Ensure .gitconfig copied from master.gitconfig
+  hosts: localhost
+
+  tasks:
+    - file: path="/tmp/learning-ansible" state=directory mode=0755
+    - copy:
+        src: "master.gitconfig"
+        dest: "/tmp/learning-ansible/.gitconfig"
+      notify: restart test
+
+  handlers:
+    - name: restart test
+      debug: msg='important job'

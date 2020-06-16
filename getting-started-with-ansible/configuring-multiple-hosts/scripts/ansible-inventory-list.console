@@ -1,0 +1,64 @@
++ ansible-inventory --list
+{
+    "_meta": {
+        "hostvars": {
+            "centos20": {
+                "ansible_host": "192.168.50.20",
+                "ansible_port": 22,
+                "ansible_private_key_file": ".vagrant/machines/centos20/virtualbox/private_key",
+                "ansible_user": "vagrant"
+            },
+            "centos21": {
+                "ansible_host": "192.168.50.21",
+                "ansible_port": 22,
+                "ansible_private_key_file": ".vagrant/machines/centos21/virtualbox/private_key",
+                "ansible_user": "vagrant"
+            },
+            "localhost": {
+                "ansible_connection": "local",
+                "ansible_python_interpreter": "/usr/local/bin/python3"
+            },
+            "ubuntu10": {
+                "ansible_host": "192.168.50.10",
+                "ansible_port": 22,
+                "ansible_private_key_file": ".vagrant/machines/ubuntu10/virtualbox/private_key",
+                "ansible_user": "vagrant"
+            },
+            "ubuntu11": {
+                "ansible_host": "192.168.50.11",
+                "ansible_port": 22,
+                "ansible_private_key_file": ".vagrant/machines/ubuntu11/virtualbox/private_key",
+                "ansible_user": "vagrant"
+            }
+        }
+    },
+    "all": {
+        "children": [
+            "ungrouped",
+            "vagrant"
+        ]
+    },
+    "centos": {
+        "hosts": [
+            "centos20",
+            "centos21"
+        ]
+    },
+    "ubuntu": {
+        "hosts": [
+            "ubuntu10",
+            "ubuntu11"
+        ]
+    },
+    "ungrouped": {
+        "hosts": [
+            "localhost"
+        ]
+    },
+    "vagrant": {
+        "children": [
+            "centos",
+            "ubuntu"
+        ]
+    }
+}

@@ -46,6 +46,18 @@ resource "aws_instance" "amazon_linux" {
   })
 }
 
+resource "cloudflare_record" "amazon_linux" {
+  count = length(aws_instance.amazon_linux)
+
+  zone_id = local.domain_id
+
+  type    = "A"
+  name    = "${lower(local.application)}-amazon-linux-${count.index + 1}"
+  value   = aws_instance.amazon_linux[count.index].private_ip
+  ttl     = "1"
+  proxied = "false"
+}
+
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Ubuntu Server 18 LTS Instances
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -86,4 +98,16 @@ resource "aws_instance" "ubuntu" {
     Name     = "${local.tags.Name}-ubuntu-${count.index + 1}"
     Platform = "Ubuntu"
   })
+}
+
+resource "cloudflare_record" "ubuntu" {
+  count = length(aws_instance.ubuntu)
+
+  zone_id = local.domain_id
+
+  type    = "A"
+  name    = "${lower(local.application)}-ubuntu-${count.index + 1}"
+  value   = aws_instance.ubuntu[count.index].private_ip
+  ttl     = "1"
+  proxied = "false"
 }
