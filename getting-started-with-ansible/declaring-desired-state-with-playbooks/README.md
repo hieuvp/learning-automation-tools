@@ -120,6 +120,7 @@ and there are no servers, daemons, or databases required.
 
 - name: Ensure .gitconfig copied from master.gitconfig
   hosts: localhost
+
   tasks:
     - file: path="/tmp/learning-ansible" state=directory mode=0755
     - copy:
