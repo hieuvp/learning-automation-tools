@@ -29,4 +29,19 @@ locals {
 
 locals {
   instance_type = "t2.nano"
+
+  domain_name = "shopback.engineering"
+  domain_id   = data.cloudflare_zones.this.zones[0].id
+}
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Data
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+data "cloudflare_zones" "this" {
+  filter {
+    name   = local.domain_name
+    status = "active"
+    paused = false
+  }
 }

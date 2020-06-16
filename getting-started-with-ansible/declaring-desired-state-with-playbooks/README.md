@@ -1,5 +1,7 @@
 # Declaring Desired State with Playbooks
 
+![Anchoring Analogy](assets/anchoring-analogy.png)
+
 ## [Ansible Glossary](https://docs.ansible.com/ansible/latest/reference_appendices/glossary.html)
 
 ### Playbooks
@@ -38,6 +40,19 @@
 ## What a Script of Ad-hoc Ansible Calls Looks Like
 
 ## Writing a First Playbook to Ensure Our `.gitconfig` Is Setup
+
+<div align="center"><img src="assets/ansible-localhost.png" width="350"></div>
+
+<!-- AUTO-GENERATED-CONTENT:START (CODE:src=labs/master.gitconfig) -->
+<!-- The below code snippet is automatically added from labs/master.gitconfig -->
+
+```gitconfig
+[user]
+  name = Harrison Van
+  email = software.engineer@shopback.com
+```
+
+<!-- AUTO-GENERATED-CONTENT:END -->
 
 ## Running `ansible-playbook` for the First Time
 
