@@ -165,44 +165,51 @@ cat: /tmp/learning-ansible/.gitconfig: No such file or directory
 
 + ansible-playbook playbook.yml
 [WARNING]: No inventory was parsed, only implicit localhost is available
-[WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+[WARNING]: provided hosts list is empty, only localhost is available. Note that the
+implicit localhost does not match 'all'
 
-PLAY [Ensure ~/.gitconfig copied from master.gitconfig] **********************************************************************************************************************
+PLAY [Ensure .gitconfig copied from master.gitconfig] ************************************
 
-TASK [Gathering Facts] *******************************************************************************************************************************************************
+TASK [Gathering Facts] *******************************************************************
 ok: [localhost]
 
-TASK [file] ******************************************************************************************************************************************************************
+TASK [file] ******************************************************************************
 ok: [localhost]
 
-TASK [copy] ******************************************************************************************************************************************************************
+TASK [copy] ******************************************************************************
 changed: [localhost]
 
-PLAY RECAP *******************************************************************************************************************************************************************
-localhost                  : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+RUNNING HANDLER [restart test] ***********************************************************
+ok: [localhost] => {
+    "msg": "important job"
+}
+
+PLAY RECAP *******************************************************************************
+localhost                  : ok=4    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
 
 + ansible-playbook playbook.yml
 [WARNING]: No inventory was parsed, only implicit localhost is available
-[WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+[WARNING]: provided hosts list is empty, only localhost is available. Note that the
+implicit localhost does not match 'all'
 
-PLAY [Ensure ~/.gitconfig copied from master.gitconfig] **********************************************************************************************************************
+PLAY [Ensure .gitconfig copied from master.gitconfig] ************************************
 
-TASK [Gathering Facts] *******************************************************************************************************************************************************
+TASK [Gathering Facts] *******************************************************************
 ok: [localhost]
 
-TASK [file] ******************************************************************************************************************************************************************
+TASK [file] ******************************************************************************
 ok: [localhost]
 
-TASK [copy] ******************************************************************************************************************************************************************
+TASK [copy] ******************************************************************************
 ok: [localhost]
 
-PLAY RECAP *******************************************************************************************************************************************************************
+PLAY RECAP *******************************************************************************
 localhost                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
 
 + cat /tmp/learning-ansible/.gitconfig
 [user]
-	name = Harrison Van
-	email = software.engineer@shopback.com
+  name = Harrison Van
+  email = software.engineer@shopback.com
 ```
 
 <!-- AUTO-GENERATED-CONTENT:END -->
