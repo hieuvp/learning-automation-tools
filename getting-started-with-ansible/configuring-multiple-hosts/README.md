@@ -4,6 +4,7 @@
 
 ## [Ansible Glossary](https://docs.ansible.com/ansible/latest/reference_appendices/glossary.html)
 
+<<<<<<< HEAD
 ### Push Mode
 
 > Push mode is the default mode of Ansible.
@@ -33,6 +34,8 @@
 > An inventory can also organize managed nodes,
 > creating and nesting groups for easier scaling.
 
+=======
+>>>>>>> master
 ## Table of Contents
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
@@ -289,8 +292,14 @@ output "ubuntu_dns_records" {
 <!-- AUTO-GENERATED-CONTENT:END -->
 
 ```shell script
+<<<<<<< HEAD
 cd getting-started-with-ansible/configuring-multiple-hosts/terraform
 terraform apply
+=======
+make terraform-plan
+make terraform-apply
+make terraform-destroy
+>>>>>>> master
 ```
 
 ## Creating Test VMs with Vagrant
@@ -339,6 +348,7 @@ ansible-inventory --graph --vars
 
 ## Destroying and Recreating Is Scalable and Reproducible
 
+<<<<<<< HEAD
 ## [Configuring Ansible with `ansible.cfg`](https://docs.ansible.com/ansible/latest/installation_guide/intro_configuration.html)
 
 > Certain settings in Ansible are adjustable via a configuration file (`ansible.cfg`).
@@ -460,6 +470,9 @@ inventory = hosts.yml
 ```
 
 <!-- AUTO-GENERATED-CONTENT:END -->
+=======
+## [Configuring Ansible with `ansible.cfg`](https://docs.ansible.com/ansible/latest/reference_appendices/config.html)
+>>>>>>> master
 
 ## Summarizing Inventory with `ansible-inventory --graph` and with `--vars`
 

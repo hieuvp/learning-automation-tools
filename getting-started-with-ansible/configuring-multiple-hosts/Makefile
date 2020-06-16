@@ -12,6 +12,7 @@ terraform-apply:
 terraform-destroy:
 	cd terraform \
 	&& terraform destroy
+<<<<<<< HEAD
 
 .PHONY: ansible-inventory-list
 ansible-inventory-list:
@@ -20,3 +21,5 @@ ansible-inventory-list:
 
 .PHONY: all
 all: ansible-inventory-list
+=======
+>>>>>>> master
