@@ -260,7 +260,6 @@ output "ubuntu_dns_records" {
 <!-- AUTO-GENERATED-CONTENT:END -->
 
 ```shell script
-cd getting-started-with-ansible/configuring-multiple-hosts
 make terraform-plan
 make terraform-apply
 make terraform-destroy
