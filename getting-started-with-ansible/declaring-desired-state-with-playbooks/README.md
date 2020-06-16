@@ -9,80 +9,6 @@
 > **Playbooks** are the language by which
 > Ansible **orchestrates**, **configures**, **administers**, or **deploys** systems.
 
-### Plays
-
-> A playbook is a list of **plays**.
-> <br />A **play** is minimally a mapping between
-> a set of hosts selected by a host specifier
-> (usually chosen by groups but sometimes by hostname globs)
-> and the tasks which run on those hosts
-> to define the role that those systems will perform.
-> <br />There can be one, or many **plays** in a playbook.
-
-### Host
-
-> A **host** is simply a remote machine that Ansible manages.
-> <br />They can have individual variables assigned to them,
-> and can also be organized in groups.
-> <br />All hosts have a name they can be reached at
-> (which is either an IP address, or a domain name)
-> and, optionally, a port number,
-> if they are not to be accessed on the default SSH port.
-
-### Task
-
-> Playbooks exist to run **tasks**.
-> Tasks combine an action (a module and its arguments) with a name
-> and optionally some other keywords (like looping directives).
-> Handlers are also tasks, but they are a special kind of task
-> that do not run unless they are notified by name
-> when a task reports an underlying change on a remote system.
-
-The units of action in Ansible.
-You can execute a single task once with an ad-hoc command.
-
-### Action
-
-> An action is a part of a task that specifies which of the modules to run
-> and which arguments to pass to that module.
-> Each task can have only one action, but it may also have other parameters.
-
-### Handlers
-
-> Handlers are just like regular tasks in an Ansible playbook (see Tasks)
-> but are only run if the Task contains a notify directive
-> and also indicates that it changed something.
-> For example, if a config file is changed,
-> then the task referencing the config file templating operation may notify a service restart handler.
-> This means services can be bounced only if they need to be restarted.
-> Handlers can be used for things other than service restarts,
-> but service restarts are the most common usage.
-
-### Modules
-
-> Modules are the units of work that Ansible ships out to remote machines.
-> Modules are kicked off by either `/usr/local/bin/ansible` or `/usr/local/bin/ansible-playbook`
-> (where multiple tasks use lots of different modules in conjunction).
-> Modules can be implemented in any language, including Perl, Bash, or Ruby –
-> but can leverage some useful communal library code if written in Python.
-> Modules just have to return JSON.
-> Once modules are executed on remote machines,
-> they are removed, so no long-running daemons are used.
-> Ansible refers to the collection of available modules as a library.
-
-The units of code Ansible executes.
-Each module has a particular use,
-from administering users on a specific type of database
-to managing VLAN interfaces on a specific type of network device.
-You can invoke a single module with a task, or invoke several different modules in a playbook.
-For an idea of how many modules Ansible includes,
-take a look at the list of all modules.
-
-These programs are written to be resource models of the desired state of the system.
-
-Your library of modules can reside on any machine,
-and there are no servers, daemons, or databases required.
-
 ## Table of Contents
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
@@ -100,7 +26,6 @@ and there are no servers, daemons, or databases required.
 - [I Cannot Emphasize Enough the Value of Versioning Playbooks with Git](#i-cannot-emphasize-enough-the-value-of-versioning-playbooks-with-git)
 - [Adding a Second Play with Two Tasks](#adding-a-second-play-with-two-tasks)
 - [What Happens When We Have a Syntax Error in a Playbook](#what-happens-when-we-have-a-syntax-error-in-a-playbook)
-- [References](#references)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -118,83 +43,7 @@ and there are no servers, daemons, or databases required.
 
 <div align="center"><img src="assets/ansible-localhost.png" width="350"></div>
 
-<!-- AUTO-GENERATED-CONTENT:START (CODE:src=labs/playbook.yml) -->
-<!-- The below code snippet is automatically added from labs/playbook.yml -->
-
-```yml
-# Source: labs/playbook.yml
-
-- name: Ensure .gitconfig copied from master.gitconfig
-  hosts: localhost
-
-  tasks:
-    - file: path="/tmp/learning-ansible" state=directory mode=0755
-    - copy:
-        src: "master.gitconfig"
-        dest: "/tmp/learning-ansible/.gitconfig"
-      notify: restart test
-
-  handlers:
-    - name: restart test
-      debug: msg='important job'
-```
-
-<!-- AUTO-GENERATED-CONTENT:END -->
-
 ## Running `ansible-playbook` for the First Time
-
-<!-- AUTO-GENERATED-CONTENT:START (CODE:src=labs/playbook.console) -->
-<!-- The below code snippet is automatically added from labs/playbook.console -->
-
-```console
-+ rm -f /tmp/learning-ansible/.gitconfig
-+ cat /tmp/learning-ansible/.gitconfig
-cat: /tmp/learning-ansible/.gitconfig: No such file or directory
-+ echo
-
-+ ansible-playbook playbook.yml
-[WARNING]: No inventory was parsed, only implicit localhost is available
-[WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
-
-PLAY [Ensure ~/.gitconfig copied from master.gitconfig] **********************************************************************************************************************
-
-TASK [Gathering Facts] *******************************************************************************************************************************************************
-ok: [localhost]
-
-TASK [file] ******************************************************************************************************************************************************************
-ok: [localhost]
-
-TASK [copy] ******************************************************************************************************************************************************************
-changed: [localhost]
-
-PLAY RECAP *******************************************************************************************************************************************************************
-localhost                  : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
-
-+ ansible-playbook playbook.yml
-[WARNING]: No inventory was parsed, only implicit localhost is available
-[WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
-
-PLAY [Ensure ~/.gitconfig copied from master.gitconfig] **********************************************************************************************************************
-
-TASK [Gathering Facts] *******************************************************************************************************************************************************
-ok: [localhost]
-
-TASK [file] ******************************************************************************************************************************************************************
-ok: [localhost]
-
-TASK [copy] ******************************************************************************************************************************************************************
-ok: [localhost]
-
-PLAY RECAP *******************************************************************************************************************************************************************
-localhost                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
-
-+ cat /tmp/learning-ansible/.gitconfig
-[user]
-	name = Harrison Van
-	email = software.engineer@shopback.com
-```
-
-<!-- AUTO-GENERATED-CONTENT:END -->
 
 ## Testing `ansible-playbook` by Removing and Restoring Our `.gitconfig`
 
@@ -205,7 +54,3 @@ localhost                  : ok=3    changed=0    unreachable=0    failed=0    s
 ## Adding a Second Play with Two Tasks
 
 ## What Happens When We Have a Syntax Error in a Playbook
-
-## References
-
-- [Getting Started with Ansible for Network Automation - Basic Concepts](https://docs.ansible.com/ansible/latest/network/getting_started/basic_concepts.html)
