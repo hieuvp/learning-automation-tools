@@ -1,6 +1,6 @@
 # Alternatives to SSH for Connecting to Hosts
 
-![Ansible's Pull Model](assets/ansible-pull-model.png)
+![Ansible Pull Model](assets/ansible-pull-model.png)
 
 ## [Ansible Glossary](https://docs.ansible.com/ansible/latest/reference_appendices/glossary.html)
 
