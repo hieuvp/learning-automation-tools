@@ -48,8 +48,8 @@
 
 ```gitconfig
 [user]
-	name = Harrison Van
-	email = software.engineer@shopback.com
+  name = Harrison Van
+  email = software.engineer@shopback.com
 ```
 
 <!-- AUTO-GENERATED-CONTENT:END -->
