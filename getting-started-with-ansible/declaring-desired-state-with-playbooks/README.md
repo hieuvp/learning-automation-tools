@@ -61,7 +61,7 @@ You can execute a single task once with an ad-hoc command.
 ### Modules
 
 > Modules are the units of work that Ansible ships out to remote machines.
-> Modules are kicked off by either `/usr/bin/ansible` or `/usr/bin/ansible-playbook`
+> Modules are kicked off by either `/usr/local/bin/ansible` or `/usr/local/bin/ansible-playbook`
 > (where multiple tasks use lots of different modules in conjunction).
 > Modules can be implemented in any language, including Perl, Bash, or Ruby –
 > but can leverage some useful communal library code if written in Python.
