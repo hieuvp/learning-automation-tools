@@ -15,7 +15,8 @@
 > A play is minimally a mapping between
 > a set of hosts selected by a host specifier
 > (usually chosen by groups but sometimes by hostname globs)
-> and the tasks which run on those hosts to define the role that those systems will perform.
+> and the tasks which run on those hosts
+> to define the role that those systems will perform.
 > There can be one or many plays in a playbook.
 
 ### Host
@@ -23,8 +24,10 @@
 > A host is simply a remote machine that Ansible manages.
 > They can have individual variables assigned to them,
 > and can also be organized in groups.
-> All hosts have a name they can be reached at (which is either an IP address or a domain name) and,
-> optionally, a port number, if they are not to be accessed on the default SSH port.
+> All hosts have a name they can be reached at
+> (which is either an IP address, or a domain name)
+> and, optionally, a port number,
+> if they are not to be accessed on the default SSH port.
 
 ### Task
 
