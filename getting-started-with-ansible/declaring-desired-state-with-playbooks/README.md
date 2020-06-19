@@ -47,6 +47,8 @@ You can execute a single task once with an ad-hoc command.
 > and which arguments to pass to that module.
 > Each task can have only one action, but it may also have other parameters.
 
+<div align="center"><img src="assets/task-vs-action.png" width="900"></div>
+
 ### Handlers
 
 > Handlers are just like regular tasks in an Ansible playbook (see Tasks)

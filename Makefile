@@ -81,4 +81,5 @@ export-drawio:
 	$(MAKEFILE_SCRIPT_PATH)/export-drawio.sh getting-started-with-ansible/configuring-multiple-hosts/assets/ansible-push-model.drawio 2
 	$(MAKEFILE_SCRIPT_PATH)/export-drawio.sh getting-started-with-ansible/declaring-desired-state-with-playbooks/assets/anchoring-analogy.drawio 2
 	$(MAKEFILE_SCRIPT_PATH)/export-drawio.sh getting-started-with-ansible/declaring-desired-state-with-playbooks/assets/ansible-localhost.drawio 3.5
+	$(MAKEFILE_SCRIPT_PATH)/export-drawio.sh getting-started-with-ansible/declaring-desired-state-with-playbooks/assets/task-vs-action.drawio 2
 	@printf "\n"
