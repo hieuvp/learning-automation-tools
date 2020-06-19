@@ -33,14 +33,10 @@
 
 > Playbooks exist to run **tasks**.
 
-The units of action in Ansible.
-You can execute a single task once with an ad-hoc command.
-
-> An action is a part of a task that specifies which of the modules to run
-> and which arguments to pass to that module.
-> Each task can have only one action, but it may also have other parameters.
-
 ![Task vs. Action](assets/task-vs-action.png)
+
+- You can execute a single task once with an ad-hoc command.
+- Each task can have only one action, but it may have many parameters.
 
 ### Handlers
 
