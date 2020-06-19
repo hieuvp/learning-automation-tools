@@ -151,7 +151,7 @@ and there are no servers, daemons, or databases required.
 <!-- The below code snippet is automatically added from labs/playbook.console -->
 
 ```console
-+ rm -f /tmp/learning-ansible/.gitconfig
++ rm -rf /tmp/learning-ansible
 + cat /tmp/learning-ansible/.gitconfig
 cat: /tmp/learning-ansible/.gitconfig: No such file or directory
 + echo
@@ -166,13 +166,18 @@ TASK [Gathering Facts] *********************************************************
 ok: [localhost]
 
 TASK [Create a root directory if it does not exist] **************************************************************************************************
-ok: [localhost]
+changed: [localhost]
 
 TASK [copy] ******************************************************************************************************************************************
 changed: [localhost]
 
+RUNNING HANDLER [restart a service] ******************************************************************************************************************
+ok: [localhost] => {
+    "msg": "Your service has been restarted"
+}
+
 PLAY RECAP *******************************************************************************************************************************************
-localhost                  : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+localhost                  : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
 
 + ansible-playbook playbook.yml
 [WARNING]: No inventory was parsed, only implicit localhost is available
@@ -192,10 +197,7 @@ ok: [localhost]
 PLAY RECAP *******************************************************************************************************************************************
 localhost                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
 
-+ cat /tmp/learning-ansible/.gitconfig
-[user]
-  name = Harrison Van
-  email = software.engineer@shopback.com
+./playbook.sh: line 17: FILE_PATH: unbound variable
 ```
 
 <!-- AUTO-GENERATED-CONTENT:END -->

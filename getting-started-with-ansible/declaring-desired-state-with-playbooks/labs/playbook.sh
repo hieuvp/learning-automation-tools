@@ -2,12 +2,13 @@
 
 set -u pipefail
 
-readonly FILE_PATH="/tmp/learning-ansible/.gitconfig"
+readonly ROOT_DIR="/tmp/learning-ansible"
+readonly FILENAME=".gitconfig"
 
 set -x
 
-rm -f "$FILE_PATH"
-cat "$FILE_PATH"
+rm -rf "$ROOT_DIR"
+cat "${ROOT_DIR}/${FILENAME}"
 echo
 
 ansible-playbook playbook.yml
