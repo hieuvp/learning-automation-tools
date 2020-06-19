@@ -32,11 +32,6 @@
 ### Task
 
 > Playbooks exist to run **tasks**.
-> Tasks combine an action (a module and its arguments) with a name
-> and optionally some other keywords (like looping directives).
-> Handlers are also tasks, but they are a special kind of task
-> that do not run unless they are notified by name
-> when a task reports an underlying change on a remote system.
 
 The units of action in Ansible.
 You can execute a single task once with an ad-hoc command.
@@ -51,6 +46,9 @@ You can execute a single task once with an ad-hoc command.
 
 ### Handlers
 
+> Handlers are also tasks, but they are a special kind of task
+> that do not run unless they are notified by name
+> when a task reports an underlying change on a remote system.
 > Handlers are just like regular tasks in an Ansible playbook (see Tasks)
 > but are only run if the Task contains a notify directive
 > and also indicates that it changed something.
