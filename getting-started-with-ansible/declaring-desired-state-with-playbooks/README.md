@@ -130,15 +130,17 @@ and there are no servers, daemons, or databases required.
   hosts: localhost
 
   tasks:
-    - file: path="/tmp/learning-ansible" state=directory mode=0755
-    - copy:
-        src: "master.gitconfig"
-        dest: "/tmp/learning-ansible/.gitconfig"
+    - name: Create a root directory if it does not exist
+      file: path=/tmp/learning-ansible state=directory mode=0755
       notify: restart test
+
+    - copy:
+        src: master.gitconfig
+        dest: /tmp/learning-ansible/.gitconfig
 
   handlers:
     - name: restart test
-      debug: msg='important job'
+      debug: msg="important job"
 ```
 
 <!-- AUTO-GENERATED-CONTENT:END -->
