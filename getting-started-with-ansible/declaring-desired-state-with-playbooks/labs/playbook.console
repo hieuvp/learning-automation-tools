@@ -13,18 +13,13 @@ TASK [Gathering Facts] *********************************************************
 ok: [localhost]
 
 TASK [Create a root directory if it does not exist] **************************************************************************************************
-changed: [localhost]
+ok: [localhost]
 
 TASK [copy] ******************************************************************************************************************************************
 changed: [localhost]
 
-RUNNING HANDLER [restart a service] ******************************************************************************************************************
-ok: [localhost] => {
-    "msg": "Your service has been restarted"
-}
-
 PLAY RECAP *******************************************************************************************************************************************
-localhost                  : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+localhost                  : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
 
 + ansible-playbook playbook.yml
 [WARNING]: No inventory was parsed, only implicit localhost is available
