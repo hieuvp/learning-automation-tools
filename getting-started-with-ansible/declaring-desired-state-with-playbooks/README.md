@@ -31,7 +31,7 @@
 
 ### Task and Action
 
-> Playbooks exist to run **tasks**.
+> Playbooks exist to run **Tasks**.
 
 ![Task vs. Action](assets/task-vs-action.png)
 
@@ -40,12 +40,8 @@
 
 ### Handlers
 
-> Handlers are also tasks, but they are a special kind of task
-> that do not run unless they are notified by name
-> when a task reports an underlying change on a remote system.
->
-> Handlers are just like regular tasks in an Ansible playbook (see Tasks)
-> but are only run if the Task contains a notify directive
+> Handlers are a special kind of task
+> that only run if the Task contains a `notify` directive
 > and also indicates that it changed something.
 > For example, if a config file is changed,
 > then the task referencing the config file templating operation may notify a service restart handler.
