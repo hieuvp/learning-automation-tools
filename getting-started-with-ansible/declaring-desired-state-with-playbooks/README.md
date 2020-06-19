@@ -48,6 +48,8 @@
 > This means services can be bounced only if they need to be restarted.
 > Handlers can be used for things other than service restarts,
 > but service restarts are the most common usage.
+> These `notify` actions are triggered at the end of each block of tasks in a play,
+> and will only be triggered once even if notified by multiple different tasks.
 
 ### Modules
 
@@ -160,41 +162,41 @@ cat: /tmp/learning-ansible/.gitconfig: No such file or directory
 [WARNING]: No inventory was parsed, only implicit localhost is available
 [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
 
-PLAY [Ensure .gitconfig copied from master.gitconfig] ************************************************************************************************
+PLAY [Ensure .gitconfig copied from master.gitconfig] *********************************************************************************
 
-TASK [Gathering Facts] *******************************************************************************************************************************
+TASK [Gathering Facts] ****************************************************************************************************************
 ok: [localhost]
 
-TASK [Create a root directory if it does not exist] **************************************************************************************************
+TASK [Create a root directory if it does not exist] ***********************************************************************************
 changed: [localhost]
 
-TASK [copy] ******************************************************************************************************************************************
+TASK [copy] ***************************************************************************************************************************
 changed: [localhost]
 
-RUNNING HANDLER [restart a service] ******************************************************************************************************************
+RUNNING HANDLER [restart a service] ***************************************************************************************************
 ok: [localhost] => {
     "msg": "Your service has been restarted"
 }
 
-PLAY RECAP *******************************************************************************************************************************************
+PLAY RECAP ****************************************************************************************************************************
 localhost                  : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
 
 + ansible-playbook playbook.yml
 [WARNING]: No inventory was parsed, only implicit localhost is available
 [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
 
-PLAY [Ensure .gitconfig copied from master.gitconfig] ************************************************************************************************
+PLAY [Ensure .gitconfig copied from master.gitconfig] *********************************************************************************
 
-TASK [Gathering Facts] *******************************************************************************************************************************
+TASK [Gathering Facts] ****************************************************************************************************************
 ok: [localhost]
 
-TASK [Create a root directory if it does not exist] **************************************************************************************************
+TASK [Create a root directory if it does not exist] ***********************************************************************************
 ok: [localhost]
 
-TASK [copy] ******************************************************************************************************************************************
+TASK [copy] ***************************************************************************************************************************
 ok: [localhost]
 
-PLAY RECAP *******************************************************************************************************************************************
+PLAY RECAP ****************************************************************************************************************************
 localhost                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
 
 + cat /tmp/learning-ansible/.gitconfig
