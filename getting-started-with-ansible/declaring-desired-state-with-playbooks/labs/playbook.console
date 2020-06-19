@@ -44,4 +44,7 @@ ok: [localhost]
 PLAY RECAP *******************************************************************************************************************************************
 localhost                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
 
-./playbook.sh: line 17: FILE_PATH: unbound variable
++ cat /tmp/learning-ansible/.gitconfig
+[user]
+  name = Harrison Van
+  email = software.engineer@shopback.com
