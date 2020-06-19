@@ -29,14 +29,12 @@
 > and, optionally, a port number,
 > if they are not to be accessed on the default SSH port.
 
-### Task
+### Task and Action
 
 > Playbooks exist to run **tasks**.
 
 The units of action in Ansible.
 You can execute a single task once with an ad-hoc command.
-
-### Action
 
 > An action is a part of a task that specifies which of the modules to run
 > and which arguments to pass to that module.
@@ -49,6 +47,7 @@ You can execute a single task once with an ad-hoc command.
 > Handlers are also tasks, but they are a special kind of task
 > that do not run unless they are notified by name
 > when a task reports an underlying change on a remote system.
+>
 > Handlers are just like regular tasks in an Ansible playbook (see Tasks)
 > but are only run if the Task contains a notify directive
 > and also indicates that it changed something.
