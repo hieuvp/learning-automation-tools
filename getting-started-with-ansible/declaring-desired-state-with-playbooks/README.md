@@ -15,19 +15,17 @@
 ```yml
 # Source: labs/playbook.yml
 
-# Play
+## Play
 - name: Ensure .gitconfig copied from master.gitconfig
   hosts: localhost
 
   tasks:
-    # Task
+    ### Task
     - name: Create a root directory if it does not exist
       file: path=/tmp/learning-ansible state=directory mode=0755
-
-      # Run Handler
       notify: restart a service
 
-    # Task
+    ### Task
     - copy:
         src: master.gitconfig
         dest: /tmp/learning-ansible/.gitconfig
