@@ -207,6 +207,25 @@ localhost                  : ok=3    changed=0    unreachable=0    failed=0    s
 
 <!-- AUTO-GENERATED-CONTENT:END -->
 
+Running a playbook in `dry-run` mode
+
+<https://ansible-tips-and-tricks.readthedocs.io/en/latest/ansible/commands>
+
+<https://ansible-tips-and-tricks.readthedocs.io/en/latest/ansible/commands/#running-a-playbook-in-dry-run-mode>
+
+Sometimes it can be useful to see what Ansible might do, but without actually changing anything.
+
+One can run in dry-run mode like this:
+
+- `--check`: don't make any changes;
+  instead, try to predict some of the changes that may occur
+- `--diff`: when changing (small) files and templates,
+  show the differences in those files; works great with `--check`
+
+```shell script
+ansible-playbook playbooks/PLAYBOOK_NAME.yml --check
+```
+
 ## Testing `ansible-playbook` by Removing and Restoring Our `.gitconfig`
 
 ## Increasing `ansible-playbook` Output Verbosity
