@@ -58,10 +58,14 @@
 
 ### Task and Action
 
-![Task vs. Action](assets/task-vs-action.png)
-
-- You can execute a single task once with an ad-hoc command.
-- Each task can have only one action, but it may have many parameters.
+<div align="center">
+  <img src="assets/task-vs-action.png" width="800">
+  <br />
+  <div>
+    Each <b>Task</b> can have only one <b>Action</b>,
+    but it may have many <b>Parameters</b>.
+  </div>
+</div>
 
 ### Handlers
 
