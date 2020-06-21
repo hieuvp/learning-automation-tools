@@ -29,7 +29,7 @@
 > <br />An **inventory file** is sometimes called a **host file**.
 > <br />Your **Inventory** can specify information like IP address for each managed node.
 > <br />An **Inventory** can organize managed nodes,
-> creating and nesting groups for easier scaling.
+> e.g. creating and nesting groups for easier scaling.
 
 ## Table of Contents
 
