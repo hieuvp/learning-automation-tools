@@ -45,7 +45,7 @@
 > a set of `hosts` selected by a host specifier
 > (usually chosen by groups but sometimes by hostname globs)
 > and the `tasks` which run on those `hosts`
-> to define the role that those systems will perform.
+> to define the `role` that those systems will perform.
 
 ### Host
 
