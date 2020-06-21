@@ -28,7 +28,7 @@
 ### Inventory
 
 > A list of managed nodes.
-> <br />An **Inventory** file is also sometimes called a `hostfile`.
+> <br />An **Inventory** file is also sometimes called a **Host File**.
 > <br />Your **Inventory** can specify information like IP address for each managed node.
 > <br />An **Inventory** can also organize managed nodes,
 > creating and nesting groups for easier scaling.
