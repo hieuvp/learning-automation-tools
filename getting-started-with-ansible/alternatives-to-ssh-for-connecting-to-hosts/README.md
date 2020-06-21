@@ -1,5 +1,7 @@
 # Alternatives to SSH for Connecting to Hosts
 
+## [Ansible Glossary](https://docs.ansible.com/ansible/latest/reference_appendices/glossary.html)
+
 ## Table of Contents
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->

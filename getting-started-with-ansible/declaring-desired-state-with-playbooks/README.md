@@ -9,6 +9,35 @@
 > **Playbooks** are the language by which
 > Ansible **orchestrates**, **configures**, **administers**, or **deploys** systems.
 
+<!-- AUTO-GENERATED-CONTENT:START (CODE:src=labs/playbook.yml) -->
+<!-- The below code snippet is automatically added from labs/playbook.yml -->
+
+```yml
+# Source: labs/playbook.yml
+
+## Play
+- name: Ensure .gitconfig copied from master.gitconfig
+  hosts: localhost
+
+  tasks:
+    ## Task
+    - name: Create a root directory if it does not exist
+      file: path=/tmp/learning-ansible state=directory mode=0755
+      notify: restart a service
+
+    ## Task
+    - copy:
+        src: master.gitconfig
+        dest: /tmp/learning-ansible/.gitconfig
+
+  handlers:
+    ## Handler
+    - name: restart a service
+      debug: msg="Your service has been restarted"
+```
+
+<!-- AUTO-GENERATED-CONTENT:END -->
+
 ## Table of Contents
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
