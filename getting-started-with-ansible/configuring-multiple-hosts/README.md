@@ -20,15 +20,15 @@
 ### Managed Nodes
 
 > The network devices and servers you manage with Ansible.
-> <br />**Managed Nodes** are also sometimes called `hosts`.
+> <br />**Managed Nodes** are sometimes called `hosts`.
 > <br />Ansible is **~~not~~** installed on **Managed Nodes**.
 
 ### Inventory
 
 > A list of managed nodes.
-> <br />An **inventory file** is also sometimes called a **host file**.
+> <br />An **inventory file** is sometimes called a **host file**.
 > <br />Your **Inventory** can specify information like IP address for each managed node.
-> <br />An **Inventory** can also organize managed nodes,
+> <br />An **Inventory** can organize managed nodes,
 > creating and nesting groups for easier scaling.
 
 ## Table of Contents
