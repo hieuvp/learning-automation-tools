@@ -6,10 +6,10 @@
 
 ### Push Mode
 
-> **Push Mode** is the default mode of Ansible.
-> <br />**Push Mode** allows Ansible to be fine-grained
-> and conduct nodes through complex orchestration processes
-> without waiting for them to check in.
+- **Push Mode** is the default mode of Ansible.
+- **Push Mode** allows Ansible to be fine-grained
+  and conduct nodes through complex orchestration processes
+  without waiting for them to check in.
 
 ### Control Node
 
@@ -28,7 +28,7 @@
 ### Inventory
 
 > A list of managed nodes.
-> <br />An **Inventory** file is also sometimes called a **Host File**.
+> <br />An **Inventory** file is also sometimes called a **host file**.
 > <br />Your **Inventory** can specify information like IP address for each managed node.
 > <br />An **Inventory** can also organize managed nodes,
 > creating and nesting groups for easier scaling.
