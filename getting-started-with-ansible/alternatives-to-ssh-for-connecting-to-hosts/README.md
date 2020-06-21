@@ -1,5 +1,6 @@
 # Alternatives to SSH for Connecting to Hosts
 
+<<<<<<< HEAD
 ![Ansible Pull Model](assets/ansible-pull-model.png)
 
 ## [Ansible Glossary](https://docs.ansible.com/ansible/latest/reference_appendices/glossary.html)
@@ -18,6 +19,10 @@
 > and then managing the machine locally,
 > using the local connection plugin.
 
+=======
+## [Ansible Glossary](https://docs.ansible.com/ansible/latest/reference_appendices/glossary.html)
+
+>>>>>>> master
 ## Table of Contents
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->

@@ -38,6 +38,7 @@
 
 <!-- AUTO-GENERATED-CONTENT:END -->
 
+<<<<<<< HEAD
 ### Plays
 
 > A playbook is a list of **Plays**.
@@ -106,6 +107,8 @@ These programs are written to be resource models of the desired state of the sys
 Your library of modules can reside on any machine,
 and there are no servers, daemons, or databases required.
 
+=======
+>>>>>>> master
 ## Table of Contents
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
