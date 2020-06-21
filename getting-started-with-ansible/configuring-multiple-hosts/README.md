@@ -40,6 +40,8 @@
 - [Creating Test EC2 Instances with Terraform](#creating-test-ec2-instances-with-terraform)
 - [Creating Test VMs with Vagrant](#creating-test-vms-with-vagrant)
 - [Perusing My Inventory Directory Example and a Bit About `ansible-config list` and `INVENTORY_IGNORE_EXTS`](#perusing-my-inventory-directory-example-and-a-bit-about-ansible-config-list-and-inventory_ignore_exts)
+- [VMs Are Operational with No Git Configuration](#vms-are-operational-with-no-git-configuration)
+- [Groups and Hosts and Ansible Ad-hoc with Multiple Hosts](#groups-and-hosts-and-ansible-ad-hoc-with-multiple-hosts)
 - [Walking through the Playbook We Will Run against All VM Hosts](#walking-through-the-playbook-we-will-run-against-all-vm-hosts)
 - [Running Our Playbook against Multiple VMs to Install and Configure Git](#running-our-playbook-against-multiple-vms-to-install-and-configure-git)
 - [Destroying and Recreating Is Scalable and Reproducible](#destroying-and-recreating-is-scalable-and-reproducible)
@@ -293,6 +295,10 @@ make terraform-destroy
 ## Creating Test VMs with Vagrant
 
 ## Perusing My Inventory Directory Example and a Bit About `ansible-config list` and `INVENTORY_IGNORE_EXTS`
+
+## VMs Are Operational with No Git Configuration
+
+## Groups and Hosts and Ansible Ad-hoc with Multiple Hosts
 
 ## Walking through the Playbook We Will Run against All VM Hosts
 
