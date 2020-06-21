@@ -14,9 +14,7 @@
 ### Control Node
 
 > Any machine with Ansible installed.
-> <br />You can run commands (`/usr/local/bin/ansible`)
-> and playbooks `/usr/local/bin/ansible-playbook`,
-> from any **Control Node**.
+> <br />You can run ad-hoc commands and playbooks from any **Control Node**.
 > <br />You can have multiple **Control Nodes**.
 
 ### Managed Nodes
