@@ -6,10 +6,10 @@
 
 ### Push Mode
 
-- **Push Mode** is the default mode of Ansible.
-- **Push Mode** allows Ansible to be fine-grained
-  and conduct nodes through complex orchestration processes
-  without waiting for them to check in.
+> **Push Mode** is the default mode of Ansible.
+> <br />**Push Mode** allows Ansible to be fine-grained
+> and conduct nodes through complex orchestration processes
+> without waiting for them to check in.
 
 ### Control Node
 
