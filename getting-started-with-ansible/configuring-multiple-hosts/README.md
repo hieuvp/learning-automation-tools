@@ -19,7 +19,7 @@
 
 ### Managed Nodes
 
-> The network devices (and/or servers) you manage with Ansible.
+> The network devices and servers you manage with Ansible.
 > <br />**Managed Nodes** are also sometimes called `hosts`.
 > <br />Ansible is **~~not~~** installed on **Managed Nodes**.
 
