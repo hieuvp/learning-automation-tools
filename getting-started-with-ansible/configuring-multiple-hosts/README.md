@@ -4,6 +4,33 @@
 
 ## [Ansible Glossary](https://docs.ansible.com/ansible/latest/reference_appendices/glossary.html)
 
+### Push Mode
+
+> **Push Mode** is the default mode of Ansible.
+> <br />**Push Mode** allows Ansible to be fine-grained
+> and conduct nodes through complex orchestration processes
+> without waiting for them to check in.
+
+### Control Node
+
+> Any machine with Ansible installed.
+> <br />You can run ad-hoc commands and playbooks from any **Control Node**.
+> <br />You can have multiple **Control Nodes**.
+
+### Managed Nodes
+
+> The network devices and servers you manage with Ansible.
+> <br />**Managed Nodes** are sometimes called `hosts`.
+> <br />Ansible is **~~not~~** installed on **Managed Nodes**.
+
+### Inventory
+
+> A list of managed nodes.
+> <br />An **inventory file** is sometimes called a **host file**.
+> <br />Your **Inventory** can specify information like IP address for each managed node.
+> <br />An **Inventory** can organize managed nodes,
+> e.g. creating and nesting groups for easier scaling.
+
 ## Table of Contents
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
@@ -269,9 +296,41 @@ make terraform-destroy
 
 ## Perusing My Inventory Directory Example and a Bit About `ansible-config list` and `INVENTORY_IGNORE_EXTS`
 
+```shell script
+ansible-config list
+```
+
+- `inventory_dir` is the pathname of the directory holding Ansible's inventory host file,
+- `inventory_file` is the pathname and the filename pointing to the Ansible's inventory host file.
+
+```yaml
+INVENTORY_IGNORE_EXTS:
+  default: "{{(BLACKLIST_EXTS + ( '.orig', '.ini', '.cfg', '.retry'))}}"
+  description: List of extensions to ignore when using a directory as an inventory
+    source
+  env:
+    - name: ANSIBLE_INVENTORY_IGNORE
+  ini:
+    - key: inventory_ignore_extensions
+      section: defaults
+    - key: ignore_extensions
+      section: inventory
+  name: Inventory ignore extensions
+  type: list
+```
+
 ## VMs Are Operational with No Git Configuration
 
 ## Groups and Hosts and Ansible Ad-hoc with Multiple Hosts
+
+```shell script
+ansible-inventory --list
+```
+
+```shell script
+ansible-inventory --graph
+ansible-inventory --graph --vars
+```
 
 ## Walking through the Playbook We Will Run against All VM Hosts
 
@@ -280,6 +339,126 @@ make terraform-destroy
 ## Destroying and Recreating Is Scalable and Reproducible
 
 ## [Configuring Ansible with `ansible.cfg`](https://docs.ansible.com/ansible/latest/reference_appendices/config.html)
+
+> Certain settings in Ansible are adjustable via a configuration file (`ansible.cfg`).
+> The stock configuration should be sufficient for most users,
+> but there may be reasons you would want to change them.
+> Paths where configuration file is searched are listed in reference documentation.
+
+<https://docs.ansible.com/ansible/latest/reference_appendices/config.html#ansible-configuration-settings-locations>
+<https://docs.ansible.com/ansible/latest/reference_appendices/config.html#the-configuration-file>
+<https://docs.ansible.com/ansible/latest/reference_appendices/config.html#the-configuration-file>
+
+Changes can be made and used in a configuration file
+which will be searched for in the following order:
+
+- `ANSIBLE_CONFIG` (environment variable if set)
+- `ansible.cfg` (in the current directory)
+- `~/.ansible.cfg` (in the home directory)
+- `/etc/ansible/ansible.cfg`
+
+Ansible will process the above list and use the first file found,
+all others are ignored.
+
+The configuration file is one variant of an INI format.
+Both the hash sign (`#`) and semicolon (`;`)
+are allowed as comment markers when the comment starts the line.
+However, if the comment is inline with regular values,
+only the semicolon is allowed to introduce the comment.
+For instance:
+
+```ini
+# some basic default values...
+inventory = /etc/ansible/hosts  ; This points to the file that lists your hosts
+```
+
+<https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html>
+
+<!-- AUTO-GENERATED-CONTENT:START (CODE:src=labs/ansible.cfg) -->
+<!-- The below code snippet is automatically added from labs/ansible.cfg -->
+
+```cfg
+[defaults]
+# disable host_key_checking
+# https://docs.ansible.com/ansible/latest/user_guide/connection_details.html#host-key-checking
+host_key_checking = False
+
+inventory = hosts.yml
+```
+
+<!-- AUTO-GENERATED-CONTENT:END -->
+
+<!-- AUTO-GENERATED-CONTENT:START (CODE:src=scripts/ansible-inventory-list.console) -->
+<!-- The below code snippet is automatically added from scripts/ansible-inventory-list.console -->
+
+```console
++ ansible-inventory --list
+{
+    "_meta": {
+        "hostvars": {
+            "centos20": {
+                "ansible_host": "192.168.50.20",
+                "ansible_port": 22,
+                "ansible_private_key_file": ".vagrant/machines/centos20/virtualbox/private_key",
+                "ansible_user": "vagrant"
+            },
+            "centos21": {
+                "ansible_host": "192.168.50.21",
+                "ansible_port": 22,
+                "ansible_private_key_file": ".vagrant/machines/centos21/virtualbox/private_key",
+                "ansible_user": "vagrant"
+            },
+            "localhost": {
+                "ansible_connection": "local",
+                "ansible_python_interpreter": "/usr/local/bin/python3"
+            },
+            "ubuntu10": {
+                "ansible_host": "192.168.50.10",
+                "ansible_port": 22,
+                "ansible_private_key_file": ".vagrant/machines/ubuntu10/virtualbox/private_key",
+                "ansible_user": "vagrant"
+            },
+            "ubuntu11": {
+                "ansible_host": "192.168.50.11",
+                "ansible_port": 22,
+                "ansible_private_key_file": ".vagrant/machines/ubuntu11/virtualbox/private_key",
+                "ansible_user": "vagrant"
+            }
+        }
+    },
+    "all": {
+        "children": [
+            "ungrouped",
+            "vagrant"
+        ]
+    },
+    "centos": {
+        "hosts": [
+            "centos20",
+            "centos21"
+        ]
+    },
+    "ubuntu": {
+        "hosts": [
+            "ubuntu10",
+            "ubuntu11"
+        ]
+    },
+    "ungrouped": {
+        "hosts": [
+            "localhost"
+        ]
+    },
+    "vagrant": {
+        "children": [
+            "centos",
+            "ubuntu"
+        ]
+    }
+}
+```
+
+<!-- AUTO-GENERATED-CONTENT:END -->
 
 ## Summarizing Inventory with `ansible-inventory --graph` and with `--vars`
 
