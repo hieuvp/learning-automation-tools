@@ -31,6 +31,7 @@
         dest: /tmp/learning-ansible/.gitconfig
 
   handlers:
+    ## Handler
     - name: restart a service
       debug: msg="Your service has been restarted"
 ```
