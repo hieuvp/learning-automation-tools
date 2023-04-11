@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "license": "MIT",
   "dependencies": {
-    "selenium-webdriver": "3.6.0",
+    "selenium-webdriver": "4.8.2",
     "sleep": "6.1.0"
   }
 }
